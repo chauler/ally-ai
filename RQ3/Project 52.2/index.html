@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naruto Characters</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+        }
+
+        main {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        .character-card {
+            width: 200px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .character-card:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        form {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 70%;
+            padding: 10px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .like-buttons {
+            margin-top: 10px;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        .like-button {
+            background-color: #3498db;
+            color: white;
+            padding: 8px 15px;
+            margin-right: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .like-button:hover {
+            background-color: #2980b9;
+        }
+
+        .reactions {
+            margin-top: 10px;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        .reaction-button {
+            background-color: #e74c3c;
+            color: white;
+            padding: 8px 15px;
+            margin-right: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .reaction-button:hover {
+            background-color: #c0392b;
+        }
+
+        .video-container {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        video {
+            max-width: 100%;
+            margin: 10px;
+        }
+
+        .like-counter {
+            margin-top: 5px;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Naruto Characters</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Characters</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <main>
+
+        <form id="search-form">
+            <label for="search">Search characters:</label>
+            <input type="text" id="search" name="search" placeholder="Search characters...">
+           <!-- Replace your existing button style with the following -->
+           <button type="submit" style="background-color: #4CAF50; color: #ffffff; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">
+            Search
+        </button>        
+
+        </form>
+
+        <section>
+            <div class="character-card">
+                <img src="Naruto.jpg" alt="Naruto">
+                <h3>Naruto Uzumaki</h3>
+                <p>Main Protagonist</p>
+                <div class="like-buttons">
+                    <button class="like-button" style="background-color: #3498db; color: #ffffff; padding: 8px 15px; margin-right: 10px; border: none; border-radius: 4px; cursor: pointer;">
+                        Like
+                    </button>
+                    
+                    <button class="like-button" style="background-color: #e74c3c; color: #ffffff; padding: 8px 15px; margin-right: 10px; border: none; border-radius: 4px; cursor: pointer;">
+                        Love
+                    </button>
+                    
+                    <button class="like-button" style="background-color: #f39c12; color: #ffffff; padding: 8px 15px; margin-right: 10px; border: none; border-radius: 4px; cursor: pointer;">
+                        Wow
+                    </button>
+                    
+                </div>
+                <div class="reactions">
+                    <button class="reaction-button" onclick="reactCharacter('naruto', '👍')" style="background-color: #27ae60; color: #ffffff; padding: 8px 15px; margin-right: 10px; border: none; border-radius: 4px; cursor: pointer;">
+                        👍
+                    </button>
+                    
+                    <button class="reaction-button" onclick="reactCharacter('naruto', '❤️')" style="background-color: #e74c3c; color: #ffffff; padding: 8px 15px; margin-right: 10px; border: none; border-radius: 4px; cursor: pointer;">
+                        ❤️
+                    </button>
+                    
+                    <button class="reaction-button" onclick="reactCharacter('naruto', '😮')" style="background-color: #e74c3c; color: #ffffff; padding: 8px 15px; margin-right: 10px; border: none; border-radius: 4px; cursor: pointer;">
+                        😮
+                    </button>
+                    
+                </div>
+                <div class="like-counter" id="naruto-like-counter">0 Likes</div>
+                <div class="like-counter" id="naruto-reaction-counter">0 Reactions</div>
+            </div>
+
+            <!-- Repeat the character cards for other characters -->
+
+            <div class="character-card">
+                <img src="sasuke.jpg" alt="Sasuke">
+                <h3>Sasuke Uchiha</h3>
+                <p>Rival</p>
+                <div class="like-buttons">
+                    <button class="like-button" style="background-color: #3498db; color: #fff; padding: 8px 15px; margin-right: 10px; border: none; border-radius: 4px; cursor: pointer;">
+                        Like
+                    </button>
+                
+                    <button class="like-button" style="background-color: #e74c3c; color: #fff; padding: 8px 15px; margin-right: 10px; border: none; border-radius: 4px; cursor: pointer;">
+                        Love
+                    </button>
+                
+                    <button class="like-button" style="background-color: #2ecc71; color: #fff; padding: 8px 15px; margin-right: 10px; border: none; border-radius: 4px; cursor: pointer;">
+                        Wow
+                    </button>
+                </div>
+                
+                <div class="reactions">
+                    <button class="reaction-button" onclick="reactCharacter('sasuke', '👍')" style="background-color: #e74c3c; color: #fff; padding: 8px 15px; margin-right: 10px; border: none; border-radius: 4px; cursor: pointer;">
+                        👍
+                    </button>
+                
+                    <button class="reaction-button" onclick="reactCharacter('sasuke', '❤️')" style="background-color: #e74c3c; color: #fff; padding: 8px 15px; margin-right: 10px; border: none; border-radius: 4px; cursor: pointer;">
+                        ❤️
+                    </button>
+                
+                    <button class="reaction-button" onclick="reactCharacter('sasuke', '😮')" style="background-color: #e74c3c; color: #fff; padding: 8px 15px; margin-right: 10px; border: none; border-radius: 4px; cursor: pointer;">
+                        😮
+                    </button>
+                </div>
+                
+                <div class="like-counter" id="sasuke-like-counter">0 Likes</div>
+                <div class="like-counter" id="sasuke-reaction-counter">0 Reactions</div>
+            </div>
+
+            <div class="character-card">
+                <img src="sakura.jpg" alt="Sakura">
+                <h3>Sakura Haruno</h3>
+                <p>Naruto's teammate</p>
+                <div class="like-buttons">
+                    <button class="like-button" style="background-color: #3498db; color: #fff; padding: 8px 15px; margin-right: 10px; border: none; border-radius: 4px; cursor: pointer;">
+                        Like
+                    </button>
+                
+                    <button class="like-button" style="background-color: #e74c3c; color: #fff; padding: 8px 15px; margin-right: 10px; border: none; border-radius: 4px; cursor: pointer;">
+                        Love
+                    </button>
+                
+                    <button class="like-button" style="background-color: #2ecc71; color: #fff; padding: 8px 15px; margin-right: 10px; border: none; border-radius: 4px; cursor: pointer;">
+                        Wow
+                    </button>
+                </div>
+                
+                <div class="reactions">
+                    <button class="reaction-button" onclick="reactCharacter('sakura', '👍')" style="background-color: #e74c3c; color: #fff; padding: 8px 15px; margin-right: 10px; border: none; border-radius: 4px; cursor: pointer;">
+                        👍
+                    </button>
+                
+                    <button class="reaction-button" onclick="reactCharacter('sakura', '❤️')" style="background-color: #e74c3c; color: #fff; padding: 8px 15px; margin-right: 10px; border: none; border-radius: 4px; cursor: pointer;">
+                        ❤️
+                    </button>
+                
+                    <button class="reaction-button" onclick="reactCharacter('sakura', '😮')" style="background-color: #e74c3c; color: #fff; padding: 8px 15px; margin-right: 10px; border: none; border-radius: 4px; cursor: pointer;">
+                        😮
+                    </button>
+                </div>
+                ass="like-counter" id="sakura-reaction-counter">0 Reactions</div>
+            </div>
+
+            <!-- Add more character cards as needed -->
+
+        </section>
+
+        <div id="call-to-action">
+            <button style="background-color: #3498db; color: #fff; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">
+                Learn More
+            </button>
+        
+            <button style="background-color: #e74c3c; color: #fff; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">
+                Contact Us
+            </button>
+        
+            <a href="#" style="color: #fff; text-decoration: none; padding: 10px; margin-left: 10px; border-radius: 4px;">View All Characters</a>
+        </div>
+        
+
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit" style="background-color: #3498db; color: #fff; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">
+                Submit
+            </button>
+            
+        </form>
+
+        <div class="like-buttons" style="color: #000;">
+            <button class="like-button" style="background-color: #3498db;">Like</button>
+            <button class="like-button" style="background-color: #e74c3c;">Love</button>
+            <button class="like-button" style="background-color: #f39c12;">Wow</button>
+        </div>
+        
+
+        <div class="video-container">
+            <video controls>
+                <source src="video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <!-- Add more videos as needed -->
+        </div>
+
+        <script>
+            function reactCharacter(character, reaction) {
+                const reactionCounter = document.getElementById(`${character}-reaction-counter`);
+                let currentReactions = parseInt(reactionCounter.innerText, 10);
+                currentReactions += 1;
+                reactionCounter.innerText = `${currentReactions} Reactions`;
+            }
+        </script>
+    </main>
+</body>
+</html>

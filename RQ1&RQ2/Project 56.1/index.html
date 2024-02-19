@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Clothing Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add your styling here */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 1em;
+}
+
+main {
+    padding: 2em;
+}
+
+.banner {
+    background: url('your-background-image.jpg') center/cover no-repeat; /* Add your background image or video styles here */
+    color: white;
+    text-align: center;
+    padding: 5em;
+}
+
+.dress-collection {
+    margin-top: 3em;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">Your Logo</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#men">Men</a></li>
+                <li><a href="#women">Women</a></li>
+                <li><a href="#kids">Kids</a></li>
+                <li><a href="#login">Login</a></li>
+                <li><a href="#signup">Signup</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <!-- Banner Section with Background Image/Video -->
+        <section class="banner">
+            <h1>Welcome to Your Clothing Store</h1>
+            <!-- You can add background images or videos here -->
+        </section>
+    
+        <!-- Dress Collection Section -->
+        <section class="dress-collection" id="men">
+            <h2>Men's Collection</h2>
+            <div class="dress-item">
+                <img src="men_dress1.jpg" alt="Men's Dress 1">
+                <p>Stylish Men's Dress 1</p>
+                <video controls>
+                    <source src="men_dress1_video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+    
+            <div class="dress-item">
+                <img src="men_dress2.jpg" alt="Men's Dress 2">
+                <p>Elegant Men's Dress 2</p>
+                <!-- Add description and video for Dress 2 -->
+            </div>
+    
+            <!-- Add more dress items as needed -->
+        </section>
+    
+        <section class="dress-collection" id="women">
+            <h2>Women's Collection</h2>
+            <div class="dress-item">
+                <img src="women_dress1.jpg" alt="Women's Dress 1">
+                <p>Fashionable Women's Dress 1</p>
+                <video controls>
+                    <source src="women_dress1_video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+    
+            <!-- Add more dress items for Women's Collection -->
+        </section>
+    
+        <section class="dress-collection" id="kids">
+            <h2>Kids Collection</h2>
+            <div class="dress-item">
+                <img src="kids_dress1.jpg" alt="Kid's Dress 1">
+                <p>Cute Kid's Dress 1</p>
+                <video controls>
+                    <source src="kids_dress1_video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+    
+            <!-- Add more dress items for Kids Collection -->
+        </section>
+    </main>
+    
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2023 Your Clothing Store. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

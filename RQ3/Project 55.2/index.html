@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Game Showcase</title>
+  <style>
+    /* CSS styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('background.jpg'); /* Replace 'background.jpg' with your image */
+      background-size: cover;
+      background-position: center;
+      color: white;
+    }
+    header {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      text-align: center;
+    }
+    nav {
+      background-color: #333;
+      overflow: hidden;
+    }
+    nav a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    section {
+      padding: 20px;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+    section h2 {
+      color: #333; 
+      background-color: rgba(255, 255, 255, 0.7); 
+      padding: 10px;
+    }
+    /* Modified style for improved contrast */
+    section p {
+      color: #ddd; /* Change text color for better contrast */
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Game Showcase</h1>
+</header>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#">Games</a>
+  <a href="#">About</a>
+  <a href="#">Contact</a>
+</nav>
+
+<section>
+  <h2>Welcome to our Game Showcase!</h2>
+  <p>Explore a variety of exciting games...</p>
+  <video width="640" height="360" controls>
+    <source src="game-preview.mp4" type="video/mp4"> <!-- Replace 'game-preview.mp4' with your video -->
+    Your browser does not support the video tag.
+  </video>
+  <p style="color: #ddd;">Description of the game goes here.</p>
+  <label for="email">Enter your email:</label>
+  <input type="text" id="email" name="email" placeholder="Enter your email">
+  <button onclick="playGame()">Play Now</button>
+</section>
+
+<footer>
+  <p>&copy; 2023 Game Showcase. All rights reserved.</p>
+</footer>
+
+<script>
+  // JavaScript functions
+  function playGame() {
+    // Add functionality to start the game
+    alert('Starting the game...');
+    // Example: window.location.href = 'game-url';
+  }
+</script>
+
+</body>
+</html>

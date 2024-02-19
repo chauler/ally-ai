@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shrimp Delight</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('background.jpg');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+    }
+
+    header {
+      background-color: #333;
+      padding: 15px 0;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #444;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 0 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #555;
+    }
+
+    section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    video {
+      width: 100%;
+      max-width: 800px;
+      margin: 20px 0;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      background-color: #ff6600;
+      color: #fff;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .button:hover {
+      background-color: #e55400;
+    }
+
+    footer {
+      background-color: #333;
+      padding: 15px 0;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Shrimp Delight</h1>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#menu">Menu</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home">
+    <h2>Welcome to Shrimp Delight</h2>
+    <p>Discover the freshest and most delicious shrimp dishes in town.</p>
+    <video controls>
+      <source src="shrimp_video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <a href="#menu" class="button">Explore Our Menu</a>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>At Shrimp Delight, we are committed to serving high-quality shrimp sourced from the best locations. Our chefs prepare each dish with precision and care.</p>
+  </section>
+
+  <section id="menu">
+    <h2>Menu</h2>
+    <!-- Include your menu items and descriptions here -->
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Have questions or want to make a reservation? Contact us!</p>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <br>
+      <textarea id="message" name="message" rows="4" placeholder="Your message..." required></textarea>
+      <br>
+      <input type="submit" value="Submit" class="button">
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Shrimp Delight. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Inventory</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-image: url('background-image.jpg'); /* Add your background image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: #fff;
+        }
+
+        header {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            background-color: #555;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .clothing-item {
+            border: 1px solid #fff;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.2);
+            display: inline-block;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #cart {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+        }
+
+        #cart button {
+            background-color: #e74c3c;
+        }
+
+        #cart button:hover {
+            background-color: #c0392b;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Clothing Inventory</h1>
+    </header>
+
+    <nav>
+        <a href="#" onclick="showWomen()">Women's Clothing</a>
+        <a href="#" onclick="showMen()">Men's Clothing</a>
+    </nav>
+
+    <section id="clothingSection">
+        <!-- Clothing items will be dynamically added here using JavaScript -->
+    </section>
+
+    <div id="cart">
+        <button onclick="checkout()">Checkout</button>
+    </div>
+
+    <script>
+        // Sample clothing data (you can replace it with your actual data)
+        const clothingData = [
+            { type: 'women', name: 'Dress 1', description: 'Beautiful dress for women', price: 50 },
+            { type: 'men', name: 'Shirt 1', description: 'Casual shirt for men', price: 30 },
+            // Add more items as needed
+        ];
+
+        function showWomen() {
+            displayClothing('women');
+        }
+
+        function showMen() {
+            displayClothing('men');
+        }
+
+        function displayClothing(type) {
+            const clothingSection = document.getElementById('clothingSection');
+            clothingSection.innerHTML = '';
+
+            const clothingItems = clothingData.filter(item => item.type === type);
+
+            clothingItems.forEach(item => {
+                const clothingItemDiv = document.createElement('div');
+                clothingItemDiv.classList.add('clothing-item');
+                clothingItemDiv.innerHTML = `
+                    <h3>${item.name}</h3>
+                    <p>${item.description}</p>
+                    <p>Price: $${item.price}</p>
+                    <button onclick="addToCart('${item.name}', ${item.price})" style="background-color: #4CAF50; color: #fff;">Add to Cart</button>
+                `;
+                clothingSection.appendChild(clothingItemDiv);
+            });
+        }
+
+        let cart = [];
+
+        function addToCart(itemName, itemPrice) {
+            cart.push({ name: itemName, price: itemPrice });
+            updateCart();
+        }
+
+        function updateCart() {
+            const cartDiv = document.getElementById('cart');
+            const checkoutButton = cartDiv.querySelector('button');
+            checkoutButton.textContent = `Checkout (${cart.length} items)`;
+        }
+
+        function checkout() {
+            // Implement your checkout logic here
+            alert('Checkout clicked! Implement your logic to process the order.');
+            // You can send the cart data to a server for further processing
+            // Reset the cart after checkout
+            cart = [];
+            updateCart();
+        }
+
+        // Initial display
+        showWomen();
+    </script>
+
+</body>
+</html>

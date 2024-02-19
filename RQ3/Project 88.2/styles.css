@@ -1,0 +1,112 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-container {
+    display: flex;
+    align-items: center;
+}
+
+.brand-logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.nav-bar {
+    list-style: none;
+    display: flex;
+}
+
+.nav-bar li {
+    margin-right: 20px;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.search-bar {
+    display: flex;
+}
+
+.search-bar input {
+    padding: 5px;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    margin-left: 5px;
+}
+
+main {
+    padding: 20px;
+}
+
+.hero-section {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+}
+
+.video-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.product-section {
+    margin-bottom: 20px;
+}
+
+.section-header {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Add more styles for product cards, new releases, special offers, etc. */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-section {
+    width: 45%;
+}
+
+.footer-section a {
+    display: block;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: #fff;
+}
+

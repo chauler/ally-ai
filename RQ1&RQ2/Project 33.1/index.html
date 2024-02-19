@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('background.jpg');
+            background-size: cover;
+            color: #333;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            color: #fff;
+        }
+
+        .destination {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .destination-card {
+            width: 300px;
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #fff;
+        }
+
+        .search-bar {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your Travel Company</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Destinations</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <section>
+        <div class="search-bar">
+            <label for="search">Search Destinations:</label>
+            <input type="text" id="search" name="search">
+            <button onclick="searchDestinations()">Search</button>
+        </div>
+
+        <div class="destination">
+            <div class="destination-card">
+                <img src="destination1.jpg" alt="Destination 1">
+                <h3>Destination 1</h3>
+                <p>Description of destination 1.</p>
+                <button>Book Now</button>
+            </div>
+
+            <div class="destination-card">
+                <img src="destination2.jpg" alt="Destination 2">
+                <h3>Destination 2</h3>
+                <p>Description of destination 2.</p>
+                <button>Book Now</button>
+            </div>
+
+            <!-- Add more destination cards as needed -->
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Your Travel Company. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function searchDestinations() {
+            // Implement search functionality if needed
+            alert('Search functionality not implemented in this example.');
+        }
+    </script>
+</body>
+</html>

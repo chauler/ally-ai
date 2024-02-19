@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#section1">Section 1</a></li>
+        <li>
+          <!-- Adding label text for the Section 2 link -->
+          <label for="section2Link">Section 2</label>
+          <a href="#section2" id="section2Link">Section 2</a>
+        </li>
+        <!-- Add more navigation items -->
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="section1">
+      <div class="content">
+        <h1>Section 1</h1>
+        <p>Text description goes here...</p>
+        <button>Click me</button>
+        <!-- Adding label text for the input field -->
+        <label for="textInput">Enter text</label>
+        <input type="text" id="textInput" placeholder="Enter text">
+        <div class="language-buttons">
+          <button onclick="translateTo('en')">English</button>
+          <button onclick="translateTo('es')">Spanish</button>
+          <!-- Add more language buttons -->
+        </div>
+      </div>
+    </section>
+
+    <section id="section2">
+      <div class="content">
+        <h1>Section 2</h1>
+        <p>Another text description...</p>
+        <video controls>
+          <source src="video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+
+    <!-- Add more sections as needed -->
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Your Website</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

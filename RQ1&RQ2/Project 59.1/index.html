@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracker</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-image: url('background.jpg');
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Fitness Tracker</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#videos">Videos</a>
+        <a href="#tracker">Tracker</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="home">
+        <h2>Welcome to our Fitness Tracker</h2>
+        <p>This is a sample fitness tracker website. Add your content here.</p>
+    </section>
+
+    <section id="videos">
+        <h2>Fitness Videos</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/your_video_id" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <section id="tracker">
+        <h2>Activity Tracker</h2>
+        <form>
+            <label for="activity">Enter your activity:</label>
+            <input type="text" id="activity" name="activity" required>
+            <button type="submit">Track</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Fitness Tracker. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

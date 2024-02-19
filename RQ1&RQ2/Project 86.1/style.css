@@ -1,0 +1,92 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.background-section {
+    background-image: url('background-image.jpg'); /* Replace with your image path */
+    background-size: cover;
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+section {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+#home {
+    background-image: url('path/to/home-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+#latest-reviews {
+    background-image: url('path/to/latest-reviews-background.jpg');
+    background-size: cover;
+    background-position: center;
+    /* Other styles */
+}
+.custom-button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+section {
+    width: 80%; /* or any width you prefer */
+    margin: 20px auto; /* Top & Bottom margin with auto left & right margin */
+    padding: 20px;
+    background-color: #f4f4f4;
+    /* Other styles */
+}
+
+
+
+/* Repeat for other sections as needed */
