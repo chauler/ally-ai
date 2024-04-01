@@ -1,0 +1,118 @@
+<html lang="en">
+<head>
+<base href="https://venkatakumarvarma.github.io/VenkataVerma/Fish">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Venkat Fish Farms</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Navigation Bar -->
+<nav>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About Us</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#contact">Contact Us</a></li>
+</ul>
+</nav>
+
+<!-- Header with Background Image -->
+<header id="home" class="header-bg">
+<h1>Welcome to Venkat Fish Farms</h1>
+<p>Your trusted source for quality fish products.</p>
+<a href="#contact" class="cta-button">Contact Us</a>
+</header>
+
+<!-- About Us Section -->
+<section id="about">
+<div class="container">
+<h2>About Us</h2>
+<p>We are a leading fish farming company dedicated to providing the best fish products to our customers. Our farm is located in a pristine environment...</p>
+</div>
+</section>
+
+<!-- Video Section -->
+<section id="video">
+<div class="container">
+<h2>Our Farm in Action</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
+</div>
+</section>
+
+<!-- Text Description Section -->
+<section id="description">
+<div class="container">
+<h2>Our Products</h2>
+<p>We offer a wide range of fresh and delicious fish products. Our fish are raised with care and are of the highest quality...</p>
+</div>
+</section>
+
+<!-- Contact Section with Input Fields and Button -->
+<section id="contact">
+<div class="container">
+<h2>Contact Us</h2>
+<form action="submit_form.php" method="post">
+<label for="name">Name:</label>
+<input type="text" id="name" name="name" required="">
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required="">
+<label for="message">Message:</label>
+<textarea id="message" name="message" rows="4" required=""></textarea>
+<button type="submit" class="cta-button">Submit</button>
+</form>
+</div>
+</section>
+
+<!-- Footer -->
+<footer>
+<p>© 2023 Venkat Fish Farms</p>
+</footer>
+
+<!-- Add CSS Styles -->
+<style>
+.header-bg {
+  background-image: url('fish-farm-background.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #333; /* Changed from white to dark for contrast */
+  text-align: center;
+  padding: 100px 0;
+}
+
+.cta-button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Ensure sufficient contrast for all text */
+body, h1, h2, p, a, label {
+  color: #333; /* Dark text color for better readability */
+}
+
+/* Additional contrast improvements */
+nav ul li a {
+  color: #fff; /* White text for navigation */
+  background-color: #333; /* Dark background for navigation items */
+  padding: 5px 10px;
+  margin: 2px;
+  border-radius: 4px;
+}
+
+footer {
+  color: #fff;
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+}
+
+input[type="text"], input[type="email"], textarea {
+  border: 1px solid #333;
+  padding: 5px;
+}
+</style>
+</body>
+</html>

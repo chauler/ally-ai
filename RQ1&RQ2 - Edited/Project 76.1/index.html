@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refactoring Education</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #555;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .background-image {
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .background-image h2 {
+            font-size: 2em;
+            margin: 0;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 25px;
+            height: 0;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Refactoring Education</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Tutorials</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="background-image">
+        <h2>Welcome to Our Refactoring Education Website</h2>
+    </div>
+
+    <section>
+        <h2>About Us</h2>
+        <p>This website is dedicated to providing educational content about refactoring techniques in software development.</p>
+        <button>Learn More</button>
+    </section>
+
+    <section class="video-container">
+        <h2>Featured Tutorial</h2>
+        <!-- Replace the video URL with a refactoring tutorial -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/i2vtD4DMk8Q" frameborder="0"
+            allowfullscreen></iframe>
+    </section>
+
+    <section>
+        <h2>Tutorials</h2>
+        <p>Explore our collection of refactoring tutorials to enhance your coding skills:</p>
+        <ul>
+            <li>
+                <iframe width="280" height="157" src="https://www.youtube.com/embed/i2vtD4DMk8Q" frameborder="0"
+                    allowfullscreen></iframe>
+                <p>Introduction to Refactoring</p>
+            </li>
+            <li>
+                <iframe width="280" height="157" src="https://www.youtube.com/embed/D4auWwMsEnY" frameborder="0"
+                    allowfullscreen></iframe>
+                <p>Code Smells and Clean Code</p>
+            </li>
+            <li>
+                <iframe width="280" height="157" src="https://www.youtube.com/embed/rp1QR3eGI1k" frameborder="0"
+                    allowfullscreen></iframe>
+                <p>Refactoring Techniques in Practice</p>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Contact Us</h2>
+        <p>Have questions or suggestions? Contact us!</p>
+        <input type="text" placeholder="Enter your message">
+        <button>Submit</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Refactoring Education. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW Shop</title>
+    <style>
+        /* Styles remain unchanged */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BMW Shop</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Cars</a>
+        <a href="#">Spare Parts</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <section>
+        <h2>Welcome to BMW Shop</h2>
+        <p>Explore our collection of luxury cars and genuine spare parts.</p>
+        <button onclick="playVideo()">Watch Video</button>
+        <video id="bmwVideo" width="400" controls>
+            <source src="bmw_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Adding label for the search input -->
+        <label for="searchInput">Search:</label>
+        <input type="text" id="searchInput" placeholder="Enter your search...">
+    </section>
+
+    <!-- More sections for displaying cars, spare parts, etc. -->
+
+    <footer>
+        <p>&copy; 2023 BMW Shop. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function playVideo() {
+            var video = document.getElementById("bmwVideo");
+            video.play();
+        }
+    </script>
+</body>
+</html>

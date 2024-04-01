@@ -1,0 +1,805 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    /* position: relative; */
+    text-align: center;
+    background-color: #FFFFFF;
+  }
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: top 0.3s ease-in-out;
+  }
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: top 0.3s ease-in-out;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 20px;
+  }
+  
+  .logo a {
+    font-family: 'Pacifico', cursive;
+    font-size: 36px;
+    color: #006400;
+    text-decoration: none;
+  }
+  
+  .menu ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .menu ul li {
+    margin-right: 20px;
+  }
+  
+  .menu ul li a {
+    text-decoration: none;
+    color: #006400;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .menu ul li a:hover {
+    color: #228B22;
+  }
+  .action-btn {
+    padding: 10px 20px;
+    background-color: #228B22;
+    color: #FFFFFF !important;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+  }
+  .action-btn:hover {
+    background-color: #006400 !important;
+  }
+
+  .hero {
+    background-image: url('bg.jpg');
+    background-size: cover;
+    color: #FFFFFF;
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 18px;
+  }
+  /* ... previous styles ... */
+
+/* Styling for the Learn More button */
+ .learn-more-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    margin-top: 20px;
+    background-color: #228B22;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .learn-more-btn:hover {
+    background-color: #006400;
+  }
+
+  /* ... previous styles ... */
+
+/* Styling for the new section */
+.mission-section {
+    text-align: center;
+    padding: 60px 20px; /* Adjust padding as needed */
+    background-color: #f5f5f5; /* Background color for the section */
+  }
+  
+  .mission-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .mission-content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #006400;
+  }
+  
+  .mission-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333333;
+  }
+ /* ... previous styles ... */
+
+/* Styling for the revised organization section */
+ /* ... previous styles ... */
+
+/* Styling for the revised organization section */
+.organization-sec {
+    padding: 60px 20px; /* Adjust padding as needed */
+    background-color: #FFFFFF; /* Background color for the section */
+  }
+  
+  .org-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allow flex items to wrap */
+  }
+  
+  .org-image {
+    flex: 0 0 100%; /* Set the image width to its natural size */
+    max-width: 100%; /* Ensure image doesn't exceed its container */
+    margin-bottom: 20px; /* Adjust spacing between image and text */
+  }
+  
+  .org-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .org-text {
+    flex: 1;
+    text-align: center;
+    max-width: 600px; /* Limit the width of the text */
+    margin-left: 20px; /* Adjust space between image and text */
+  }
+  
+  .org-text h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #006400;
+  }
+  
+  .org-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333333;
+  }
+  
+  /* Media query for responsiveness */
+  @media (min-width: 768px) {
+    .org-image {
+      flex: 0 0 40%; /* Adjust image width */
+      margin-bottom: 0; /* Remove margin for larger screens */
+    }
+  
+    .org-text {
+      margin-left: 40px; /* Increase space between image and text for larger screens */
+    }
+  }
+ /* ... previous styles ... */
+
+/* Styling for the action section */
+.action-section {
+    padding: 60px 20px; /* Adjust padding as needed */
+    background-color: #FFFFFF; /* Background color for the section */
+  }
+  
+  .action-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allow flex items to wrap */
+  }
+  
+  .action-info {
+    flex: 1;
+    text-align: center;
+    max-width: 600px; /* Limit the width of the text */
+    margin-right: 40px;
+    margin-bottom: 40px; /* Adjust space between text and image */
+  }
+  
+  .action-info h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #006400;
+  }
+  
+  .action-info p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333333;
+  }
+  
+  .action-image {
+    flex: 0 0 100%; /* Set the image width to its natural size */
+    max-width: 100%; /* Ensure image doesn't exceed its container */
+    margin-bottom: 20px; /* Adjust spacing between image and text */
+  }
+  
+  .action-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .find-out-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #228B22;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 20px;
+  }
+  
+  .find-out-btn:hover {
+    background-color: #006400;
+  }
+  
+  /* Media query for responsiveness */
+  @media (min-width: 768px) {
+    .action-info {
+      flex: 0 0 40%; /* Adjust text width */
+      margin-bottom: 40px; /* Increase space between text and image for larger screens */
+    }
+  
+    .action-image {
+      flex: 0 0 40%; /* Adjust image width */
+      margin-bottom: 0; /* Remove margin for larger screens */
+    }
+  }
+ /* ... previous styles ... */
+
+/* Styling for the newsletter section */
+.newsletter-section {
+    padding: 60px 20px; /* Adjust padding as needed */
+    background-color: #f5f5f5; /* Background color for the section */
+    text-align: center;
+  }
+  
+  .newsletter-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .newsletter-content h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #006400;
+  }
+  
+  .newsletter-content p {
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 30px;
+  }
+  
+  .subscribe-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .subscribe-form input[type="email"],
+  .subscribe-form button {
+    width: 100%;
+    max-width: 250px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+  }
+  
+  .subscribe-form button {
+    background-color: #228B22;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .subscribe-form button:hover {
+    background-color: #006400;
+  }
+  
+/* ... previous styles ... */
+
+/* Styling for the footer */
+.footer {
+    background-color: #333333;
+    color: #FFFFFF;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .footer-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .footer-contact,
+  .footer-social {
+    flex: 1 1 100%;
+    margin: 0 10px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .footer-contact h3,
+  .footer-social h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .footer-contact p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social-icon {
+    display: inline-block;
+    font-size: 20px;
+    margin: 0 5px;
+    color: #FFFFFF;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #228B22;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .social-icon:hover {
+    background-color: #006400;
+  }
+  
+  /* Media query for responsiveness */
+  @media (min-width: 768px) {
+    .footer-contact,
+    .footer-social {
+      flex: 1 1 50%;
+      margin-bottom: 0;
+    }
+  }
+  /* ... previous styles ... */
+
+/* Styling for the About Us section */
+.about-section {
+    padding: 60px 20px; /* Adjust padding as needed */
+    background-color: #f5f5f5; /* Background color for the section */
+    text-align: center;
+  }
+  
+  .about-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .about-text {
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  
+  .about-text h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #006400;
+  }
+  
+  .about-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333333;
+    margin-bottom: 15px;
+  }
+  
+  .about-image {
+    max-width: 100%;
+  }
+  
+  .about-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  /* Media query for responsiveness */
+  @media (min-width: 768px) {
+    .about-content {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  
+    .about-text {
+      flex: 1;
+      margin-right: 40px;
+      text-align: left;
+    }
+  
+    .about-image {
+      flex: 1;
+    }
+  }
+/* ... previous styles ... */
+
+/* Styling for the News section */
+ .news-section {
+    padding: 60px 20px; /* Adjust padding as needed */
+    background-color: #f5f5f5; /* Background color for the section */
+  }
+  
+  .news-item {
+    margin-bottom: 40px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex; /* Adjusting layout to use flexbox */
+  }
+  
+  .news-image {
+    flex: 0 0 30%; /* Set image column width */
+  }
+  
+  .news-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+  
+  .news-content {
+    flex: 1; /* Allow content to take remaining space */
+    padding: 20px;
+  }
+  
+  .news-date {
+    font-size: 14px;
+    color: #888888;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .news-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #006400;
+  }
+  
+  .news-description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333333;
+    margin-bottom: 15px;
+  }
+  
+/* ... previous styles ... */
+
+/* Styling for the Read More link */
+ .read-more-link {
+    text-decoration: none;
+    color: #228B22;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    text-decoration: underline; /* Adding underline */
+  }
+  
+  .read-more-link:hover {
+    color: #006400;
+  }
+  
+ /* Your existing styles */
+
+/* Styles for the detailed news article */
+.detailed-news {
+    padding: 40px;
+    background-color: #f5f5f5;
+    text-align: center;
+  }
+  
+  .news-article {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .article-image img {
+    width: 100%; /* Adjust the width as needed */
+    max-height: 400px; /* Set the maximum height for the image */
+    height: auto;
+    display: block;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  .article-content {
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .news-description {
+    font-size: 18px;
+    color: #333333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+    
+  /* Your existing styles */
+
+/* Styles for the organization section */
+.about-greenscape {
+    padding: 40px;
+    background-color: #f5f5f5;
+    text-align: center;
+  }
+  
+  .organization-section {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+  }
+  
+  .org-content {
+    text-align: left;
+  }
+  
+  .org-content h2 {
+    font-size: 28px;
+    color: #006400;
+    margin-bottom: 15px;
+  }
+  
+  .org-content p {
+    font-size: 16px;
+    color: #333333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  /* Your existing styles */
+
+/* Styles for the donation section */
+.donation-section {
+    padding: 40px;
+    background-color: #f5f5f5;
+    text-align: center;
+  }
+  
+  .donate {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+  }
+  
+  .donate-content {
+    text-align: left;
+  }
+  
+  .donate-content h2 {
+    font-size: 28px;
+    color: #006400;
+    margin-bottom: 15px;
+  }
+  
+  .donate-content p {
+    font-size: 16px;
+    color: #333333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .donate-button {
+    text-align: center;
+  }
+  
+  .donate-link {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #228B22;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .donate-link:hover {
+    background-color: #006400;
+  }
+  
+  
+  /* Responsive Design */
+/* For screens smaller than 768px (typical mobile devices) */
+@media (max-width: 768px) {
+    .logo a {
+      font-size: 20px;
+    }
+  
+    .menu ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .menu ul li {
+      margin-bottom: 15px;
+      margin-right: 0;
+    }
+  
+    .hero {
+      padding: 80px 0;
+    }
+  
+    .hero h1 {
+      font-size: 32px;
+    }
+  
+    .hero p {
+      font-size: 16px;
+    }
+    nav {
+        flex-direction: column;
+        text-align: center;
+      }
+    
+      .logo {
+        margin-bottom: 20px;
+      }
+    
+      .menu {
+        margin-top: 20px;
+      }
+    
+      .menu ul {
+        flex-direction: column;
+      }
+    
+      .menu ul li {
+        margin-bottom: 15px;
+        margin-right: 0;
+      }
+    
+      .menu ul li a {
+        font-size: 16px;
+      }
+  }
+  
+  /* For screens between 768px and 1024px (tablets) */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .hero {
+      padding: 120px 0;
+    }
+  
+    .hero h1 {
+      font-size: 36px;
+    }
+  
+    .hero p {
+      font-size: 18px;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 20px;
+      }
+    
+      .menu ul {
+        flex-direction: row;
+      }
+    
+      .menu ul li {
+        margin-bottom: 0;
+        margin-right: 20px;
+      }
+    
+      .menu ul li:last-child {
+        margin-right: 0;
+      }
+    
+      .menu ul li a {
+        font-size: 18px;
+      }
+      
+  }
+  
+  /* For screens larger than 1024px (desktops) */
+  @media (min-width: 1025px) {
+    .hero {
+      padding: 160px 0;
+    }
+  
+    .hero h1 {
+      font-size: 48px;
+    }
+  
+    .hero p {
+      font-size: 20px;
+    }
+  }
+  
+/* Styling for the action button */
+.action-btn {
+  padding: 10px 20px;
+  background-color: #228B22;
+  color: #FFFFFF; /* Changed text color */
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.action-btn:hover {
+  background-color: #006400; /* Darkened background color on hover */
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VenkatChick Poultry Farm</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header with Background Image -->
+    <header id="home" class="header-bg">
+        <h1>Welcome to VenkatChick Poultry Farm</h1>
+        <p>Your trusted source for high-quality poultry products.</p>
+        <a href="#contact" class="cta-button">Contact Us</a>
+    </header>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>At VenkatChick, we are dedicated to providing healthy and well-cared-for poultry products. Our farm is known for its commitment to quality...</p>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section id="video">
+        <div class="container">
+            <h2>Our Farm in Action</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- Text Description Section -->
+    <section id="description">
+        <div class="container">
+            <h2>Our Products</h2>
+            <p>We offer a wide range of poultry products, including fresh eggs and premium chicken meat. Our birds are raised with care and fed a balanced diet...</p>
+        </div>
+    </section>
+
+    <!-- Contact Section with Input Fields and Button -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit" class="cta-button">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 VenkatChick Poultry Farm</p>
+    </footer>
+
+    <!-- Add CSS Styles -->
+    <style>
+        /* Define your CSS styles here or link to an external stylesheet (styles.css) */
+        /* Example styles for header background */
+        .header-bg {
+            background-image: url('poultry-farm-background.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 100px 0;
+        }
+        /* Example style for buttons */
+        .cta-button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        /* Add more styles for other elements as needed */
+    </style>
+</body>
+</html>

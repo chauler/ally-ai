@@ -1,0 +1,116 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling for the navigation bar */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Styling for header section */
+header {
+    text-align: center;
+    padding: 50px 0;
+}
+
+/* Styling for content section */
+.content {
+    position: relative;
+}
+
+.background-image img {
+    width: 100%;
+    height: auto;
+}
+
+.text-description {
+    text-align: center;
+    padding: 20px;
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Styling for primary button with improved contrast */
+.btn-primary {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-right: 20px;
+    /* Improved contrast by adjusting color */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for better user feedback */
+.btn-primary:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+.btn-secondary {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.video {
+    text-align: center;
+    padding: 20px;
+}
+
+.images {
+    text-align: center;
+    padding: 20px;
+}
+
+.images img {
+    width: 50%;
+    height: auto;
+    margin: 10px;
+}
+
+.textfields {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Styling for sorting filters */
+.sorting-filters {
+    text-align: center;
+    padding: 20px;
+}
+
+.sorting-filters select {
+    padding: 10px;
+}
+
+/* Styling for footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
