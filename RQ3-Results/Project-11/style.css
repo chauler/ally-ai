@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%), url('path-to-your-anime-background.jpg');
+    background-size: cover;
+    color: white;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.search-container {
+    margin-top: 10px;
+}
+
+.search-container input[type=text] {
+    padding: 5px;
+    margin-top: 10px;
+    font-size: 17px;
+    border: none;
+}
+
+section {
+    background: rgba(255, 255, 255, 0.8);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
