@@ -1,0 +1,273 @@
+## You
+Context: You are an accessibility expert reviewing HTML for accessibility issues. Analyze the following code in the context of WCAG (Web Content Accessibility Guidelines) 2.2, listing any issues that may violate these guidelines. You will only be analyzing the HTML, ignoring any included or missing styles and scripts.
+Code:
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bookstore</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#books">Books</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Header with Background Image -->
+    <header style="background-image: url('header-image.jpg')">
+      <h1>Welcome to our Bookstore</h1>
+      <p>Explore a vast collection of books.</p>
+    </header>
+
+    <!-- Search Bar and Filters -->
+
+    <section id="filters">
+      <label for="search">Search:</label>
+      <input
+        type="text"
+        id="search"
+        placeholder="Search..."
+        aria-label="Search"
+      />
+      <select id="filter">
+        <option value="genre">Genre</option>
+        <option value="author">Author</option>
+        <!-- Add more filter options -->
+      </select>
+      <button>Apply Filters</button>
+    </section>
+
+    <!-- Book Display Section -->
+    <section id="books">
+      <!-- Display books dynamically from database -->
+      <!-- Example book -->
+      <div class="book">
+        <img src="book-cover.jpg" />
+        <h2>Book Title</h2>
+        <p>Author: Author Name</p>
+        <font size="5">Description of the book...</font>
+        <button>Read More</button>
+      </div>
+
+      <!-- Add more books dynamically -->
+    </section>
+
+    <!-- Video about the Bookstore -->
+    <section id="video">
+      <h2><b>Discover Our Bookstore</b></h2>
+      <video autoplay>
+        <source src="bookstore-video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form action="submit.php" method="POST">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" />
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" />
+        <label for="message">Your Message:</label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Your Message"
+        ></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2023 Bookstore. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for interactivity -->
+    <script src="scripts.js"></script>
+  </body>
+</html>
+
+Response format:
+Snippet with error: …
+Location of error: …
+WCAG Guideline violated: …
+Detection Algorithm: …
+Explanation of Error: …
+## Copilot
+Here are some potential accessibility issues in the provided HTML code:
+- Snippet with error:
+
+<header style="background-image: url('header-image.jpg')">
+  <h1>Welcome to our Bookstore</h1>
+  <p>Explore a vast collection of books.</p>
+</header>
+
+Location of error: Header section
+WCAG Guideline violated: 1.4.5 Images of Text
+Detection Algorithm: Checking for text over background images.
+Explanation of Error: The header contains text over a background image. If the image fails to load or is not visible to a user with visual impairments, the text may not be perceivable. Consider adding a solid background color as a fallback.
+- Snippet with error:
+
+<div class="book">
+  <img src="book-cover.jpg" />
+  <h2>Book Title</h2>
+  <p>Author: Author Name</p>
+  <font size="5">Description of the book...</font>
+  <button>Read More</button>
+</div>
+
+Location of error: Book Display Section
+WCAG Guideline violated: 1.1.1 Non-text Content
+Detection Algorithm: Checking for img tags without alt attributes.
+Explanation of Error: The img tag is missing an alt attribute. This attribute is important for users who can't see the image. It provides a textual description of the image.
+- Snippet with error:
+
+<video autoplay>
+  <source src="bookstore-video.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+Location of error: Video section
+WCAG Guideline violated: 1.2.2 Captions (Prerecorded)
+Detection Algorithm: Checking for video tags without track elements.
+Explanation of Error: The video tag is missing a track element with kind="captions". This is important for providing captions for users who are deaf or hard of hearing.
+- Snippet with error:
+
+<font size="5">Description of the book...</font>
+
+Location of error: Book Display Section
+WCAG Guideline violated: 1.4.4 Resize text
+Detection Algorithm: Checking for deprecated font tags.
+Explanation of Error: The font tag is deprecated and does not comply with accessibility standards. Font size should be set using CSS to allow for text resizing by visually impaired users.
+Please note that this is not an exhaustive list and there may be other potential accessibility issues in the code. It's always a good practice to use automated tools and manual testing for a comprehensive accessibility review. Also, remember that accessibility is not just about adhering to standards, but about ensuring a good user experience for all users.
+## You
+Are there any more issues? List all that you find.
+## Copilot
+Sure, here are some additional potential accessibility issues in the provided HTML code:
+- Snippet with error:
+
+<nav>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#books">Books</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+Location of error: Navigation Bar
+WCAG Guideline violated: 2.4.4 Link Purpose (In Context)
+Detection Algorithm: Checking for a tags without title attributes.
+Explanation of Error: The a tags are missing title attributes. This attribute provides additional context about the purpose of a link, which can be helpful for users navigating with assistive technologies.
+- Snippet with error:
+
+<button>Apply Filters</button>
+
+Location of error: Search Bar and Filters
+WCAG Guideline violated: 4.1.2 Name, Role, Value
+Detection Algorithm: Checking for interactive elements without aria-label or aria-labelledby attributes.
+Explanation of Error: The button tag is missing an aria-label or aria-labelledby attribute. These attributes provide accessible names for interactive elements, which can be read by screen readers.
+- Snippet with error:
+
+<section id="video">
+  <h2><b>Discover Our Bookstore</b></h2>
+  <video autoplay>
+    <source src="bookstore-video.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</section>
+
+Location of error: Video section
+WCAG Guideline violated: 2.2.2 Pause, Stop, Hide
+Detection Algorithm: Checking for video tags with autoplay attribute.
+Explanation of Error: The video tag has an autoplay attribute. This can be problematic for users who need more time to understand the content or who may be disoriented by automatic media playback.
+- Snippet with error:
+
+<form action="submit.php" method="POST">
+  <label for="name">Your Name:</label>
+  <input type="text" id="name" name="name" placeholder="Your Name" />
+  <label for="email">Your Email:</label>
+  <input type="email" id="email" name="email" placeholder="Your Email" />
+  <label for="message">Your Message:</label>
+  <textarea id="message" name="message" placeholder="Your Message"></textarea>
+  <button type="submit">Send</button>
+</form>
+
+Location of error: Contact Form
+WCAG Guideline violated: 3.3.2 Labels or Instructions
+Detection Algorithm: Checking for form elements without associated label elements.
+Explanation of Error: While the label elements are present, they are not programmatically associated with their respective form controls. The for attribute of each label should match the id of its associated control.
+Again, this is not an exhaustive list and there may be other potential accessibility issues in the code. It's always a good practice to use automated tools and manual testing for a comprehensive accessibility review. Also, remember that accessibility is not just about adhering to standards, but about ensuring a good user experience for all users.
+## You
+Are there any more issues? List all that you find.
+## Copilot
+Sure, here are some additional potential accessibility issues in the provided HTML code:
+- Snippet with error:
+
+<section id="filters">
+  <label for="search">Search:</label>
+  <input
+    type="text"
+    id="search"
+    placeholder="Search..."
+    aria-label="Search"
+  />
+  <select id="filter">
+    <option value="genre">Genre</option>
+    <option value="author">Author</option>
+    <!-- Add more filter options -->
+  </select>
+  <button>Apply Filters</button>
+</section>
+
+Location of error: Search Bar and Filters
+WCAG Guideline violated: 1.3.1 Info and Relationships
+Detection Algorithm: Checking for form controls without fieldset and legend.
+Explanation of Error: The form controls in the search bar and filters section are not grouped with a fieldset and described by a legend. This can make it harder for screen reader users to understand the relationship between different controls.
+- Snippet with error:
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <form action="submit.php" method="POST">
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" name="name" placeholder="Your Name" />
+    <label for="email">Your Email:</label>
+    <input type="email" id="email" name="email" placeholder="Your Email" />
+    <label for="message">Your Message:</label>
+    <textarea
+      id="message"
+      name="message"
+      placeholder="Your Message"
+    ></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+Location of error: Contact Form
+WCAG Guideline violated: 3.3.3 Error Suggestion
+Detection Algorithm: Checking for form controls without error handling.
+Explanation of Error: The form does not provide error suggestions. When user input is received and errors are automatically detected, suggestions for correction should be provided to the user.
+- Snippet with error:
+
+<section id="video">
+  <h2><b>Discover Our Bookstore</b></h2>
+  <video autoplay>
+    <source src="bookstore-video.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</section>
+
+Location of error: Video section
+WCAG Guideline violated: 1.2.5 Audio Description (Prerecorded)
+Detection Algorithm: Checking for video tags without audio descriptions.
+Explanation of Error: The video tag does not include an audio description track. This is important for providing access to information in the video for users who are blind or visually impaired.
+Again, this is not an exhaustive list and there may be other potential accessibility issues in the code. It's always a good practice to use automated tools and manual testing for a comprehensive accessibility review. Also, remember that accessibility is not just about adhering to standards, but about ensuring a good user experience for all users.

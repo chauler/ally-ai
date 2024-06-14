@@ -1,0 +1,261 @@
+## You
+Context: You are an accessibility expert reviewing HTML for accessibility issues. Analyze the following code in the context of WCAG (Web Content Accessibility Guidelines) 2.2, listing any issues that may violate these guidelines. You will only be analyzing the HTML, ignoring any included or missing styles and scripts.
+Code:
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        /* Inline CSS styles go here */
+        /* Place your CSS styles inside the <style> tags */
+        /* Reset some default styles */
+        body, h1, h2, h3, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Define basic styles for the header */
+        header {
+            background-image: url('header-background.jpg');
+            background-size: cover;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            max-width: 100px;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        /* Define styles for the hero section */
+        .hero {
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .btn {
+            background-color: #ff3366;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Define styles for the video section */
+        .video {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        /* Define styles for other sections (products, about us, etc.) */
+
+        /* Define styles for the footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .contact, .subscribe {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .subscribe input {
+            padding: 10px;
+            width: 100%;
+            border: none;
+            margin-bottom: 10px;
+        }
+
+        .subscribe button {
+            background-color: #ff3366;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to our Beauty Products Store</h1>
+        <p>Discover the latest beauty products that will make you look stunning.</p>
+        <a href="#" class="btn" style="color: #fff; background-color: #ff3366;">Shop Now</a>
+    </section>
+
+    <section class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <form>
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="pwd" name="pwd">      
+
+        <input type="radio" id="1" name="fav_number" value="1">
+        <label for="1">1</label><br>
+        <input type="radio" id="2" name="fav_number" value="2">
+        <label for="2">2</label><br>
+        <input type="radio" id="3" name="fav_number" value="3">
+        <label for="3">3</label>   
+
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"></label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> I have a boat</label>
+
+        <input type="file" id="myfile" name="myfile">
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <section class="products">
+        <h2>Featured Products</h2>
+        <div class="product-card">
+            <!-- Your product card conten -->
+    </section>
+</body>```
+Response format: 
+Snippet with error: …
+Location of error: …
+WCAG Guideline violated: …
+Detection Algorithm: …
+Explanation of Error: …
+
+
+## Copilot
+
+**Snippet with error:** `<img src="logo.png">`
+**Location of error:** Inside the `<header>` tag, within the `<div class="logo">` tag.
+**WCAG Guideline violated:** 1.1.1 Non-text Content (Level A)
+**Detection Algorithm:** Checking if `<img>` tags have `alt` attributes.
+**Explanation of Error:** The image tag does not have an `alt` attribute. This attribute is important for screen readers to describe the content of the image to visually impaired users.
+
+**Snippet with error:** `<iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>`
+**Location of error:** Inside the `<section class="video">` tag.
+**WCAG Guideline violated:** 4.1.2 Name, Role, Value (Level A)
+**Detection Algorithm:** Checking if `<iframe>` tags have `title` attributes.
+**Explanation of Error:** The iframe tag does not have a `title` attribute. This attribute is important for screen readers to describe the content of the iframe to users.
+
+**Snippet with error:** `<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"><label for="vehicle1"></label><br>`
+**Location of error:** Inside the `<form>` tag.
+**WCAG Guideline violated:** 1.3.1 Info and Relationships (Level A)
+**Detection Algorithm:** Checking if `<label>` tags are empty.
+**Explanation of Error:** The label for the checkbox is empty. Labels should provide descriptive text for the associated input field.
+
+**Snippet with error:** `<title></title>`
+**Location of error:** Inside the `<head>` tag.
+**WCAG Guideline violated:** 2.4.2 Page Titled (Level A)
+**Detection Algorithm:** Checking if `<title>` tags are empty.
+**Explanation of Error:** The title tag is empty. The title tag should provide a short description of the page's content.
+
+Please note that this analysis is based on the provided HTML code and does not take into account any scripts or stylesheets that may be linked or included in the page. It's also important to manually check the website with various assistive technologies to ensure full accessibility. WCAG compliance is not just about code, but also about how the actual users interact with the website. It's always a good idea to involve real users in accessibility testing.
+
+
+## You
+
+Are there any more issues? List all that you find.
+
+
+## Copilot
+
+Sure, here are some additional issues I found:
+
+**Snippet with error:** `<input type="password" id="pwd" name="pwd">`
+**Location of error:** Inside the `<form>` tag.
+**WCAG Guideline violated:** 1.3.1 Info and Relationships (Level A)
+**Detection Algorithm:** Checking if `<input>` tags have associated `<label>` tags.
+**Explanation of Error:** The password input field does not have an associated label. Labels should provide descriptive text for the associated input field.
+
+**Snippet with error:** `<input type="file" id="myfile" name="myfile">`
+**Location of error:** Inside the `<form>` tag.
+**WCAG Guideline violated:** 1.3.1 Info and Relationships (Level A)
+**Detection Algorithm:** Checking if `<input>` tags have associated `<label>` tags.
+**Explanation of Error:** The file input field does not have an associated label. Labels should provide descriptive text for the associated input field.
+
+**Snippet with error:** `<a href="#" class="btn" style="color: #fff; background-color: #ff3366;">Shop Now</a>`
+**Location of error:** Inside the `<section class="hero">` tag.
+**WCAG Guideline violated:** 1.4.1 Use of Color (Level A)
+**Detection Algorithm:** Checking if color is the only visual means of conveying information.
+**Explanation of Error:** The link uses color as the only visual means of conveying information. Ensure that information conveyed with color is also available without color.
+
+**Snippet with error:** `<section class="products"><h2>Featured Products</h2><div class="product-card"></div></section>`
+**Location of error:** Inside the `<section class="products">` tag.
+**WCAG Guideline violated:** 1.3.1 Info and Relationships (Level A)
+**Detection Algorithm:** Checking if sections have sufficient content.
+**Explanation of Error:** The products section is empty. Ensure that all sections have sufficient content.
+
+Please note that this analysis is based on the provided HTML code and does not take into account any scripts or stylesheets that may be linked or included in the page. It's also important to manually check the website with various assistive technologies to ensure full accessibility. WCAG compliance is not just about code, but also about how the actual users interact with the website. It's always a good idea to involve real users in accessibility testing.
+
+
+## You
+
+Are there any more issues? List all that you find.
+
+
+## Copilot
+
+Absolutely, here are some more issues I found:
+
+**Snippet with error:** `<a href="#">Home</a>`
+**Location of error:** Inside the `<nav>` tag, within the `<ul>` tag.
+**WCAG Guideline violated:** 2.4.4 Link Purpose (In Context) (Level A)
+**Detection Algorithm:** Checking if `<a>` tags have descriptive text.
+**Explanation of Error:** The link text does not provide sufficient context about the link destination. It's recommended to use more descriptive link text.
+
+**Snippet with error:** `<a href="#" class="btn" style="color: #fff; background-color: #ff3366;">Shop Now</a>`
+**Location of error:** Inside the `<section class="hero">` tag.
+**WCAG Guideline violated:** 1.4.3 Contrast (Minimum) (Level AA)
+**Detection Algorithm:** Checking if there is sufficient contrast between text color and background color.
+**Explanation of Error:** The contrast ratio between the text color (#fff) and the background color (#ff3366) might be too low. It's recommended to have a contrast ratio of at least 4.5:1 for normal text.
+
+**Snippet with error:** `<form>`
+**Location of error:** Inside the `<form>` tag.
+**WCAG Guideline violated:** 3.3.2 Labels or Instructions (Level A)
+**Detection Algorithm:** Checking if form elements have associated labels or instructions.
+**Explanation of Error:** The form does not have a submit button with an associated label. It's recommended to provide a descriptive label for all form controls, including buttons.
+
+**Snippet with error:** `<section class="products"><h2>Featured Products</h2><div class="product-card"></div></section>`
+**Location of error:** Inside the `<section class="products">` tag.
+**WCAG Guideline violated:** 2.4.6 Headings and Labels (Level AA)
+**Detection Algorithm:** Checking if sections have sufficient content.
+**Explanation of Error:** The products section has a heading but no content. Ensure that all sections have sufficient content under their headings.
+
+Please note that this analysis is based on the provided HTML code and does not take into account any scripts or stylesheets that may be linked or included in the page. It's also important to manually check the website with various assistive technologies to ensure full accessibility. WCAG compliance is not just about code, but also about how the actual users interact with the website. It's always a good idea to involve real users in accessibility testing.
+

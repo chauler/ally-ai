@@ -1,0 +1,157 @@
+## You
+Context: You are an accessibility expert reviewing HTML for accessibility issues. Analyze the following code in the context of WCAG (Web Content Accessibility Guidelines) 2.2, listing any issues that may violate these guidelines. You will only be analyzing the HTML, ignoring any included or missing styles and scripts.
+Code:
+
+<html lang="eg">
+<head>
+  <meta charset="UTF-8">
+  <title>Restaurant Menu</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <!-- Navigation bar -->
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About Us</a></li>
+        <!-- More navigation links -->
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <!-- Homepage content with background image, text, buttons, and maybe a video -->
+      <div class="hero">
+        <h1>Welcome to Our Restaurant</h1>
+        <font size="5"> Delicious food just for you!</font>
+        <a href="#menu" class="btn">View Menu</a>
+      </div>
+    </section>
+
+    <section id="menu">
+      <!-- Menu items with images, text descriptions, search filters, and sorting filters -->
+      <h2>Our Menu</h2>
+      <div class="search-filter">
+        <!-- Search field and filters -->
+        <label for="search">Search:</label>
+        <label for="search">Search:</label>
+        <input type="text" id="search" placeholder="Search...">
+        <!-- Sorting options -->
+        <select id="sort">
+          <option value="default">Default</option>
+          <option value="price">Price</option>
+          <!-- More sorting options -->
+        </select>
+      </div>
+      <div class="menu-items">
+        <!-- Individual menu item -->
+        <div class="menu-item" onmouseover="ExternalFunction()">
+          <img src="food1.jpg" alt="Food 1">
+          <h3>Food Item Name</h3>
+          <p>Description of the food item.</p>
+          <span class="price">$10.99</span>
+          <!-- Add to cart button -->
+          <button>Add to Cart</button>
+        </div>
+        <!-- More menu items -->
+      </div>
+    </section>
+
+    <!-- Other sections like About Us, Contact, etc. -->
+
+  </main>
+
+  <footer>
+    <!-- Footer content -->
+    <p>&copy; 2023 Restaurant Name. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
+
+Response format:
+Snippet with error: …
+Location of error: …
+WCAG Guideline violated: …
+Detection Algorithm: …
+Explanation of Error: …
+## Copilot
+Snippet with error: <html lang="eg">
+Location of error: Line 2
+WCAG Guideline violated: 3.1.1 Language of Page
+Detection Algorithm: Checking the lang attribute in the <html> tag
+Explanation of Error: The lang attribute in the <html> tag is set to "eg", which is not a valid language code. It should be set to a valid language code that represents the primary language of the page's content.
+Snippet with error: <font size="5"> Delicious food just for you!</font>
+Location of error: Line 22
+WCAG Guideline violated: 1.3.1 Info and Relationships
+Detection Algorithm: Checking for deprecated HTML elements
+Explanation of Error: The <font> tag is deprecated and should not be used. Styling should be done using CSS.
+Snippet with error: <label for="search">Search:</label>
+Location of error: Lines 31 and 32
+WCAG Guideline violated: 4.1.2 Name, Role, Value
+Detection Algorithm: Checking for duplicate labels
+Explanation of Error: There are two labels with the same for attribute. Each form control should have a unique associated label.
+Snippet with error: <div class="menu-item" onmouseover="ExternalFunction()">
+Location of error: Line 39
+WCAG Guideline violated: 2.1.1 Keyboard
+Detection Algorithm: Checking for mouse-specific event handlers
+Explanation of Error: The onmouseover event handler is mouse-specific. All functionality should be accessible using the keyboard. Consider using focusable elements and focus/blur event handlers instead.
+Snippet with error: <img src="food1.jpg" alt="Food 1">
+Location of error: Line 40
+WCAG Guideline violated: 1.1.1 Non-text Content
+Detection Algorithm: Checking alt attribute of <img> tags
+Explanation of Error: The alt attribute of the image is not descriptive enough. It should provide a meaningful description of the image when the image is not available. For example, it could be "A photo of Food 1".
+## You
+Are there any more issues? List all that you find.
+## Copilot
+Sure, here are some additional issues I found:
+Snippet with error: <button>Add to Cart</button>
+Location of error: Line 46
+WCAG Guideline violated: 4.1.2 Name, Role, Value
+Detection Algorithm: Checking for interactive elements without an accessible name
+Explanation of Error: The button does not have an accessible name. Assistive technologies use this to help users understand the purpose of the button. Consider adding an aria-label or aria-labelledby attribute.
+Snippet with error: <img src="food1.jpg" alt="Food 1">
+Location of error: Line 40
+WCAG Guideline violated: 2.4.4 Link Purpose (In Context)
+Detection Algorithm: Checking alt attribute of <img> tags used as links
+Explanation of Error: If the image is used as a link, the alt attribute should describe the destination of the link, not the visual content of the image.
+Snippet with error: <a href="#menu" class="btn">View Menu</a>
+Location of error: Line 23
+WCAG Guideline violated: 2.4.4 Link Purpose (In Context)
+Detection Algorithm: Checking for links with generic text
+Explanation of Error: The link text "View Menu" is somewhat generic and may not make sense out of context. Consider making the link text more descriptive or using the aria-label attribute to provide more context.
+Snippet with error: <div class="menu-item" onmouseover="ExternalFunction()">
+Location of error: Line 39
+WCAG Guideline violated: 2.1.1 Keyboard
+Detection Algorithm: Checking for mouse-specific event handlers
+Explanation of Error: The onmouseover event handler is mouse-specific. All functionality should be accessible using the keyboard. Consider using focusable elements and focus/blur event handlers instead.
+Please note that this analysis is based on the provided HTML code snippet. There might be additional accessibility issues not covered by this analysis. It's always a good idea to use automated tools and conduct user testing to ensure full accessibility compliance.
+## You
+Are there any more issues? List all that you find.
+## Copilot
+Certainly, here are some more issues I found:
+Snippet with error: <nav>
+Location of error: Line 13
+WCAG Guideline violated: 1.3.1 Info and Relationships
+Detection Algorithm: Checking for landmark roles
+Explanation of Error: The <nav> element should have an aria-label or aria-labelledby attribute to provide a unique name for the navigation landmark, especially if there is more than one <nav> element on the page.
+Snippet with error: <section id="home">
+Location of error: Line 24
+WCAG Guideline violated: 1.3.1 Info and Relationships
+Detection Algorithm: Checking for landmark roles
+Explanation of Error: The <section> element should have an aria-label or aria-labelledby attribute to provide a unique name for the section landmark.
+Snippet with error: <button>Add to Cart</button>
+Location of error: Line 46
+WCAG Guideline violated: 4.1.2 Name, Role, Value
+Detection Algorithm: Checking for interactive elements without an accessible name
+Explanation of Error: The button does not have an accessible name. Assistive technologies use this to help users understand the purpose of the button. Consider adding an aria-label or aria-labelledby attribute.
+Snippet with error: <div class="menu-item" onmouseover="ExternalFunction()">
+Location of error: Line 39
+WCAG Guideline violated: 2.1.1 Keyboard
+Detection Algorithm: Checking for mouse-specific event handlers
+Explanation of Error: The onmouseover event handler is mouse-specific. All functionality should be accessible using the keyboard. Consider using focusable elements and focus/blur event handlers instead.
+Please note that this analysis is based on the provided HTML code snippet. There might be additional accessibility issues not covered by this analysis. It's always a good idea to use automated tools and conduct user testing to ensure full accessibility compliance.

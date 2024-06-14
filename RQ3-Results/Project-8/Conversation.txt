@@ -1,0 +1,127 @@
+## You
+Context: You are an accessibility expert reviewing HTML for accessibility issues. Analyze the following code in the context of WCAG (Web Content Accessibility Guidelines) 2.2, listing any issues that may violate these guidelines. You will only be analyzing the HTML, ignoring any included or missing styles and scripts.
+Code:
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home"></a></li>
+            <li><a href="#laptops">Laptops</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+        <h1 style="color: rgb(255, 255, 255); background-color: rgb(0, 0, 0);">
+            Welcome to DELL Laptops
+        </h1>
+        <p style="color: rgb(255, 255, 255); background-color: rgb(0, 0, 0);">
+            Discover the latest innovation in computing
+        </p>
+    </header>
+
+    <!-- Video Section -->
+    <section class="video-section">
+        <video autoplay>
+            <source src="video/sample-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <!-- Text Description Section -->
+    <section class="description-section">
+        <h3>Explore our latest laptops</h3>
+        <p>Discover powerful performance and stunning design with our new range of DELL laptops. Whether you're a student, professional, or gamer, we have the perfect laptop for you.</p>
+        <a href="#laptops" class="btn">View Laptops</a>
+    </section>
+
+    <meta http-equiv="refresh" content="0">
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 DELL Laptops. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
+
+Response format:
+Snippet with error: …
+Location of error: …
+WCAG Guideline violated: …
+Detection Algorithm: …
+Explanation of Error: …
+## Copilot
+Here are the accessibility issues I found in your code:
+- Snippet with error: <title></title>
+Location of error: Inside the <head> tag
+WCAG Guideline violated: 2.4.2 Page Titled
+Detection Algorithm: Checking if the title tag is empty
+Explanation of Error: The title tag is empty. It should provide a brief description of the webpage's content.
+- Snippet with error: <a href="#home"></a>
+Location of error: Inside the <nav> tag
+WCAG Guideline violated: 2.4.4 Link Purpose (In Context)
+Detection Algorithm: Checking if the anchor tag contains any text
+Explanation of Error: The link doesn't have any text which describes the purpose of the link.
+- Snippet with error: <video autoplay>
+Location of error: Inside the <section class="video-section"> tag
+WCAG Guideline violated: 1.4.2 Audio Control
+Detection Algorithm: Checking if the video tag has the 'autoplay' attribute
+Explanation of Error: Videos should not autoplay without the user's consent.
+- Snippet with error: <meta http-equiv="refresh" content="0">
+Location of error: Inside the <body> tag
+WCAG Guideline violated: 2.2.1 Timing Adjustable
+Detection Algorithm: Checking if the meta refresh tag is present
+Explanation of Error: The page is set to refresh automatically, which can disorient users, especially those with cognitive disabilities.
+Please correct these issues to make your website more accessible. Remember, accessibility is not just about catering for assistive technology users, but ensuring your website is usable by as many people as possible. It's a good practice to always keep WCAG guidelines in mind when developing a website.
+## You
+Are there any more issues? List all that you find.
+## Copilot
+Yes, there are a few more issues in the code. Here they are:
+- Snippet with error: <h1 style="color: rgb(255, 255, 255); background-color: rgb(0, 0, 0);">
+Location of error: Inside the <header> tag
+WCAG Guideline violated: 1.4.3 Contrast (Minimum)
+Detection Algorithm: Checking if the contrast ratio between the text color and the background color is less than 4.5:1
+Explanation of Error: The contrast ratio between the text color (white) and the background color (black) is not sufficient. It should be at least 4.5:1 for normal text.
+- Snippet with error: <video autoplay>
+Location of error: Inside the <section class="video-section"> tag
+WCAG Guideline violated: 1.2.2 Captions (Prerecorded)
+Detection Algorithm: Checking if the video tag has a track element with kind="captions"
+Explanation of Error: The video doesn't have captions. Captions should be provided for all prerecorded audio content in synchronized media.
+- Snippet with error: <video autoplay>
+Location of error: Inside the <section class="video-section"> tag
+WCAG Guideline violated: 1.2.5 Audio Description (Prerecorded)
+Detection Algorithm: Checking if the video tag has a track element with kind="descriptions"
+Explanation of Error: The video doesn't have audio descriptions. Audio descriptions should be provided for all prerecorded video content in synchronized media.
+- Snippet with error: <a href="#laptops" class="btn">View Laptops</a>
+Location of error: Inside the <section class="description-section"> tag
+WCAG Guideline violated: 2.4.4 Link Purpose (In Context)
+Detection Algorithm: Checking if the anchor tag contains sufficient information about the link purpose
+Explanation of Error: The link text "View Laptops" might not provide enough context about the link's purpose. Consider providing more descriptive link text or additional context.
+Please correct these issues to make your website more accessible. Remember, accessibility is not just about catering for assistive technology users, but ensuring your website is usable by as many people as possible. It's a good practice to always keep WCAG guidelines in mind when developing a website.
+## You
+Are there any more issues? List all that you find.
+## Copilot
+Yes, there are a couple more issues in the code. Here they are:
+- Snippet with error: <video autoplay>
+Location of error: Inside the <section class="video-section"> tag
+WCAG Guideline violated: 2.2.2 Pause, Stop, Hide
+Detection Algorithm: Checking if the video tag has the 'autoplay' attribute without corresponding controls
+Explanation of Error: The video is set to autoplay and doesn't have controls for the user to pause, stop, or hide the video.
+- Snippet with error: <nav>
+Location of error: Inside the <body> tag
+WCAG Guideline violated: 1.3.1 Info and Relationships
+Detection Algorithm: Checking if the <nav> element has an accessible name
+Explanation of Error: The <nav> element doesn't have an accessible name. This can be provided using aria-label or aria-labelledby.
+Please correct these issues to make your website more accessible. Remember, accessibility is not just about catering for assistive technology users, but ensuring your website is usable by as many people as possible. It's a good practice to always keep WCAG guidelines in mind when developing a website. If you have any more code snippets or questions, feel free to ask!
