@@ -1,0 +1,436 @@
+{
+  "requesterUsername": "chauler",
+  "requesterAvatarIconUri": {
+    "$mid": 1,
+    "path": "/chauler",
+    "scheme": "https",
+    "authority": "avatars.githubusercontent.com"
+  },
+  "responderUsername": "GitHub Copilot",
+  "responderAvatarIconUri": {
+    "id": "copilot"
+  },
+  "initialLocation": "panel",
+  "welcomeMessage": [
+    "Hi **@chauler**, how can I help you?"
+  ],
+  "requests": [
+    {
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 2619
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 81,
+              "endColumn": 24
+            },
+            "text": "Context: You are an accessibility expert reviewing HTML for accessibility issues. Analyze the following code in the context of WCAG (Web Content Accessibility Guidelines) 2.2, listing any issues that may violate these guidelines. You will only be analyzing the HTML, ignoring any included or missing styles and scripts.\r\nCode: \r\n```<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Music Player</title>\r\n    <link rel=\"stylesheet\" href=\"styles.css\">\r\n</head>\r\n<body>\r\n\r\n    <!-- Navigation Bar -->\r\n    <nav>\r\n        <ul>\r\n            <li><a href=\"#\">Home</a></li>\r\n            <li><a href=\"#\">Browse</a></li>\r\n            <li><a href=\"#\">Playlists</a></li>\r\n            <li><a href=\"#\">Favorites</a></li>\r\n        </ul>\r\n    </nav>\r\n\r\n    <!-- Header Section with Background Image -->\r\n    <header class=\"header-bg\">\r\n        <h1>Discover and Enjoy Your Favorite Music</h1>\r\n        <p>Listen to the latest tracks and create your own playlists</p>\r\n        <a href=\"#browse\" class=\"btn\">Browse Music</a>\r\n    </header>\r\n\r\n    <!-- Browse Music Section -->\r\n    <section id=\"browse\">\r\n        <h3>Browse Music</h3>\r\n        <!-- Add music cards with images, artist names, and play buttons -->\r\n        <div class=\"music-card\">\r\n            <img src=\"song1.jpg\" alt=\"Song 1\">\r\n            <h2>Song 1</h2>\r\n            <p><b>Artist Name</b></p>\r\n            <button class=\"play-btn\"></button>\r\n        </div>\r\n\r\n        <!-- Add more music cards here -->\r\n\r\n    </section>\r\n\r\n    <!-- Video Section -->\r\n    <section id=\"video\">\r\n        <h2>Watch Music Videos</h2>\r\n        <video autoplay>\r\n            <source src=\"music-video.mp4\" type=\"video/mp4\">\r\n            Your browser does not support the video tag.\r\n        </video>\r\n    </section>\r\n\r\n    <!-- Create Playlist Section -->\r\n    <section id=\"create-playlist\">\r\n        <h2>Create Your Playlist</h2>\r\n        <form>\r\n            <input type=\"text\" id=\"playlist-name\" name=\"playlist-name\" required>\r\n\r\n            <label for=\"song-list\">Song List:</label>\r\n            <textarea id=\"song-list\" name=\"song-list\" rows=\"4\" required></textarea>\r\n\r\n            <button type=\"submit\" class=\"btn\">Create Playlist</button>\r\n        </form>\r\n    </section>\r\n\r\n    <!-- Footer Section -->\r\n    <footer>\r\n        <p>&copy; 2023 Music Player</p>\r\n    </footer>\r\n\r\n    <script src=\"script.js\"></script>\r\n</body>\r\n</html>\r\n```\r\nResponse format: \r\nSnippet with error: …\r\nLocation of error: …\r\nWCAG Guideline violated: …\r\nDetection Algorithm: …\r\nExplanation of Error: …",
+            "kind": "text"
+          }
+        ],
+        "text": "Context: You are an accessibility expert reviewing HTML for accessibility issues. Analyze the following code in the context of WCAG (Web Content Accessibility Guidelines) 2.2, listing any issues that may violate these guidelines. You will only be analyzing the HTML, ignoring any included or missing styles and scripts.\r\nCode: \r\n```<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Music Player</title>\r\n    <link rel=\"stylesheet\" href=\"styles.css\">\r\n</head>\r\n<body>\r\n\r\n    <!-- Navigation Bar -->\r\n    <nav>\r\n        <ul>\r\n            <li><a href=\"#\">Home</a></li>\r\n            <li><a href=\"#\">Browse</a></li>\r\n            <li><a href=\"#\">Playlists</a></li>\r\n            <li><a href=\"#\">Favorites</a></li>\r\n        </ul>\r\n    </nav>\r\n\r\n    <!-- Header Section with Background Image -->\r\n    <header class=\"header-bg\">\r\n        <h1>Discover and Enjoy Your Favorite Music</h1>\r\n        <p>Listen to the latest tracks and create your own playlists</p>\r\n        <a href=\"#browse\" class=\"btn\">Browse Music</a>\r\n    </header>\r\n\r\n    <!-- Browse Music Section -->\r\n    <section id=\"browse\">\r\n        <h3>Browse Music</h3>\r\n        <!-- Add music cards with images, artist names, and play buttons -->\r\n        <div class=\"music-card\">\r\n            <img src=\"song1.jpg\" alt=\"Song 1\">\r\n            <h2>Song 1</h2>\r\n            <p><b>Artist Name</b></p>\r\n            <button class=\"play-btn\"></button>\r\n        </div>\r\n\r\n        <!-- Add more music cards here -->\r\n\r\n    </section>\r\n\r\n    <!-- Video Section -->\r\n    <section id=\"video\">\r\n        <h2>Watch Music Videos</h2>\r\n        <video autoplay>\r\n            <source src=\"music-video.mp4\" type=\"video/mp4\">\r\n            Your browser does not support the video tag.\r\n        </video>\r\n    </section>\r\n\r\n    <!-- Create Playlist Section -->\r\n    <section id=\"create-playlist\">\r\n        <h2>Create Your Playlist</h2>\r\n        <form>\r\n            <input type=\"text\" id=\"playlist-name\" name=\"playlist-name\" required>\r\n\r\n            <label for=\"song-list\">Song List:</label>\r\n            <textarea id=\"song-list\" name=\"song-list\" rows=\"4\" required></textarea>\r\n\r\n            <button type=\"submit\" class=\"btn\">Create Playlist</button>\r\n        </form>\r\n    </section>\r\n\r\n    <!-- Footer Section -->\r\n    <footer>\r\n        <p>&copy; 2023 Music Player</p>\r\n    </footer>\r\n\r\n    <script src=\"script.js\"></script>\r\n</body>\r\n</html>\r\n```\r\nResponse format: \r\nSnippet with error: …\r\nLocation of error: …\r\nWCAG Guideline violated: …\r\nDetection Algorithm: …\r\nExplanation of Error: …"
+      },
+      "variableData": {
+        "variables": []
+      },
+      "response": [
+        {
+          "value": "Snippet with error: `<button class=\"play-btn\"></button>`\nLocation of error: Inside the \"Browse Music Section\"\nWCAG Guideline violated: 4.1.2 Name, Role, Value\nDetection Algorithm: Check if interactive elements have accessible names.\nExplanation of Error: The play button doesn't have an accessible name. Assistive technologies won't be able to identify the purpose of this button.\n\nSnippet with error: `<video autoplay>`\nLocation of error: Inside the \"Video Section\"\nWCAG Guideline violated: 2.2.2 Pause, Stop, Hide\nDetection Algorithm: Check if media elements have controls to pause, stop, or hide them.\nExplanation of Error: The video element is set to autoplay without providing controls to pause or stop the video.\n\nSnippet with error: `<a href=\"#\">Home</a>`\nLocation of error: Inside the \"Navigation Bar\"\nWCAG Guideline violated: 2.4.4 Link Purpose (In Context)\nDetection Algorithm: Check if links have a discernible purpose.\nExplanation of Error: The links in the navigation bar are not pointing to any actual content (href=\"#\"). This could be confusing for users, especially those using screen readers.\n\nSnippet with error: `<img src=\"song1.jpg\" alt=\"Song 1\">`\nLocation of error: Inside the \"Browse Music Section\"\nWCAG Guideline violated: 1.1.1 Non-text Content\nDetection Algorithm: Check if images have meaningful alternative text.\nExplanation of Error: The alt attribute for the image only contains the song name. It should provide a more descriptive alternative text, such as \"Album cover for Song 1\".",
+          "supportThemeIcons": false,
+          "supportHtml": false
+        }
+      ],
+      "result": {
+        "timings": {
+          "firstProgress": 1045,
+          "totalElapsed": 9731
+        },
+        "metadata": {
+          "responseId": "68d847a3-3405-4f2c-b860-f401a3633f14",
+          "sessionId": "20b86d79-91ff-4b8f-9d18-226734646d26"
+        }
+      },
+      "followups": [
+        {
+          "kind": "reply",
+          "agentId": "github.copilot.default",
+          "message": "What are some best practices for providing accessible names for interactive elements in HTML?"
+        }
+      ],
+      "isCanceled": false,
+      "agent": {
+        "b": {
+          "extensionId": {
+            "value": "GitHub.copilot-chat",
+            "_lower": "github.copilot-chat"
+          },
+          "extensionPublisherDisplayName": "GitHub",
+          "extensionPublisherId": "GitHub",
+          "extensionDisplayName": "GitHub Copilot Chat",
+          "id": "github.copilot.default",
+          "description": "Ask Copilot or type / for commands",
+          "metadata": {
+            "fullName": "GitHub Copilot",
+            "themeIcon": {
+              "id": "copilot"
+            },
+            "hasFollowups": true,
+            "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+            "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+            "helpTextPostfix": {
+              "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview).",
+              "isTrusted": {
+                "enabledCommands": [
+                  "inlineChat.start"
+                ]
+              },
+              "supportThemeIcons": false,
+              "supportHtml": false,
+              "uris": {
+                "command:inlineChat.start": {
+                  "$mid": 1,
+                  "path": "inlineChat.start",
+                  "scheme": "command"
+                },
+                "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                  "$mid": 1,
+                  "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                  "scheme": "https",
+                  "authority": "docs.github.com",
+                  "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+                },
+                "https://code.visualstudio.com/docs/copilot/overview": {
+                  "$mid": 1,
+                  "path": "/docs/copilot/overview",
+                  "scheme": "https",
+                  "authority": "code.visualstudio.com"
+                }
+              }
+            },
+            "supportIssueReporting": false,
+            "requester": {
+              "name": "chauler",
+              "icon": {
+                "$mid": 1,
+                "path": "/chauler",
+                "scheme": "https",
+                "authority": "avatars.githubusercontent.com"
+              }
+            }
+          },
+          "name": "GitHub Copilot",
+          "isDefault": true,
+          "locations": [
+            "panel"
+          ],
+          "slashCommands": []
+        },
+        "d": {}
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\Alex\\Desktop\\A11y_AI\\RQ3-Results\\Project-6\\index.txt",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/Alex/Desktop/A11y_AI/RQ3-Results/Project-6/index.txt",
+              "path": "/c:/Users/Alex/Desktop/A11y_AI/RQ3-Results/Project-6/index.txt",
+              "scheme": "file"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 81,
+              "endColumn": 24
+            }
+          }
+        }
+      ]
+    },
+    {
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 50
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 51
+            },
+            "text": "Are there any more issues? List all that you find.",
+            "kind": "text"
+          }
+        ],
+        "text": "Are there any more issues? List all that you find."
+      },
+      "variableData": {
+        "variables": []
+      },
+      "response": [
+        {
+          "value": "Snippet with error: `<input type=\"text\" id=\"playlist-name\" name=\"playlist-name\" required>`\nLocation of error: Inside the \"Create Playlist Section\"\nWCAG Guideline violated: 3.3.2 Labels or Instructions\nDetection Algorithm: Check if form elements have associated labels.\nExplanation of Error: The input field for the playlist name doesn't have an associated label. This can make it difficult for screen reader users to understand what information should be entered in this field.\n\nSnippet with error: `<textarea id=\"song-list\" name=\"song-list\" rows=\"4\" required></textarea>`\nLocation of error: Inside the \"Create Playlist Section\"\nWCAG Guideline violated: 3.3.2 Labels or Instructions\nDetection Algorithm: Check if form elements have associated labels.\nExplanation of Error: The textarea for the song list doesn't have an associated label. This can make it difficult for screen reader users to understand what information should be entered in this field.\n\nSnippet with error: `<nav>`\nLocation of error: \"Navigation Bar\"\nWCAG Guideline violated: 1.3.1 Info and Relationships\nDetection Algorithm: Check if the structure of the content can be determined programmatically.\nExplanation of Error: The navigation bar doesn't have a descriptive label. This can make it difficult for screen reader users to understand the purpose of this section.\n\nSnippet with error: `<section id=\"browse\">`\nLocation of error: \"Browse Music Section\"\nWCAG Guideline violated: 1.3.1 Info and Relationships\nDetection Algorithm: Check if the structure of the content can be determined programmatically.\nExplanation of Error: The section doesn't have a descriptive label. This can make it difficult for screen reader users to understand the purpose of this section.\n\nSnippet with error: `<section id=\"video\">`\nLocation of error: \"Video Section\"\nWCAG Guideline violated: 1.3.1 Info and Relationships\nDetection Algorithm: Check if the structure of the content can be determined programmatically.\nExplanation of Error: The section doesn't have a descriptive label. This can make it difficult for screen reader users to understand the purpose of this section.\n\nSnippet with error: `<section id=\"create-playlist\">`\nLocation of error: \"Create Playlist Section\"\nWCAG Guideline violated: 1.3.1 Info and Relationships\nDetection Algorithm: Check if the structure of the content can be determined programmatically.\nExplanation of Error: The section doesn't have a descriptive label. This can make it difficult for screen reader users to understand the purpose of this section.",
+          "supportThemeIcons": false,
+          "supportHtml": false
+        }
+      ],
+      "result": {
+        "timings": {
+          "firstProgress": 1190,
+          "totalElapsed": 15171
+        },
+        "metadata": {
+          "responseId": "2793429a-63f7-434a-ac54-6395a5fe043c",
+          "sessionId": "20b86d79-91ff-4b8f-9d18-226734646d26"
+        }
+      },
+      "followups": [
+        {
+          "kind": "reply",
+          "agentId": "github.copilot.default",
+          "message": "What are some best practices for addressing the accessibility issues in the provided HTML code?"
+        }
+      ],
+      "isCanceled": false,
+      "agent": {
+        "b": {
+          "extensionId": {
+            "value": "GitHub.copilot-chat",
+            "_lower": "github.copilot-chat"
+          },
+          "extensionPublisherDisplayName": "GitHub",
+          "extensionPublisherId": "GitHub",
+          "extensionDisplayName": "GitHub Copilot Chat",
+          "id": "github.copilot.default",
+          "description": "Ask Copilot or type / for commands",
+          "metadata": {
+            "fullName": "GitHub Copilot",
+            "themeIcon": {
+              "id": "copilot"
+            },
+            "hasFollowups": true,
+            "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+            "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+            "helpTextPostfix": {
+              "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview).",
+              "isTrusted": {
+                "enabledCommands": [
+                  "inlineChat.start"
+                ]
+              },
+              "supportThemeIcons": false,
+              "supportHtml": false,
+              "uris": {
+                "command:inlineChat.start": {
+                  "$mid": 1,
+                  "path": "inlineChat.start",
+                  "scheme": "command"
+                },
+                "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                  "$mid": 1,
+                  "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                  "scheme": "https",
+                  "authority": "docs.github.com",
+                  "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+                },
+                "https://code.visualstudio.com/docs/copilot/overview": {
+                  "$mid": 1,
+                  "path": "/docs/copilot/overview",
+                  "scheme": "https",
+                  "authority": "code.visualstudio.com"
+                }
+              }
+            },
+            "supportIssueReporting": false,
+            "requester": {
+              "name": "chauler",
+              "icon": {
+                "$mid": 1,
+                "path": "/chauler",
+                "scheme": "https",
+                "authority": "avatars.githubusercontent.com"
+              }
+            }
+          },
+          "name": "GitHub Copilot",
+          "isDefault": true,
+          "locations": [
+            "panel"
+          ],
+          "slashCommands": []
+        },
+        "d": {}
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\Alex\\Desktop\\A11y_AI\\RQ3-Results\\Project-6\\index.txt",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/Alex/Desktop/A11y_AI/RQ3-Results/Project-6/index.txt",
+              "path": "/c:/Users/Alex/Desktop/A11y_AI/RQ3-Results/Project-6/index.txt",
+              "scheme": "file"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 81,
+              "endColumn": 24
+            }
+          }
+        }
+      ]
+    },
+    {
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 50
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 51
+            },
+            "text": "Are there any more issues? List all that you find.",
+            "kind": "text"
+          }
+        ],
+        "text": "Are there any more issues? List all that you find."
+      },
+      "variableData": {
+        "variables": []
+      },
+      "response": [
+        {
+          "value": "Snippet with error: `<nav>`\nLocation of error: \"Navigation Bar\"\nWCAG Guideline violated: 2.4.1 Bypass Blocks\nDetection Algorithm: Check if there are mechanisms to bypass blocks of content that are repeated on multiple web pages.\nExplanation of Error: There are no skip links provided. Skip links allow users to skip over repetitive content like navigation links.\n\nSnippet with error: `<video autoplay>`\nLocation of error: Inside the \"Video Section\"\nWCAG Guideline violated: 1.4.2 Audio Control\nDetection Algorithm: Check if audio that plays automatically for more than 3 seconds has a control mechanism.\nExplanation of Error: The video element is set to autoplay, but there is no control provided to turn off the sound.\n\nSnippet with error: `<button class=\"play-btn\"></button>`\nLocation of error: Inside the \"Browse Music Section\"\nWCAG Guideline violated: 2.1.1 Keyboard\nDetection Algorithm: Check if all functionality is operable through a keyboard interface.\nExplanation of Error: The play button doesn't have a discernible name, which can make it difficult for keyboard users to understand its function.\n\nSnippet with error: `<form>`\nLocation of error: Inside the \"Create Playlist Section\"\nWCAG Guideline violated: 3.3.4 Error Prevention (Legal, Financial, Data)\nDetection Algorithm: Check if forms that cause legal commitments or financial transactions, modify or delete user-controllable data, or submit test responses have at least one of the following: Reversible, Checked, Confirmed.\nExplanation of Error: The form doesn't have any error prevention mechanisms in place. While this form may not cause legal or financial transactions, it's still a good practice to provide error prevention for forms that modify user-controllable data.\n\nSnippet with error: `<video autoplay>`\nLocation of error: Inside the \"Video Section\"\nWCAG Guideline violated: 2.2.2 Pause, Stop, Hide\nDetection Algorithm: Check if moving, blinking, scrolling, or auto-updating information can be paused, stopped, or hidden by the user.\nExplanation of Error: The video element is set to autoplay without providing controls to pause, stop, or hide the video.",
+          "supportThemeIcons": false,
+          "supportHtml": false
+        }
+      ],
+      "result": {
+        "timings": {
+          "firstProgress": 1350,
+          "totalElapsed": 13628
+        },
+        "metadata": {
+          "responseId": "5c9524fb-4327-4335-96f8-ab9984ea98b7",
+          "sessionId": "20b86d79-91ff-4b8f-9d18-226734646d26"
+        }
+      },
+      "followups": [
+        {
+          "kind": "reply",
+          "agentId": "github.copilot.default",
+          "message": "What are some guidelines for providing accessible labels for form elements?"
+        }
+      ],
+      "isCanceled": false,
+      "agent": {
+        "b": {
+          "extensionId": {
+            "value": "GitHub.copilot-chat",
+            "_lower": "github.copilot-chat"
+          },
+          "extensionPublisherDisplayName": "GitHub",
+          "extensionPublisherId": "GitHub",
+          "extensionDisplayName": "GitHub Copilot Chat",
+          "id": "github.copilot.default",
+          "description": "Ask Copilot or type / for commands",
+          "metadata": {
+            "fullName": "GitHub Copilot",
+            "themeIcon": {
+              "id": "copilot"
+            },
+            "hasFollowups": true,
+            "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+            "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+            "helpTextPostfix": {
+              "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview).",
+              "isTrusted": {
+                "enabledCommands": [
+                  "inlineChat.start"
+                ]
+              },
+              "supportThemeIcons": false,
+              "supportHtml": false,
+              "uris": {
+                "command:inlineChat.start": {
+                  "$mid": 1,
+                  "path": "inlineChat.start",
+                  "scheme": "command"
+                },
+                "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                  "$mid": 1,
+                  "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                  "scheme": "https",
+                  "authority": "docs.github.com",
+                  "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+                },
+                "https://code.visualstudio.com/docs/copilot/overview": {
+                  "$mid": 1,
+                  "path": "/docs/copilot/overview",
+                  "scheme": "https",
+                  "authority": "code.visualstudio.com"
+                }
+              }
+            },
+            "supportIssueReporting": false,
+            "requester": {
+              "name": "chauler",
+              "icon": {
+                "$mid": 1,
+                "path": "/chauler",
+                "scheme": "https",
+                "authority": "avatars.githubusercontent.com"
+              }
+            }
+          },
+          "name": "GitHub Copilot",
+          "isDefault": true,
+          "locations": [
+            "panel"
+          ],
+          "slashCommands": []
+        },
+        "d": {}
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\Alex\\Desktop\\A11y_AI\\RQ3-Results\\Project-6\\index.txt",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/Alex/Desktop/A11y_AI/RQ3-Results/Project-6/index.txt",
+              "path": "/c:/Users/Alex/Desktop/A11y_AI/RQ3-Results/Project-6/index.txt",
+              "scheme": "file"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 81,
+              "endColumn": 24
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

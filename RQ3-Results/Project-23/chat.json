@@ -1,0 +1,436 @@
+{
+  "requesterUsername": "chauler",
+  "requesterAvatarIconUri": {
+    "$mid": 1,
+    "path": "/chauler",
+    "scheme": "https",
+    "authority": "avatars.githubusercontent.com"
+  },
+  "responderUsername": "GitHub Copilot",
+  "responderAvatarIconUri": {
+    "id": "copilot"
+  },
+  "initialLocation": "panel",
+  "welcomeMessage": [
+    "Hi **@chauler**, how can I help you?"
+  ],
+  "requests": [
+    {
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 4679
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 157,
+              "endColumn": 24
+            },
+            "text": "Context: You are an accessibility expert reviewing HTML for accessibility issues. Analyze the following code in the context of WCAG (Web Content Accessibility Guidelines) 2.2, listing any issues that may violate these guidelines. You will only be analyzing the HTML, ignoring any included or missing styles and scripts.\r\nCode: \r\n```<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <style>\r\n        body {\r\n            margin: 0;\r\n            padding: 0;\r\n            font-family: 'Arial', sans-serif;\r\n        }\r\n\r\n        header {\r\n            background-image: url('background.jpg'); /* Add your background image URL */\r\n            background-size: cover;\r\n            color: white;\r\n            text-align: center;\r\n            padding: 50px;\r\n        }\r\n\r\n        header h1 {\r\n            margin: 0; /* Remove default margin for better spacing */\r\n            padding: 10px; /* Add padding to improve contrast */\r\n            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for better contrast */\r\n        }\r\n\r\n        nav {\r\n            background-color: #333;\r\n            color: white;\r\n            padding: 15px;\r\n            text-align: center;\r\n        }\r\n\r\n        nav a {\r\n            display: inline-block;\r\n            padding: 10px 15px;\r\n            font-size: 16px;\r\n            text-decoration: none;\r\n            color: #0077cc; /* Adjusted text color for better contrast */\r\n            background-color: #333; /* Adjusted background color for better contrast */\r\n        }\r\n\r\n        nav a:hover {\r\n            background-color: #555; /* Change link color on hover for better feedback */\r\n        }\r\n\r\n        section {\r\n            padding: 20px;\r\n        }\r\n\r\n        footer {\r\n            background-color: #333;\r\n            color: white;\r\n            text-align: center;\r\n            padding: 10px;\r\n            position: fixed;\r\n            bottom: 0;\r\n            width: 100%;\r\n        }\r\n\r\n        .video-container {\r\n            position: relative;\r\n            padding-bottom: 56.25%;\r\n            padding-top: 30px;\r\n            height: 0;\r\n            overflow: hidden;\r\n        }\r\n\r\n        .video-container iframe {\r\n            position: absolute;\r\n            top: 0;\r\n            left: 0;\r\n            width: 100%;\r\n            height: 100%;\r\n        }\r\n\r\n        .button {\r\n            display: inline-block;\r\n            padding: 10px 20px;\r\n            font-size: 16px;\r\n            text-align: center;\r\n            text-decoration: none;\r\n            background-color: #4CAF50;\r\n            color: white;\r\n            border-radius: 5px;\r\n            border: none; /* Add border for better contrast */\r\n            cursor: pointer; /* Add cursor pointer for better feedback */\r\n        }\r\n\r\n        .button:hover {\r\n            background-color: #45a55c; /* Change button color on hover for better feedback */\r\n        }\r\n\r\n        input[type=\"text\"] {\r\n            padding: 10px;\r\n            font-size: 16px;\r\n        }\r\n    </style>\r\n</head>\r\n<body>\r\n\r\n    <header>\r\n        <h1>Welcome to Food Delivery App</h1>\r\n    </header>\r\n\r\n    <nav>\r\n        <a href=\"#\">Home</a>\r\n        <a href=\"#\">Menu</a>\r\n        <a href=\"#\">Order Now</a>\r\n        <a href=\"#\">Contact</a>\r\n    </nav>\r\n\r\n    <section>\r\n        <h2>Featured Videos</h2>\r\n        <div class=\"video-container\">\r\n            <iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/your-video-id\" frameborder=\"0\" allowfullscreen></iframe>\r\n        </div>\r\n    </section>\r\n\r\n    <section>\r\n        <h2>Explore Our Menu</h2>\r\n        <p><b>Delicious food descriptions go here...</b></p>\r\n        <a href=\"#\" class=\"button\"><font size=\"5\"> View Menu</font></a>\r\n    </section>\r\n\r\n    <section>\r\n        <h2 onmouseover=\"ToolTip()\">Place Your Order</h2>\r\n        <p>Enter your details below to place an order:</p>\r\n        <form>\r\n            <label for=\"name\">Name:</label>\r\n            <input type=\"text\" id=\"name\" name=\"name\" required>\r\n\r\n            <label for=\"address\">Address:</label>\r\n            <input type=\"text\" alt=\"address\" id=\"address\" name=\"address\" required>\r\n\r\n            <label for=\"phone\">Phone:</label>\r\n            <input type=\"text\" id=\"phone\" name=\"phone\" required>\r\n\r\n            <input type=\"submit\" value=\"Place Order\" class=\"button\">\r\n        </form>\r\n    </section>\r\n\r\n    <footer>\r\n        <p>&copy; 2023 Food Delivery App</p>\r\n    </footer>\r\n\r\n</body>\r\n</html>\r\n```\r\nResponse format: \r\nSnippet with error: …\r\nLocation of error: …\r\nWCAG Guideline violated: …\r\nDetection Algorithm: …\r\nExplanation of Error: …",
+            "kind": "text"
+          }
+        ],
+        "text": "Context: You are an accessibility expert reviewing HTML for accessibility issues. Analyze the following code in the context of WCAG (Web Content Accessibility Guidelines) 2.2, listing any issues that may violate these guidelines. You will only be analyzing the HTML, ignoring any included or missing styles and scripts.\r\nCode: \r\n```<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <style>\r\n        body {\r\n            margin: 0;\r\n            padding: 0;\r\n            font-family: 'Arial', sans-serif;\r\n        }\r\n\r\n        header {\r\n            background-image: url('background.jpg'); /* Add your background image URL */\r\n            background-size: cover;\r\n            color: white;\r\n            text-align: center;\r\n            padding: 50px;\r\n        }\r\n\r\n        header h1 {\r\n            margin: 0; /* Remove default margin for better spacing */\r\n            padding: 10px; /* Add padding to improve contrast */\r\n            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for better contrast */\r\n        }\r\n\r\n        nav {\r\n            background-color: #333;\r\n            color: white;\r\n            padding: 15px;\r\n            text-align: center;\r\n        }\r\n\r\n        nav a {\r\n            display: inline-block;\r\n            padding: 10px 15px;\r\n            font-size: 16px;\r\n            text-decoration: none;\r\n            color: #0077cc; /* Adjusted text color for better contrast */\r\n            background-color: #333; /* Adjusted background color for better contrast */\r\n        }\r\n\r\n        nav a:hover {\r\n            background-color: #555; /* Change link color on hover for better feedback */\r\n        }\r\n\r\n        section {\r\n            padding: 20px;\r\n        }\r\n\r\n        footer {\r\n            background-color: #333;\r\n            color: white;\r\n            text-align: center;\r\n            padding: 10px;\r\n            position: fixed;\r\n            bottom: 0;\r\n            width: 100%;\r\n        }\r\n\r\n        .video-container {\r\n            position: relative;\r\n            padding-bottom: 56.25%;\r\n            padding-top: 30px;\r\n            height: 0;\r\n            overflow: hidden;\r\n        }\r\n\r\n        .video-container iframe {\r\n            position: absolute;\r\n            top: 0;\r\n            left: 0;\r\n            width: 100%;\r\n            height: 100%;\r\n        }\r\n\r\n        .button {\r\n            display: inline-block;\r\n            padding: 10px 20px;\r\n            font-size: 16px;\r\n            text-align: center;\r\n            text-decoration: none;\r\n            background-color: #4CAF50;\r\n            color: white;\r\n            border-radius: 5px;\r\n            border: none; /* Add border for better contrast */\r\n            cursor: pointer; /* Add cursor pointer for better feedback */\r\n        }\r\n\r\n        .button:hover {\r\n            background-color: #45a55c; /* Change button color on hover for better feedback */\r\n        }\r\n\r\n        input[type=\"text\"] {\r\n            padding: 10px;\r\n            font-size: 16px;\r\n        }\r\n    </style>\r\n</head>\r\n<body>\r\n\r\n    <header>\r\n        <h1>Welcome to Food Delivery App</h1>\r\n    </header>\r\n\r\n    <nav>\r\n        <a href=\"#\">Home</a>\r\n        <a href=\"#\">Menu</a>\r\n        <a href=\"#\">Order Now</a>\r\n        <a href=\"#\">Contact</a>\r\n    </nav>\r\n\r\n    <section>\r\n        <h2>Featured Videos</h2>\r\n        <div class=\"video-container\">\r\n            <iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/your-video-id\" frameborder=\"0\" allowfullscreen></iframe>\r\n        </div>\r\n    </section>\r\n\r\n    <section>\r\n        <h2>Explore Our Menu</h2>\r\n        <p><b>Delicious food descriptions go here...</b></p>\r\n        <a href=\"#\" class=\"button\"><font size=\"5\"> View Menu</font></a>\r\n    </section>\r\n\r\n    <section>\r\n        <h2 onmouseover=\"ToolTip()\">Place Your Order</h2>\r\n        <p>Enter your details below to place an order:</p>\r\n        <form>\r\n            <label for=\"name\">Name:</label>\r\n            <input type=\"text\" id=\"name\" name=\"name\" required>\r\n\r\n            <label for=\"address\">Address:</label>\r\n            <input type=\"text\" alt=\"address\" id=\"address\" name=\"address\" required>\r\n\r\n            <label for=\"phone\">Phone:</label>\r\n            <input type=\"text\" id=\"phone\" name=\"phone\" required>\r\n\r\n            <input type=\"submit\" value=\"Place Order\" class=\"button\">\r\n        </form>\r\n    </section>\r\n\r\n    <footer>\r\n        <p>&copy; 2023 Food Delivery App</p>\r\n    </footer>\r\n\r\n</body>\r\n</html>\r\n```\r\nResponse format: \r\nSnippet with error: …\r\nLocation of error: …\r\nWCAG Guideline violated: …\r\nDetection Algorithm: …\r\nExplanation of Error: …"
+      },
+      "variableData": {
+        "variables": []
+      },
+      "response": [
+        {
+          "value": "Snippet with error: `<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/your-video-id\" frameborder=\"0\" allowfullscreen></iframe>`\nLocation of error: Inside the \"Featured Videos\" section\nWCAG Guideline violated: 1.2.2 Captions (Prerecorded)\nDetection Algorithm: Checking if the `iframe` tag has a `track` child element with `kind=\"captions\"`\nExplanation of Error: The embedded video does not provide captions, which are necessary for deaf or hard-of-hearing individuals to understand the video content.\n\n---\n\nSnippet with error: `<a href=\"#\" class=\"button\"><font size=\"5\"> View Menu</font></a>`\nLocation of error: Inside the \"Explore Our Menu\" section\nWCAG Guideline violated: 1.4.4 Resize text\nDetection Algorithm: Checking for deprecated `font` tag\nExplanation of Error: The `font` tag is deprecated and does not comply with accessibility standards. Text size should be specified using CSS, which allows users to adjust text size as needed.\n\n---\n\nSnippet with error: `<h2 onmouseover=\"ToolTip()\">Place Your Order</h2>`\nLocation of error: Inside the \"Place Your Order\" section\nWCAG Guideline violated: 2.1.1 Keyboard\nDetection Algorithm: Checking for `onmouseover` event without corresponding `onfocus` event\nExplanation of Error: The `onmouseover` event requires a mouse, which is not accessible for keyboard-only users. A corresponding `onfocus` event should be provided for keyboard accessibility.\n\n---\n\nSnippet with error: `<input type=\"text\" alt=\"address\" id=\"address\" name=\"address\" required>`\nLocation of error: Inside the \"Place Your Order\" section, in the form\nWCAG Guideline violated: 1.3.1 Info and Relationships\nDetection Algorithm: Checking for `alt` attribute on `input` element\nExplanation of Error: The `alt` attribute is not valid for `input` elements. To provide a description for the input field, use the `label` element or the `aria-label` or `aria-labelledby` attributes.",
+          "supportThemeIcons": false,
+          "supportHtml": false
+        }
+      ],
+      "result": {
+        "timings": {
+          "firstProgress": 1467,
+          "totalElapsed": 15278
+        },
+        "metadata": {
+          "responseId": "3d3bf62f-9a1c-46c0-a858-0f8384a11973",
+          "sessionId": "2e7e897f-1b3f-4eb3-a5f2-042d9cad57fb"
+        }
+      },
+      "followups": [
+        {
+          "kind": "reply",
+          "agentId": "github.copilot.default",
+          "message": "What are some best practices for providing captions in embedded videos?"
+        }
+      ],
+      "isCanceled": false,
+      "agent": {
+        "b": {
+          "extensionId": {
+            "value": "GitHub.copilot-chat",
+            "_lower": "github.copilot-chat"
+          },
+          "extensionPublisherDisplayName": "GitHub",
+          "extensionPublisherId": "GitHub",
+          "extensionDisplayName": "GitHub Copilot Chat",
+          "id": "github.copilot.default",
+          "description": "Ask Copilot or type / for commands",
+          "metadata": {
+            "fullName": "GitHub Copilot",
+            "themeIcon": {
+              "id": "copilot"
+            },
+            "hasFollowups": true,
+            "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+            "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+            "helpTextPostfix": {
+              "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview).",
+              "isTrusted": {
+                "enabledCommands": [
+                  "inlineChat.start"
+                ]
+              },
+              "supportThemeIcons": false,
+              "supportHtml": false,
+              "uris": {
+                "command:inlineChat.start": {
+                  "$mid": 1,
+                  "path": "inlineChat.start",
+                  "scheme": "command"
+                },
+                "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                  "$mid": 1,
+                  "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                  "scheme": "https",
+                  "authority": "docs.github.com",
+                  "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+                },
+                "https://code.visualstudio.com/docs/copilot/overview": {
+                  "$mid": 1,
+                  "path": "/docs/copilot/overview",
+                  "scheme": "https",
+                  "authority": "code.visualstudio.com"
+                }
+              }
+            },
+            "supportIssueReporting": false,
+            "requester": {
+              "name": "chauler",
+              "icon": {
+                "$mid": 1,
+                "path": "/chauler",
+                "scheme": "https",
+                "authority": "avatars.githubusercontent.com"
+              }
+            }
+          },
+          "name": "GitHub Copilot",
+          "isDefault": true,
+          "locations": [
+            "panel"
+          ],
+          "slashCommands": []
+        },
+        "d": {}
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\Alex\\Desktop\\A11y_AI\\RQ3-Results\\Project-23\\index.txt",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/Alex/Desktop/A11y_AI/RQ3-Results/Project-23/index.txt",
+              "path": "/c:/Users/Alex/Desktop/A11y_AI/RQ3-Results/Project-23/index.txt",
+              "scheme": "file"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 157,
+              "endColumn": 24
+            }
+          }
+        }
+      ]
+    },
+    {
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 50
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 51
+            },
+            "text": "Are there any more issues? List all that you find.",
+            "kind": "text"
+          }
+        ],
+        "text": "Are there any more issues? List all that you find."
+      },
+      "variableData": {
+        "variables": []
+      },
+      "response": [
+        {
+          "value": "Snippet with error: `<header><h1>Welcome to Food Delivery App</h1></header>`\nLocation of error: Inside the `header` tag\nWCAG Guideline violated: 1.4.3 Contrast (Minimum)\nDetection Algorithm: Checking if the contrast ratio between the text color and the background color is at least 4.5:1 for normal text\nExplanation of Error: The contrast ratio between the white text and the background image may not meet the minimum contrast ratio of 4.5:1 for normal text. This can make the text difficult to read for users with moderate visual impairments.\n\n---\n\nSnippet with error: `<nav><a href=\"#\">Home</a>...</nav>`\nLocation of error: Inside the `nav` tag\nWCAG Guideline violated: 2.4.4 Link Purpose (In Context)\nDetection Algorithm: Checking if the `href` attribute of the `a` tag is set to \"#\"\nExplanation of Error: The links in the navigation bar do not have a clear purpose when taken out of context, as they all point to \"#\". This can be confusing for users who rely on screen readers or other assistive technologies.\n\n---\n\nSnippet with error: `<input type=\"text\" id=\"name\" name=\"name\" required>`\nLocation of error: Inside the \"Place Your Order\" section, in the form\nWCAG Guideline violated: 3.3.2 Labels or Instructions\nDetection Algorithm: Checking if `input` elements have associated `label` elements\nExplanation of Error: The `input` fields in the form do not have associated `label` elements. This can make it difficult for users with cognitive disabilities to understand what information is required.\n\n---\n\nSnippet with error: `<footer><p>&copy; 2023 Food Delivery App</p></footer>`\nLocation of error: Inside the `footer` tag\nWCAG Guideline violated: 2.4.1 Bypass Blocks\nDetection Algorithm: Checking if there are mechanisms to bypass repeated blocks of content\nExplanation of Error: The page does not provide a way to bypass repeated blocks of content, such as the navigation bar or the footer. This can make it difficult for keyboard-only users to navigate the page.",
+          "supportThemeIcons": false,
+          "supportHtml": false
+        }
+      ],
+      "result": {
+        "timings": {
+          "firstProgress": 1365,
+          "totalElapsed": 14328
+        },
+        "metadata": {
+          "responseId": "8c507392-c836-443d-b3ce-7b2d80a813da",
+          "sessionId": "2e7e897f-1b3f-4eb3-a5f2-042d9cad57fb"
+        }
+      },
+      "followups": [
+        {
+          "kind": "reply",
+          "agentId": "github.copilot.default",
+          "message": "What are some best practices for improving accessibility in HTML?"
+        }
+      ],
+      "isCanceled": false,
+      "agent": {
+        "b": {
+          "extensionId": {
+            "value": "GitHub.copilot-chat",
+            "_lower": "github.copilot-chat"
+          },
+          "extensionPublisherDisplayName": "GitHub",
+          "extensionPublisherId": "GitHub",
+          "extensionDisplayName": "GitHub Copilot Chat",
+          "id": "github.copilot.default",
+          "description": "Ask Copilot or type / for commands",
+          "metadata": {
+            "fullName": "GitHub Copilot",
+            "themeIcon": {
+              "id": "copilot"
+            },
+            "hasFollowups": true,
+            "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+            "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+            "helpTextPostfix": {
+              "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview).",
+              "isTrusted": {
+                "enabledCommands": [
+                  "inlineChat.start"
+                ]
+              },
+              "supportThemeIcons": false,
+              "supportHtml": false,
+              "uris": {
+                "command:inlineChat.start": {
+                  "$mid": 1,
+                  "path": "inlineChat.start",
+                  "scheme": "command"
+                },
+                "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                  "$mid": 1,
+                  "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                  "scheme": "https",
+                  "authority": "docs.github.com",
+                  "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+                },
+                "https://code.visualstudio.com/docs/copilot/overview": {
+                  "$mid": 1,
+                  "path": "/docs/copilot/overview",
+                  "scheme": "https",
+                  "authority": "code.visualstudio.com"
+                }
+              }
+            },
+            "supportIssueReporting": false,
+            "requester": {
+              "name": "chauler",
+              "icon": {
+                "$mid": 1,
+                "path": "/chauler",
+                "scheme": "https",
+                "authority": "avatars.githubusercontent.com"
+              }
+            }
+          },
+          "name": "GitHub Copilot",
+          "isDefault": true,
+          "locations": [
+            "panel"
+          ],
+          "slashCommands": []
+        },
+        "d": {}
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\Alex\\Desktop\\A11y_AI\\RQ3-Results\\Project-23\\index.txt",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/Alex/Desktop/A11y_AI/RQ3-Results/Project-23/index.txt",
+              "path": "/c:/Users/Alex/Desktop/A11y_AI/RQ3-Results/Project-23/index.txt",
+              "scheme": "file"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 157,
+              "endColumn": 24
+            }
+          }
+        }
+      ]
+    },
+    {
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 50
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 51
+            },
+            "text": "Are there any more issues? List all that you find.",
+            "kind": "text"
+          }
+        ],
+        "text": "Are there any more issues? List all that you find."
+      },
+      "variableData": {
+        "variables": []
+      },
+      "response": [
+        {
+          "value": "Snippet with error: `<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/your-video-id\" frameborder=\"0\" allowfullscreen></iframe>`\nLocation of error: Inside the \"Featured Videos\" section\nWCAG Guideline violated: 1.2.2 Captions (Prerecorded)\nDetection Algorithm: Checking if the `iframe` tag has a `track` child element with `kind=\"captions\"`\nExplanation of Error: The embedded video does not provide captions, which are necessary for deaf or hard-of-hearing individuals to understand the video content.\n\n---\n\nSnippet with error: `<a href=\"#\" class=\"button\"><font size=\"5\"> View Menu</font></a>`\nLocation of error: Inside the \"Explore Our Menu\" section\nWCAG Guideline violated: 1.4.4 Resize text\nDetection Algorithm: Checking for deprecated `font` tag\nExplanation of Error: The `font` tag is deprecated and does not comply with accessibility standards. Text size should be specified using CSS, which allows users to adjust text size as needed.\n\n---\n\nSnippet with error: `<h2 onmouseover=\"ToolTip()\">Place Your Order</h2>`\nLocation of error: Inside the \"Place Your Order\" section\nWCAG Guideline violated: 2.1.1 Keyboard\nDetection Algorithm: Checking for `onmouseover` event without corresponding `onfocus` event\nExplanation of Error: The `onmouseover` event requires a mouse, which is not accessible for keyboard-only users. A corresponding `onfocus` event should be provided for keyboard accessibility.\n\n---\n\nSnippet with error: `<input type=\"text\" alt=\"address\" id=\"address\" name=\"address\" required>`\nLocation of error: Inside the \"Place Your Order\" section, in the form\nWCAG Guideline violated: 1.3.1 Info and Relationships\nDetection Algorithm: Checking for `alt` attribute on `input` element\nExplanation of Error: The `alt` attribute is not valid for `input` elements. To provide a description for the input field, use the `label` element or the `aria-label` or `aria-labelledby` attributes.",
+          "supportThemeIcons": false,
+          "supportHtml": false
+        }
+      ],
+      "result": {
+        "timings": {
+          "firstProgress": 1330,
+          "totalElapsed": 13518
+        },
+        "metadata": {
+          "responseId": "e4523953-9f66-496b-97a1-f8fb099b9799",
+          "sessionId": "2e7e897f-1b3f-4eb3-a5f2-042d9cad57fb"
+        }
+      },
+      "followups": [
+        {
+          "kind": "reply",
+          "agentId": "github.copilot.default",
+          "message": "What are some recommendations for improving the accessibility of the HTML code?"
+        }
+      ],
+      "isCanceled": false,
+      "agent": {
+        "b": {
+          "extensionId": {
+            "value": "GitHub.copilot-chat",
+            "_lower": "github.copilot-chat"
+          },
+          "extensionPublisherDisplayName": "GitHub",
+          "extensionPublisherId": "GitHub",
+          "extensionDisplayName": "GitHub Copilot Chat",
+          "id": "github.copilot.default",
+          "description": "Ask Copilot or type / for commands",
+          "metadata": {
+            "fullName": "GitHub Copilot",
+            "themeIcon": {
+              "id": "copilot"
+            },
+            "hasFollowups": true,
+            "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+            "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+            "helpTextPostfix": {
+              "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview).",
+              "isTrusted": {
+                "enabledCommands": [
+                  "inlineChat.start"
+                ]
+              },
+              "supportThemeIcons": false,
+              "supportHtml": false,
+              "uris": {
+                "command:inlineChat.start": {
+                  "$mid": 1,
+                  "path": "inlineChat.start",
+                  "scheme": "command"
+                },
+                "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                  "$mid": 1,
+                  "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                  "scheme": "https",
+                  "authority": "docs.github.com",
+                  "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+                },
+                "https://code.visualstudio.com/docs/copilot/overview": {
+                  "$mid": 1,
+                  "path": "/docs/copilot/overview",
+                  "scheme": "https",
+                  "authority": "code.visualstudio.com"
+                }
+              }
+            },
+            "supportIssueReporting": false,
+            "requester": {
+              "name": "chauler",
+              "icon": {
+                "$mid": 1,
+                "path": "/chauler",
+                "scheme": "https",
+                "authority": "avatars.githubusercontent.com"
+              }
+            }
+          },
+          "name": "GitHub Copilot",
+          "isDefault": true,
+          "locations": [
+            "panel"
+          ],
+          "slashCommands": []
+        },
+        "d": {}
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\Alex\\Desktop\\A11y_AI\\RQ3-Results\\Project-23\\index.txt",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/Alex/Desktop/A11y_AI/RQ3-Results/Project-23/index.txt",
+              "path": "/c:/Users/Alex/Desktop/A11y_AI/RQ3-Results/Project-23/index.txt",
+              "scheme": "file"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 157,
+              "endColumn": 24
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

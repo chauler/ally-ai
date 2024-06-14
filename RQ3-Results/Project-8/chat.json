@@ -1,0 +1,436 @@
+{
+  "requesterUsername": "chauler",
+  "requesterAvatarIconUri": {
+    "$mid": 1,
+    "path": "/chauler",
+    "scheme": "https",
+    "authority": "avatars.githubusercontent.com"
+  },
+  "responderUsername": "GitHub Copilot",
+  "responderAvatarIconUri": {
+    "id": "copilot"
+  },
+  "initialLocation": "panel",
+  "welcomeMessage": [
+    "Hi **@chauler**, how can I help you?"
+  ],
+  "requests": [
+    {
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 2083
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 63,
+              "endColumn": 24
+            },
+            "text": "Context: You are an accessibility expert reviewing HTML for accessibility issues. Analyze the following code in the context of WCAG (Web Content Accessibility Guidelines) 2.2, listing any issues that may violate these guidelines. You will only be analyzing the HTML, ignoring any included or missing styles and scripts.\r\nCode: \r\n```<!DOCTYPE html>\r\n<html lang=\"en\">\r\n\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <title></title>\r\n    <link rel=\"stylesheet\" href=\"index.css\">\r\n</head>\r\n\r\n<body>\r\n    <!-- Navigation Bar -->\r\n    <nav>\r\n        <ul>\r\n            <li><a href=\"#home\"></a></li>\r\n            <li><a href=\"#laptops\">Laptops</a></li>\r\n            <li><a href=\"#about\">About</a></li>\r\n            <li><a href=\"#contact\">Contact</a></li>\r\n        </ul>\r\n    </nav>\r\n\r\n    <!-- Header Section -->\r\n    <header>\r\n        <h1 style=\"color: rgb(255, 255, 255); background-color: rgb(0, 0, 0);\">\r\n            Welcome to DELL Laptops\r\n        </h1>\r\n        <p style=\"color: rgb(255, 255, 255); background-color: rgb(0, 0, 0);\">\r\n            Discover the latest innovation in computing\r\n        </p>\r\n    </header>\r\n\r\n    <!-- Video Section -->\r\n    <section class=\"video-section\">\r\n        <video autoplay>\r\n            <source src=\"video/sample-video.mp4\" type=\"video/mp4\">\r\n            Your browser does not support the video tag.\r\n        </video>\r\n    </section>\r\n\r\n    <!-- Text Description Section -->\r\n    <section class=\"description-section\">\r\n        <h3>Explore our latest laptops</h3>\r\n        <p>Discover powerful performance and stunning design with our new range of DELL laptops. Whether you're a student, professional, or gamer, we have the perfect laptop for you.</p>\r\n        <a href=\"#laptops\" class=\"btn\">View Laptops</a>\r\n    </section>\r\n\r\n    <meta http-equiv=\"refresh\" content=\"0\">\r\n\r\n    <!-- Footer -->\r\n    <footer>\r\n        <p>&copy; 2023 DELL Laptops. All rights reserved.</p>\r\n    </footer>\r\n</body>\r\n\r\n</html>\r\n```\r\nResponse format: \r\nSnippet with error: …\r\nLocation of error: …\r\nWCAG Guideline violated: …\r\nDetection Algorithm: …\r\nExplanation of Error: …",
+            "kind": "text"
+          }
+        ],
+        "text": "Context: You are an accessibility expert reviewing HTML for accessibility issues. Analyze the following code in the context of WCAG (Web Content Accessibility Guidelines) 2.2, listing any issues that may violate these guidelines. You will only be analyzing the HTML, ignoring any included or missing styles and scripts.\r\nCode: \r\n```<!DOCTYPE html>\r\n<html lang=\"en\">\r\n\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <title></title>\r\n    <link rel=\"stylesheet\" href=\"index.css\">\r\n</head>\r\n\r\n<body>\r\n    <!-- Navigation Bar -->\r\n    <nav>\r\n        <ul>\r\n            <li><a href=\"#home\"></a></li>\r\n            <li><a href=\"#laptops\">Laptops</a></li>\r\n            <li><a href=\"#about\">About</a></li>\r\n            <li><a href=\"#contact\">Contact</a></li>\r\n        </ul>\r\n    </nav>\r\n\r\n    <!-- Header Section -->\r\n    <header>\r\n        <h1 style=\"color: rgb(255, 255, 255); background-color: rgb(0, 0, 0);\">\r\n            Welcome to DELL Laptops\r\n        </h1>\r\n        <p style=\"color: rgb(255, 255, 255); background-color: rgb(0, 0, 0);\">\r\n            Discover the latest innovation in computing\r\n        </p>\r\n    </header>\r\n\r\n    <!-- Video Section -->\r\n    <section class=\"video-section\">\r\n        <video autoplay>\r\n            <source src=\"video/sample-video.mp4\" type=\"video/mp4\">\r\n            Your browser does not support the video tag.\r\n        </video>\r\n    </section>\r\n\r\n    <!-- Text Description Section -->\r\n    <section class=\"description-section\">\r\n        <h3>Explore our latest laptops</h3>\r\n        <p>Discover powerful performance and stunning design with our new range of DELL laptops. Whether you're a student, professional, or gamer, we have the perfect laptop for you.</p>\r\n        <a href=\"#laptops\" class=\"btn\">View Laptops</a>\r\n    </section>\r\n\r\n    <meta http-equiv=\"refresh\" content=\"0\">\r\n\r\n    <!-- Footer -->\r\n    <footer>\r\n        <p>&copy; 2023 DELL Laptops. All rights reserved.</p>\r\n    </footer>\r\n</body>\r\n\r\n</html>\r\n```\r\nResponse format: \r\nSnippet with error: …\r\nLocation of error: …\r\nWCAG Guideline violated: …\r\nDetection Algorithm: …\r\nExplanation of Error: …"
+      },
+      "variableData": {
+        "variables": []
+      },
+      "response": [
+        {
+          "value": "Snippet with error: `<title></title>`\nLocation of error: Inside the `<head>` tag\nWCAG Guideline violated: 2.4.2 Page Titled\nDetection Algorithm: Check if the `<title>` tag is empty.\nExplanation of Error: The `<title>` tag is empty. It should provide a brief description of the page's content.\n\nSnippet with error: `<a href=\"#home\"></a>`\nLocation of error: Inside the `<nav>` tag\nWCAG Guideline violated: 2.4.4 Link Purpose (In Context)\nDetection Algorithm: Check if the `<a>` tag is empty.\nExplanation of Error: The link text is missing. It should provide a description of the link's purpose.\n\nSnippet with error: `<video autoplay>`\nLocation of error: Inside the `video-section` class\nWCAG Guideline violated: 1.4.2 Audio Control\nDetection Algorithm: Check if the `autoplay` attribute is present in the `<video>` tag.\nExplanation of Error: The video starts playing automatically without any controls. There should be a mechanism to pause, stop, or control the volume of the audio.\n\nSnippet with error: `<meta http-equiv=\"refresh\" content=\"0\">`\nLocation of error: Inside the `<body>` tag\nWCAG Guideline violated: 2.2.1 Timing Adjustable\nDetection Algorithm: Check if the `http-equiv=\"refresh\"` attribute is present in the `<meta>` tag.\nExplanation of Error: The page is set to refresh automatically. This can disorient users if they are not expecting the page to reload or refresh automatically.",
+          "supportThemeIcons": false,
+          "supportHtml": false
+        }
+      ],
+      "result": {
+        "timings": {
+          "firstProgress": 1002,
+          "totalElapsed": 9257
+        },
+        "metadata": {
+          "responseId": "911ac6a0-b885-43e1-a7ec-a5c5b41171a3",
+          "sessionId": "06649201-1f95-4ecf-b1cb-96f2122ff10f"
+        }
+      },
+      "followups": [
+        {
+          "kind": "reply",
+          "agentId": "github.copilot.default",
+          "message": "What is the purpose of the `lang` attribute in the `<html>` tag?"
+        }
+      ],
+      "isCanceled": false,
+      "agent": {
+        "b": {
+          "extensionId": {
+            "value": "GitHub.copilot-chat",
+            "_lower": "github.copilot-chat"
+          },
+          "extensionPublisherDisplayName": "GitHub",
+          "extensionPublisherId": "GitHub",
+          "extensionDisplayName": "GitHub Copilot Chat",
+          "id": "github.copilot.default",
+          "description": "Ask Copilot or type / for commands",
+          "metadata": {
+            "fullName": "GitHub Copilot",
+            "themeIcon": {
+              "id": "copilot"
+            },
+            "hasFollowups": true,
+            "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+            "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+            "helpTextPostfix": {
+              "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview).",
+              "isTrusted": {
+                "enabledCommands": [
+                  "inlineChat.start"
+                ]
+              },
+              "supportThemeIcons": false,
+              "supportHtml": false,
+              "uris": {
+                "command:inlineChat.start": {
+                  "$mid": 1,
+                  "path": "inlineChat.start",
+                  "scheme": "command"
+                },
+                "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                  "$mid": 1,
+                  "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                  "scheme": "https",
+                  "authority": "docs.github.com",
+                  "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+                },
+                "https://code.visualstudio.com/docs/copilot/overview": {
+                  "$mid": 1,
+                  "path": "/docs/copilot/overview",
+                  "scheme": "https",
+                  "authority": "code.visualstudio.com"
+                }
+              }
+            },
+            "supportIssueReporting": false,
+            "requester": {
+              "name": "chauler",
+              "icon": {
+                "$mid": 1,
+                "path": "/chauler",
+                "scheme": "https",
+                "authority": "avatars.githubusercontent.com"
+              }
+            }
+          },
+          "name": "GitHub Copilot",
+          "isDefault": true,
+          "locations": [
+            "panel"
+          ],
+          "slashCommands": []
+        },
+        "d": {}
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\Alex\\Desktop\\A11y_AI\\RQ3-Results\\Project-8\\index.txt",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/Alex/Desktop/A11y_AI/RQ3-Results/Project-8/index.txt",
+              "path": "/c:/Users/Alex/Desktop/A11y_AI/RQ3-Results/Project-8/index.txt",
+              "scheme": "file"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 63,
+              "endColumn": 24
+            }
+          }
+        }
+      ]
+    },
+    {
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 50
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 51
+            },
+            "text": "Are there any more issues? List all that you find.",
+            "kind": "text"
+          }
+        ],
+        "text": "Are there any more issues? List all that you find."
+      },
+      "variableData": {
+        "variables": []
+      },
+      "response": [
+        {
+          "value": "Snippet with error: `<h1 style=\"color: rgb(255, 255, 255); background-color: rgb(0, 0, 0);\">`\nLocation of error: Inside the `<header>` tag\nWCAG Guideline violated: 1.4.3 Contrast (Minimum)\nDetection Algorithm: Check if the contrast ratio between the text color and the background color is at least 4.5:1 for normal text.\nExplanation of Error: The contrast ratio between the text color (white) and the background color (black) is not specified in the HTML. While white text on a black background generally provides sufficient contrast, it's best to avoid inline styles and ensure contrast is sufficient in the CSS.\n\nSnippet with error: `<video autoplay>`\nLocation of error: Inside the `video-section` class\nWCAG Guideline violated: 1.2.1 Audio-only and Video-only (Prerecorded)\nDetection Algorithm: Check if the `<video>` tag has a `<track>` child with the `kind=\"captions\"` attribute.\nExplanation of Error: The video does not have captions. All prerecorded video-only content should provide an alternative media that presents equivalent information (e.g., captions or a link to a text transcript).\n\nSnippet with error: `<nav>`\nLocation of error: Inside the `<body>` tag\nWCAG Guideline violated: 1.3.1 Info and Relationships\nDetection Algorithm: Check if the `<nav>` tag has an `aria-label` or `aria-labelledby` attribute.\nExplanation of Error: The navigation region does not have a label. Screen reader users rely on these labels to understand the purpose of the region.\n\nSnippet with error: `<footer>`\nLocation of error: Inside the `<body>` tag\nWCAG Guideline violated: 1.3.1 Info and Relationships\nDetection Algorithm: Check if the `<footer>` tag has an `aria-label` or `aria-labelledby` attribute.\nExplanation of Error: The footer region does not have a label. Screen reader users rely on these labels to understand the purpose of the region.",
+          "supportThemeIcons": false,
+          "supportHtml": false
+        }
+      ],
+      "result": {
+        "timings": {
+          "firstProgress": 1313,
+          "totalElapsed": 14840
+        },
+        "metadata": {
+          "responseId": "695e1b1b-3cb4-46bb-997a-7f23c17ab6b4",
+          "sessionId": "06649201-1f95-4ecf-b1cb-96f2122ff10f"
+        }
+      },
+      "followups": [
+        {
+          "kind": "reply",
+          "agentId": "github.copilot.default",
+          "message": "What are some best practices for improving accessibility in HTML?"
+        }
+      ],
+      "isCanceled": false,
+      "agent": {
+        "b": {
+          "extensionId": {
+            "value": "GitHub.copilot-chat",
+            "_lower": "github.copilot-chat"
+          },
+          "extensionPublisherDisplayName": "GitHub",
+          "extensionPublisherId": "GitHub",
+          "extensionDisplayName": "GitHub Copilot Chat",
+          "id": "github.copilot.default",
+          "description": "Ask Copilot or type / for commands",
+          "metadata": {
+            "fullName": "GitHub Copilot",
+            "themeIcon": {
+              "id": "copilot"
+            },
+            "hasFollowups": true,
+            "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+            "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+            "helpTextPostfix": {
+              "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview).",
+              "isTrusted": {
+                "enabledCommands": [
+                  "inlineChat.start"
+                ]
+              },
+              "supportThemeIcons": false,
+              "supportHtml": false,
+              "uris": {
+                "command:inlineChat.start": {
+                  "$mid": 1,
+                  "path": "inlineChat.start",
+                  "scheme": "command"
+                },
+                "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                  "$mid": 1,
+                  "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                  "scheme": "https",
+                  "authority": "docs.github.com",
+                  "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+                },
+                "https://code.visualstudio.com/docs/copilot/overview": {
+                  "$mid": 1,
+                  "path": "/docs/copilot/overview",
+                  "scheme": "https",
+                  "authority": "code.visualstudio.com"
+                }
+              }
+            },
+            "supportIssueReporting": false,
+            "requester": {
+              "name": "chauler",
+              "icon": {
+                "$mid": 1,
+                "path": "/chauler",
+                "scheme": "https",
+                "authority": "avatars.githubusercontent.com"
+              }
+            }
+          },
+          "name": "GitHub Copilot",
+          "isDefault": true,
+          "locations": [
+            "panel"
+          ],
+          "slashCommands": []
+        },
+        "d": {}
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\Alex\\Desktop\\A11y_AI\\RQ3-Results\\Project-8\\index.txt",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/Alex/Desktop/A11y_AI/RQ3-Results/Project-8/index.txt",
+              "path": "/c:/Users/Alex/Desktop/A11y_AI/RQ3-Results/Project-8/index.txt",
+              "scheme": "file"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 63,
+              "endColumn": 24
+            }
+          }
+        }
+      ]
+    },
+    {
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 50
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 51
+            },
+            "text": "Are there any more issues? List all that you find.",
+            "kind": "text"
+          }
+        ],
+        "text": "Are there any more issues? List all that you find."
+      },
+      "variableData": {
+        "variables": []
+      },
+      "response": [
+        {
+          "value": "Snippet with error: `<html lang=\"en\">`\nLocation of error: At the start of the HTML document\nWCAG Guideline violated: 3.1.1 Language of Page\nDetection Algorithm: Check if the `lang` attribute in the `<html>` tag matches the language of the page content.\nExplanation of Error: The `lang` attribute is set to \"en\" (English), but if the content of the page is not in English, this would be misleading for screen readers and other assistive technologies.\n\nSnippet with error: `<video autoplay>`\nLocation of error: Inside the `video-section` class\nWCAG Guideline violated: 1.2.3 Audio Description or Media Alternative (Prerecorded)\nDetection Algorithm: Check if the `<video>` tag has a `<track>` child with the `kind=\"descriptions\"` attribute.\nExplanation of Error: The video does not have an audio description or alternative media. This is necessary for those who cannot see and need to understand the content of the video.\n\nSnippet with error: `<section class=\"description-section\">`\nLocation of error: Inside the `<body>` tag\nWCAG Guideline violated: 1.3.1 Info and Relationships\nDetection Algorithm: Check if the `<section>` tag has an `aria-label` or `aria-labelledby` attribute.\nExplanation of Error: The section does not have a label. Screen reader users rely on these labels to understand the purpose of the section.\n\nSnippet with error: `<a href=\"#laptops\" class=\"btn\">View Laptops</a>`\nLocation of error: Inside the `description-section` class\nWCAG Guideline violated: 2.4.4 Link Purpose (In Context)\nDetection Algorithm: Check if the `<a>` tag has an `aria-label` attribute that provides a description of the link's purpose.\nExplanation of Error: The link text \"View Laptops\" might not provide enough context for users with screen readers. Adding an `aria-label` attribute could provide more context.",
+          "supportThemeIcons": false,
+          "supportHtml": false
+        }
+      ],
+      "result": {
+        "timings": {
+          "firstProgress": 1220,
+          "totalElapsed": 12280
+        },
+        "metadata": {
+          "responseId": "8a318d74-a127-4a7e-ac75-71186ba779a0",
+          "sessionId": "06649201-1f95-4ecf-b1cb-96f2122ff10f"
+        }
+      },
+      "followups": [
+        {
+          "kind": "reply",
+          "agentId": "github.copilot.default",
+          "message": "What are the guidelines for providing alternative text for images in HTML?"
+        }
+      ],
+      "isCanceled": false,
+      "agent": {
+        "b": {
+          "extensionId": {
+            "value": "GitHub.copilot-chat",
+            "_lower": "github.copilot-chat"
+          },
+          "extensionPublisherDisplayName": "GitHub",
+          "extensionPublisherId": "GitHub",
+          "extensionDisplayName": "GitHub Copilot Chat",
+          "id": "github.copilot.default",
+          "description": "Ask Copilot or type / for commands",
+          "metadata": {
+            "fullName": "GitHub Copilot",
+            "themeIcon": {
+              "id": "copilot"
+            },
+            "hasFollowups": true,
+            "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+            "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+            "helpTextPostfix": {
+              "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview).",
+              "isTrusted": {
+                "enabledCommands": [
+                  "inlineChat.start"
+                ]
+              },
+              "supportThemeIcons": false,
+              "supportHtml": false,
+              "uris": {
+                "command:inlineChat.start": {
+                  "$mid": 1,
+                  "path": "inlineChat.start",
+                  "scheme": "command"
+                },
+                "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                  "$mid": 1,
+                  "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                  "scheme": "https",
+                  "authority": "docs.github.com",
+                  "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+                },
+                "https://code.visualstudio.com/docs/copilot/overview": {
+                  "$mid": 1,
+                  "path": "/docs/copilot/overview",
+                  "scheme": "https",
+                  "authority": "code.visualstudio.com"
+                }
+              }
+            },
+            "supportIssueReporting": false,
+            "requester": {
+              "name": "chauler",
+              "icon": {
+                "$mid": 1,
+                "path": "/chauler",
+                "scheme": "https",
+                "authority": "avatars.githubusercontent.com"
+              }
+            }
+          },
+          "name": "GitHub Copilot",
+          "isDefault": true,
+          "locations": [
+            "panel"
+          ],
+          "slashCommands": []
+        },
+        "d": {}
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\Alex\\Desktop\\A11y_AI\\RQ3-Results\\Project-8\\index.txt",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/Alex/Desktop/A11y_AI/RQ3-Results/Project-8/index.txt",
+              "path": "/c:/Users/Alex/Desktop/A11y_AI/RQ3-Results/Project-8/index.txt",
+              "scheme": "file"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 63,
+              "endColumn": 24
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

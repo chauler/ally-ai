@@ -1,0 +1,436 @@
+{
+  "requesterUsername": "chauler",
+  "requesterAvatarIconUri": {
+    "$mid": 1,
+    "path": "/chauler",
+    "scheme": "https",
+    "authority": "avatars.githubusercontent.com"
+  },
+  "responderUsername": "GitHub Copilot",
+  "responderAvatarIconUri": {
+    "id": "copilot"
+  },
+  "initialLocation": "panel",
+  "welcomeMessage": [
+    "Hi **@chauler**, how can I help you?"
+  ],
+  "requests": [
+    {
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 5395
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 171,
+              "endColumn": 24
+            },
+            "text": "Context: You are an accessibility expert reviewing HTML for accessibility issues. Analyze the following code in the context of WCAG (Web Content Accessibility Guidelines) 2.2, listing any issues that may violate these guidelines. You will only be analyzing the HTML, ignoring any included or missing styles and scripts.\r\nCode: \r\n```<!DOCTYPE html>\r\n<html lang=\"ex\">\r\n\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Resume Maker</title>\r\n    <style>\r\n        body {\r\n            margin: 0;\r\n            padding: 0;\r\n            font-family: 'Arial', sans-serif;\r\n            background-image: url('background.jpg');\r\n            background-size: cover;\r\n            background-position: center;\r\n            color: #fff;\r\n        }\r\n\r\n        header {\r\n            background-color: #333;\r\n            padding: 15px;\r\n            text-align: center;\r\n        }\r\n\r\n        nav {\r\n            background-color: #555;\r\n            padding: 10px;\r\n        }\r\n\r\n        nav a {\r\n            color: #fff;\r\n            text-decoration: none;\r\n            padding: 10px;\r\n            margin: 0 10px;\r\n        }\r\n\r\n        section {\r\n            padding: 20px;\r\n        }\r\n\r\n        footer {\r\n            background-color: #333;\r\n            padding: 10px;\r\n            text-align: center;\r\n            position: absolute;\r\n            bottom: 0;\r\n            width: 100%;\r\n        }\r\n\r\n        button {\r\n            background-color: #4CAF50;\r\n            color: #fff; /* Adjusted text color for better contrast */\r\n            padding: 10px 20px;\r\n            border: none;\r\n            border-radius: 5px;\r\n            cursor: pointer;\r\n        }\r\n\r\n        input[type=\"text\"] {\r\n            padding: 10px;\r\n            margin: 5px 0;\r\n            width: 100%;\r\n        }\r\n\r\n        select {\r\n            padding: 10px;\r\n            margin: 5px 0;\r\n        }\r\n\r\n        h2 {\r\n            color: #333; /* Adjusted text color for better contrast */\r\n            background-color: #fff; /* Adjusted background color for better contrast */\r\n            padding: 10px; /* Added padding for better spacing */\r\n            border-radius: 5px; /* Added border-radius for better styling */\r\n        }\r\n\r\n        label {\r\n            color: #333; /* Adjusted text color for better contrast */\r\n            background-color: #fff; /* Adjusted background color for better contrast */\r\n            display: block; /* Ensuring the label takes the full width */\r\n            padding: 5px; /* Added padding for better spacing */\r\n            border-radius: 5px; /* Added border-radius for better styling */\r\n            margin-bottom: 5px; /* Adding margin for better spacing */\r\n        }\r\n\r\n        .icon {\r\n            width: 20px;\r\n            height: 20px;\r\n            margin-right: 5px;\r\n        }\r\n    </style>\r\n</head>\r\n\r\n<body>\r\n    <header>\r\n        <h1>Resume Maker</h1>\r\n    </header>\r\n\r\n    <nav>\r\n        <a onmouseover=\"sample()\" href=\"#\">Home</a>\r\n        <a href=\"#\">About</a>\r\n        <a href=\"#\">Contact</a>\r\n    </nav>\r\n\r\n    <section>\r\n        <h2>Create Your Resume</h2>\r\n        <label for=\"name\">Name:</label>\r\n        <input type=\"text\" id=\"name\" placeholder=\"Enter your full name\">\r\n\r\n        <label for=\"email\">Email:</label>\r\n        <input type=\"text\" id=\"email\" placeholder=\"Enter your email\">\r\n\r\n        <select id=\"experience\">\r\n            <option value=\"entry\">Entry Level</option>\r\n            <option value=\"mid\">Mid Level</option>\r\n            <option value=\"senior\">Senior Level</option>\r\n        </select>\r\n\r\n        <button onclick=\"generateResume()\" style=\"color: rgb(255, 255, 255); background-color: rgb(76, 175, 80);\">Generate Resume</button>\r\n    </section>\r\n\r\n    <footer>\r\n        <form>\r\n            <label for=\"username\">Username:</label><br>\r\n            <input type=\"text\" id=\"username\" name=\"username\"><br>\r\n            <label for=\"password\"></label><br>\r\n            <input type=\"password\" id=\"pwd\" name=\"pwd\">      \r\n    \r\n            <input type=\"radio\" id=\"1\" name=\"fav_number\" value=\"1\">\r\n            <label for=\"1\">1</label><br>\r\n            <input type=\"radio\" id=\"2\" name=\"fav_number\" value=\"2\">\r\n            <label for=\"2\">2</label><br>\r\n            <input type=\"radio\" id=\"3\" name=\"fav_number\" value=\"3\">\r\n            <label for=\"3\">3</label>   \r\n    \r\n            <input type=\"checkbox\" id=\"vehicle1\" name=\"vehicle1\" value=\"Bike\">\r\n            <label for=\"vehicle1\"> I have a bike</label><br>\r\n            <input type=\"checkbox\" id=\"vehicle2\" name=\"vehicle2\" value=\"Car\">\r\n            <label for=\"vehicle2\"> I have a car</label><br>\r\n            <input type=\"checkbox\" id=\"vehicle3\" name=\"vehicle3\" value=\"Boat\">\r\n            <label for=\"vehicle3\"> I have a boat</label>\r\n    \r\n            <input type=\"file\" id=\"myfile\" name=\"myfile\">\r\n    \r\n            <button type=\"submit\">Submit</button>\r\n        </form>\r\n        <p>&copy; 2023 Resume Maker</p>\r\n    </footer>\r\n\r\n    <script>\r\n        function generateResume() {\r\n            // Add your resume generation logic here\r\n            alert('Resume generated!');\r\n        }\r\n\r\n        function sample() {\r\n            alert(\"hovered\")\r\n        }\r\n    </script>\r\n</body>\r\n\r\n</html>\r\n```\r\nResponse format: \r\nSnippet with error: …\r\nLocation of error: …\r\nWCAG Guideline violated: …\r\nDetection Algorithm: …\r\nExplanation of Error: …",
+            "kind": "text"
+          }
+        ],
+        "text": "Context: You are an accessibility expert reviewing HTML for accessibility issues. Analyze the following code in the context of WCAG (Web Content Accessibility Guidelines) 2.2, listing any issues that may violate these guidelines. You will only be analyzing the HTML, ignoring any included or missing styles and scripts.\r\nCode: \r\n```<!DOCTYPE html>\r\n<html lang=\"ex\">\r\n\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Resume Maker</title>\r\n    <style>\r\n        body {\r\n            margin: 0;\r\n            padding: 0;\r\n            font-family: 'Arial', sans-serif;\r\n            background-image: url('background.jpg');\r\n            background-size: cover;\r\n            background-position: center;\r\n            color: #fff;\r\n        }\r\n\r\n        header {\r\n            background-color: #333;\r\n            padding: 15px;\r\n            text-align: center;\r\n        }\r\n\r\n        nav {\r\n            background-color: #555;\r\n            padding: 10px;\r\n        }\r\n\r\n        nav a {\r\n            color: #fff;\r\n            text-decoration: none;\r\n            padding: 10px;\r\n            margin: 0 10px;\r\n        }\r\n\r\n        section {\r\n            padding: 20px;\r\n        }\r\n\r\n        footer {\r\n            background-color: #333;\r\n            padding: 10px;\r\n            text-align: center;\r\n            position: absolute;\r\n            bottom: 0;\r\n            width: 100%;\r\n        }\r\n\r\n        button {\r\n            background-color: #4CAF50;\r\n            color: #fff; /* Adjusted text color for better contrast */\r\n            padding: 10px 20px;\r\n            border: none;\r\n            border-radius: 5px;\r\n            cursor: pointer;\r\n        }\r\n\r\n        input[type=\"text\"] {\r\n            padding: 10px;\r\n            margin: 5px 0;\r\n            width: 100%;\r\n        }\r\n\r\n        select {\r\n            padding: 10px;\r\n            margin: 5px 0;\r\n        }\r\n\r\n        h2 {\r\n            color: #333; /* Adjusted text color for better contrast */\r\n            background-color: #fff; /* Adjusted background color for better contrast */\r\n            padding: 10px; /* Added padding for better spacing */\r\n            border-radius: 5px; /* Added border-radius for better styling */\r\n        }\r\n\r\n        label {\r\n            color: #333; /* Adjusted text color for better contrast */\r\n            background-color: #fff; /* Adjusted background color for better contrast */\r\n            display: block; /* Ensuring the label takes the full width */\r\n            padding: 5px; /* Added padding for better spacing */\r\n            border-radius: 5px; /* Added border-radius for better styling */\r\n            margin-bottom: 5px; /* Adding margin for better spacing */\r\n        }\r\n\r\n        .icon {\r\n            width: 20px;\r\n            height: 20px;\r\n            margin-right: 5px;\r\n        }\r\n    </style>\r\n</head>\r\n\r\n<body>\r\n    <header>\r\n        <h1>Resume Maker</h1>\r\n    </header>\r\n\r\n    <nav>\r\n        <a onmouseover=\"sample()\" href=\"#\">Home</a>\r\n        <a href=\"#\">About</a>\r\n        <a href=\"#\">Contact</a>\r\n    </nav>\r\n\r\n    <section>\r\n        <h2>Create Your Resume</h2>\r\n        <label for=\"name\">Name:</label>\r\n        <input type=\"text\" id=\"name\" placeholder=\"Enter your full name\">\r\n\r\n        <label for=\"email\">Email:</label>\r\n        <input type=\"text\" id=\"email\" placeholder=\"Enter your email\">\r\n\r\n        <select id=\"experience\">\r\n            <option value=\"entry\">Entry Level</option>\r\n            <option value=\"mid\">Mid Level</option>\r\n            <option value=\"senior\">Senior Level</option>\r\n        </select>\r\n\r\n        <button onclick=\"generateResume()\" style=\"color: rgb(255, 255, 255); background-color: rgb(76, 175, 80);\">Generate Resume</button>\r\n    </section>\r\n\r\n    <footer>\r\n        <form>\r\n            <label for=\"username\">Username:</label><br>\r\n            <input type=\"text\" id=\"username\" name=\"username\"><br>\r\n            <label for=\"password\"></label><br>\r\n            <input type=\"password\" id=\"pwd\" name=\"pwd\">      \r\n    \r\n            <input type=\"radio\" id=\"1\" name=\"fav_number\" value=\"1\">\r\n            <label for=\"1\">1</label><br>\r\n            <input type=\"radio\" id=\"2\" name=\"fav_number\" value=\"2\">\r\n            <label for=\"2\">2</label><br>\r\n            <input type=\"radio\" id=\"3\" name=\"fav_number\" value=\"3\">\r\n            <label for=\"3\">3</label>   \r\n    \r\n            <input type=\"checkbox\" id=\"vehicle1\" name=\"vehicle1\" value=\"Bike\">\r\n            <label for=\"vehicle1\"> I have a bike</label><br>\r\n            <input type=\"checkbox\" id=\"vehicle2\" name=\"vehicle2\" value=\"Car\">\r\n            <label for=\"vehicle2\"> I have a car</label><br>\r\n            <input type=\"checkbox\" id=\"vehicle3\" name=\"vehicle3\" value=\"Boat\">\r\n            <label for=\"vehicle3\"> I have a boat</label>\r\n    \r\n            <input type=\"file\" id=\"myfile\" name=\"myfile\">\r\n    \r\n            <button type=\"submit\">Submit</button>\r\n        </form>\r\n        <p>&copy; 2023 Resume Maker</p>\r\n    </footer>\r\n\r\n    <script>\r\n        function generateResume() {\r\n            // Add your resume generation logic here\r\n            alert('Resume generated!');\r\n        }\r\n\r\n        function sample() {\r\n            alert(\"hovered\")\r\n        }\r\n    </script>\r\n</body>\r\n\r\n</html>\r\n```\r\nResponse format: \r\nSnippet with error: …\r\nLocation of error: …\r\nWCAG Guideline violated: …\r\nDetection Algorithm: …\r\nExplanation of Error: …"
+      },
+      "variableData": {
+        "variables": []
+      },
+      "response": [
+        {
+          "value": "Snippet with error: `<html lang=\"ex\">`\nLocation of error: Line 2\nWCAG Guideline violated: 3.1.1 Language of Page\nDetection Algorithm: Checking the `lang` attribute in the `<html>` tag.\nExplanation of Error: The `lang` attribute in the `<html>` tag should represent the primary language of the page's content. The value \"ex\" is not a valid language code.\n\nSnippet with error: `<a onmouseover=\"sample()\" href=\"#\">Home</a>`\nLocation of error: Line 43\nWCAG Guideline violated: 2.1.1 Keyboard\nDetection Algorithm: Checking for mouse-specific events that lack keyboard equivalents.\nExplanation of Error: The `onmouseover` event is mouse-specific and does not have a keyboard equivalent. This can make the website inaccessible for keyboard-only users.\n\nSnippet with error: `<label for=\"password\"></label><br><input type=\"password\" id=\"pwd\" name=\"pwd\">`\nLocation of error: Line 80\nWCAG Guideline violated: 1.3.1 Info and Relationships\nDetection Algorithm: Checking if form input fields have associated labels.\nExplanation of Error: The password input field lacks an associated label, which can make it difficult for screen reader users to understand its purpose.\n\nSnippet with error: `<input type=\"radio\" id=\"1\" name=\"fav_number\" value=\"1\"><label for=\"1\">1</label><br>`\nLocation of error: Line 82\nWCAG Guideline violated: 4.1.2 Name, Role, Value\nDetection Algorithm: Checking if form elements have meaningful and descriptive values.\nExplanation of Error: The radio buttons lack descriptive labels, making it unclear what they represent. The label \"1\" does not provide enough context for the user to understand its purpose.",
+          "supportThemeIcons": false,
+          "supportHtml": false
+        }
+      ],
+      "result": {
+        "timings": {
+          "firstProgress": 1476,
+          "totalElapsed": 11688
+        },
+        "metadata": {
+          "responseId": "075d4d67-29ad-4d7b-8442-7da61dc6bc0d",
+          "sessionId": "c3200abc-6767-4bc3-961c-5605752c4aca"
+        }
+      },
+      "followups": [
+        {
+          "kind": "reply",
+          "agentId": "github.copilot.default",
+          "message": "What are the best practices for providing alternative text for images in HTML?"
+        }
+      ],
+      "isCanceled": false,
+      "agent": {
+        "b": {
+          "extensionId": {
+            "value": "GitHub.copilot-chat",
+            "_lower": "github.copilot-chat"
+          },
+          "extensionPublisherDisplayName": "GitHub",
+          "extensionPublisherId": "GitHub",
+          "extensionDisplayName": "GitHub Copilot Chat",
+          "id": "github.copilot.default",
+          "description": "Ask Copilot or type / for commands",
+          "metadata": {
+            "fullName": "GitHub Copilot",
+            "themeIcon": {
+              "id": "copilot"
+            },
+            "hasFollowups": true,
+            "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+            "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+            "helpTextPostfix": {
+              "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview).",
+              "isTrusted": {
+                "enabledCommands": [
+                  "inlineChat.start"
+                ]
+              },
+              "supportThemeIcons": false,
+              "supportHtml": false,
+              "uris": {
+                "command:inlineChat.start": {
+                  "$mid": 1,
+                  "path": "inlineChat.start",
+                  "scheme": "command"
+                },
+                "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                  "$mid": 1,
+                  "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                  "scheme": "https",
+                  "authority": "docs.github.com",
+                  "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+                },
+                "https://code.visualstudio.com/docs/copilot/overview": {
+                  "$mid": 1,
+                  "path": "/docs/copilot/overview",
+                  "scheme": "https",
+                  "authority": "code.visualstudio.com"
+                }
+              }
+            },
+            "supportIssueReporting": false,
+            "requester": {
+              "name": "chauler",
+              "icon": {
+                "$mid": 1,
+                "path": "/chauler",
+                "scheme": "https",
+                "authority": "avatars.githubusercontent.com"
+              }
+            }
+          },
+          "name": "GitHub Copilot",
+          "isDefault": true,
+          "locations": [
+            "panel"
+          ],
+          "slashCommands": []
+        },
+        "d": {}
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\Alex\\Desktop\\A11y_AI\\RQ3-Results\\Project-17\\index.txt",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/Alex/Desktop/A11y_AI/RQ3-Results/Project-17/index.txt",
+              "path": "/c:/Users/Alex/Desktop/A11y_AI/RQ3-Results/Project-17/index.txt",
+              "scheme": "file"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 171,
+              "endColumn": 24
+            }
+          }
+        }
+      ]
+    },
+    {
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 50
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 51
+            },
+            "text": "Are there any more issues? List all that you find.",
+            "kind": "text"
+          }
+        ],
+        "text": "Are there any more issues? List all that you find."
+      },
+      "variableData": {
+        "variables": []
+      },
+      "response": [
+        {
+          "value": "Snippet with error: `<button onclick=\"generateResume()\" style=\"color: rgb(255, 255, 255); background-color: rgb(76, 175, 80);\">Generate Resume</button>`\nLocation of error: Line 96\nWCAG Guideline violated: 2.1.1 Keyboard\nDetection Algorithm: Checking for mouse-specific events that lack keyboard equivalents.\nExplanation of Error: The `onclick` event is mouse-specific and does not have a keyboard equivalent. This can make the website inaccessible for keyboard-only users.\n\nSnippet with error: `<input type=\"password\" id=\"pwd\" name=\"pwd\">`\nLocation of error: Line 113\nWCAG Guideline violated: 1.3.1 Info and Relationships\nDetection Algorithm: Checking if form input fields have associated labels.\nExplanation of Error: The password input field lacks an associated label, which can make it difficult for screen reader users to understand its purpose.\n\nSnippet with error: `<input type=\"radio\" id=\"1\" name=\"fav_number\" value=\"1\"><label for=\"1\">1</label><br>`\nLocation of error: Line 116\nWCAG Guideline violated: 4.1.2 Name, Role, Value\nDetection Algorithm: Checking if form elements have meaningful and descriptive values.\nExplanation of Error: The radio buttons lack descriptive labels, making it unclear what they represent. The label \"1\" does not provide enough context for the user to understand its purpose.\n\nSnippet with error: `<input type=\"checkbox\" id=\"vehicle1\" name=\"vehicle1\" value=\"Bike\"><label for=\"vehicle1\"> I have a bike</label><br>`\nLocation of error: Line 121\nWCAG Guideline violated: 1.3.1 Info and Relationships\nDetection Algorithm: Checking if form input fields have associated labels.\nExplanation of Error: The checkbox input fields lack associated labels, which can make it difficult for screen reader users to understand their purpose.\n\nSnippet with error: `<input type=\"file\" id=\"myfile\" name=\"myfile\">`\nLocation of error: Line 127\nWCAG Guideline violated: 1.3.1 Info and Relationships\nDetection Algorithm: Checking if form input fields have associated labels.\nExplanation of Error: The file input field lacks an associated label, which can make it difficult for screen reader users to understand its purpose.",
+          "supportThemeIcons": false,
+          "supportHtml": false
+        }
+      ],
+      "result": {
+        "timings": {
+          "firstProgress": 1130,
+          "totalElapsed": 16515
+        },
+        "metadata": {
+          "responseId": "57eb5e92-8c70-4099-b9b6-f3da36747ad4",
+          "sessionId": "c3200abc-6767-4bc3-961c-5605752c4aca"
+        }
+      },
+      "followups": [
+        {
+          "kind": "reply",
+          "agentId": "github.copilot.default",
+          "message": "What are some best practices for improving accessibility in HTML forms?"
+        }
+      ],
+      "isCanceled": false,
+      "agent": {
+        "b": {
+          "extensionId": {
+            "value": "GitHub.copilot-chat",
+            "_lower": "github.copilot-chat"
+          },
+          "extensionPublisherDisplayName": "GitHub",
+          "extensionPublisherId": "GitHub",
+          "extensionDisplayName": "GitHub Copilot Chat",
+          "id": "github.copilot.default",
+          "description": "Ask Copilot or type / for commands",
+          "metadata": {
+            "fullName": "GitHub Copilot",
+            "themeIcon": {
+              "id": "copilot"
+            },
+            "hasFollowups": true,
+            "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+            "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+            "helpTextPostfix": {
+              "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview).",
+              "isTrusted": {
+                "enabledCommands": [
+                  "inlineChat.start"
+                ]
+              },
+              "supportThemeIcons": false,
+              "supportHtml": false,
+              "uris": {
+                "command:inlineChat.start": {
+                  "$mid": 1,
+                  "path": "inlineChat.start",
+                  "scheme": "command"
+                },
+                "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                  "$mid": 1,
+                  "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                  "scheme": "https",
+                  "authority": "docs.github.com",
+                  "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+                },
+                "https://code.visualstudio.com/docs/copilot/overview": {
+                  "$mid": 1,
+                  "path": "/docs/copilot/overview",
+                  "scheme": "https",
+                  "authority": "code.visualstudio.com"
+                }
+              }
+            },
+            "supportIssueReporting": false,
+            "requester": {
+              "name": "chauler",
+              "icon": {
+                "$mid": 1,
+                "path": "/chauler",
+                "scheme": "https",
+                "authority": "avatars.githubusercontent.com"
+              }
+            }
+          },
+          "name": "GitHub Copilot",
+          "isDefault": true,
+          "locations": [
+            "panel"
+          ],
+          "slashCommands": []
+        },
+        "d": {}
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\Alex\\Desktop\\A11y_AI\\RQ3-Results\\Project-17\\index.txt",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/Alex/Desktop/A11y_AI/RQ3-Results/Project-17/index.txt",
+              "path": "/c:/Users/Alex/Desktop/A11y_AI/RQ3-Results/Project-17/index.txt",
+              "scheme": "file"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 171,
+              "endColumn": 24
+            }
+          }
+        }
+      ]
+    },
+    {
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 50
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 51
+            },
+            "text": "Are there any more issues? List all that you find.",
+            "kind": "text"
+          }
+        ],
+        "text": "Are there any more issues? List all that you find."
+      },
+      "variableData": {
+        "variables": []
+      },
+      "response": [
+        {
+          "value": "Snippet with error: `<html lang=\"ex\">`\nLocation of error: Line 2\nWCAG Guideline violated: 3.1.1 Language of Page\nDetection Algorithm: Checking the `lang` attribute in the `<html>` tag.\nExplanation of Error: The `lang` attribute in the `<html>` tag should represent the primary language of the page's content. The value \"ex\" is not a valid language code.\n\nSnippet with error: `<a onmouseover=\"sample()\" href=\"#\">Home</a>`\nLocation of error: Line 43\nWCAG Guideline violated: 2.1.1 Keyboard\nDetection Algorithm: Checking for mouse-specific events that lack keyboard equivalents.\nExplanation of Error: The `onmouseover` event is mouse-specific and does not have a keyboard equivalent. This can make the website inaccessible for keyboard-only users.\n\nSnippet with error: `<label for=\"password\"></label><br><input type=\"password\" id=\"pwd\" name=\"pwd\">`\nLocation of error: Line 80\nWCAG Guideline violated: 1.3.1 Info and Relationships\nDetection Algorithm: Checking if form input fields have associated labels.\nExplanation of Error: The password input field lacks an associated label, which can make it difficult for screen reader users to understand its purpose.\n\nSnippet with error: `<input type=\"radio\" id=\"1\" name=\"fav_number\" value=\"1\"><label for=\"1\">1</label><br>`\nLocation of error: Line 82\nWCAG Guideline violated: 4.1.2 Name, Role, Value\nDetection Algorithm: Checking if form elements have meaningful and descriptive values.\nExplanation of Error: The radio buttons lack descriptive labels, making it unclear what they represent. The label \"1\" does not provide enough context for the user to understand its purpose.\n\nSnippet with error: `<button onclick=\"generateResume()\" style=\"color: rgb(255, 255, 255); background-color: rgb(76, 175, 80);\">Generate Resume</button>`\nLocation of error: Line 96\nWCAG Guideline violated: 2.1.1 Keyboard\nDetection Algorithm: Checking for mouse-specific events that lack keyboard equivalents.\nExplanation of Error: The `onclick` event is mouse-specific and does not have a keyboard equivalent. This can make the website inaccessible for keyboard-only users.\n\nSnippet with error: `<input type=\"password\" id=\"pwd\" name=\"pwd\">`\nLocation of error: Line 113\nWCAG Guideline violated: 1.3.1 Info and Relationships\nDetection Algorithm: Checking if form input fields have associated labels.\nExplanation of Error: The password input field lacks an associated label, which can make it difficult for screen reader users to understand its purpose.\n\nSnippet with error: `<input type=\"radio\" id=\"1\" name=\"fav_number\" value=\"1\"><label for=\"1\">1</label><br>`\nLocation of error: Line 116\nWCAG Guideline violated: 4.1.2 Name, Role, Value\nDetection Algorithm: Checking if form elements have meaningful and descriptive values.\nExplanation of Error: The radio buttons lack descriptive labels, making it unclear what they represent. The label \"1\" does not provide enough context for the user to understand its purpose.\n\nSnippet with error: `<input type=\"checkbox\" id=\"vehicle1\" name=\"vehicle1\" value=\"Bike\"><label for=\"vehicle1\"> I have a bike</label><br>`\nLocation of error: Line 121\nWCAG Guideline violated: 1.3.1 Info and Relationships\nDetection Algorithm: Checking if form input fields have associated labels.\nExplanation of Error: The checkbox input fields lack associated labels, which can make it difficult for screen reader users to understand their purpose.\n\nSnippet with error: `<input type=\"file\" id=\"myfile\" name=\"myfile\">`\nLocation of error: Line 127\nWCAG Guideline violated: 1.3.1 Info and Relationships\nDetection Algorithm: Checking if form input fields have associated labels.\nExplanation of Error: The file input field lacks an associated label, which can make it difficult for screen reader users to understand its purpose.",
+          "supportThemeIcons": false,
+          "supportHtml": false
+        }
+      ],
+      "result": {
+        "timings": {
+          "firstProgress": 1356,
+          "totalElapsed": 26360
+        },
+        "metadata": {
+          "responseId": "5be5c869-b342-4f3e-96b8-be5396019f4b",
+          "sessionId": "c3200abc-6767-4bc3-961c-5605752c4aca"
+        }
+      },
+      "followups": [
+        {
+          "kind": "reply",
+          "agentId": "github.copilot.default",
+          "message": "What are some guidelines for improving accessibility in HTML forms?"
+        }
+      ],
+      "isCanceled": false,
+      "agent": {
+        "b": {
+          "extensionId": {
+            "value": "GitHub.copilot-chat",
+            "_lower": "github.copilot-chat"
+          },
+          "extensionPublisherDisplayName": "GitHub",
+          "extensionPublisherId": "GitHub",
+          "extensionDisplayName": "GitHub Copilot Chat",
+          "id": "github.copilot.default",
+          "description": "Ask Copilot or type / for commands",
+          "metadata": {
+            "fullName": "GitHub Copilot",
+            "themeIcon": {
+              "id": "copilot"
+            },
+            "hasFollowups": true,
+            "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+            "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+            "helpTextPostfix": {
+              "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview).",
+              "isTrusted": {
+                "enabledCommands": [
+                  "inlineChat.start"
+                ]
+              },
+              "supportThemeIcons": false,
+              "supportHtml": false,
+              "uris": {
+                "command:inlineChat.start": {
+                  "$mid": 1,
+                  "path": "inlineChat.start",
+                  "scheme": "command"
+                },
+                "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                  "$mid": 1,
+                  "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                  "scheme": "https",
+                  "authority": "docs.github.com",
+                  "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+                },
+                "https://code.visualstudio.com/docs/copilot/overview": {
+                  "$mid": 1,
+                  "path": "/docs/copilot/overview",
+                  "scheme": "https",
+                  "authority": "code.visualstudio.com"
+                }
+              }
+            },
+            "supportIssueReporting": false,
+            "requester": {
+              "name": "chauler",
+              "icon": {
+                "$mid": 1,
+                "path": "/chauler",
+                "scheme": "https",
+                "authority": "avatars.githubusercontent.com"
+              }
+            }
+          },
+          "name": "GitHub Copilot",
+          "isDefault": true,
+          "locations": [
+            "panel"
+          ],
+          "slashCommands": []
+        },
+        "d": {}
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\Alex\\Desktop\\A11y_AI\\RQ3-Results\\Project-17\\index.txt",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/Alex/Desktop/A11y_AI/RQ3-Results/Project-17/index.txt",
+              "path": "/c:/Users/Alex/Desktop/A11y_AI/RQ3-Results/Project-17/index.txt",
+              "scheme": "file"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 171,
+              "endColumn": 24
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

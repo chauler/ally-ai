@@ -1,0 +1,436 @@
+{
+  "requesterUsername": "chauler",
+  "requesterAvatarIconUri": {
+    "$mid": 1,
+    "path": "/chauler",
+    "scheme": "https",
+    "authority": "avatars.githubusercontent.com"
+  },
+  "responderUsername": "GitHub Copilot",
+  "responderAvatarIconUri": {
+    "id": "copilot"
+  },
+  "initialLocation": "panel",
+  "welcomeMessage": [
+    "Hi **@chauler**, how can I help you?"
+  ],
+  "requests": [
+    {
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 3943
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 140,
+              "endColumn": 24
+            },
+            "text": "Context: You are an accessibility expert reviewing HTML for accessibility issues. Analyze the following code in the context of WCAG (Web Content Accessibility Guidelines) 2.2, listing any issues that may violate these guidelines. You will only be analyzing the HTML, ignoring any included or missing styles and scripts.\r\nCode: \r\n```<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Fitness Tracker</title>\r\n    <style>\r\n        body {\r\n            font-family: Arial, sans-serif;\r\n            margin: 0;\r\n            padding: 0;\r\n        }\r\n\r\n        header, footer {\r\n            background-color: #333;\r\n            color: white;\r\n            text-align: center;\r\n            padding: 1em;\r\n        }\r\n\r\n        nav {\r\n            background-color: #444;\r\n            padding: 0.5em;\r\n        }\r\n\r\n        nav a {\r\n            color: white;\r\n            text-decoration: none;\r\n            padding: 0.5em 1em;\r\n            margin: 0 1em;\r\n            border-radius: 5px;\r\n        }\r\n\r\n        section {\r\n            padding: 20px;\r\n            margin: 10px;\r\n        }\r\n\r\n        img {\r\n            max-width: 100%;\r\n            height: auto;\r\n        }\r\n\r\n        table {\r\n            width: 100%;\r\n            border-collapse: collapse;\r\n            margin-top: 20px;\r\n        }\r\n\r\n        th, td {\r\n            border: 1px solid #ddd;\r\n            padding: 8px;\r\n            text-align: left;\r\n        }\r\n\r\n        button {\r\n            background-color: #4CAF50; /* Green background */\r\n            color: #000000; /* Changed text color to black */\r\n            padding: 10px 20px;\r\n            border: none;\r\n            border-radius: 5px;\r\n            cursor: pointer;\r\n        }\r\n\r\n        button:hover {\r\n            background-color: #45a049;\r\n        }\r\n    </style>\r\n</head>\r\n<body>\r\n\r\n    <header>\r\n        <h1>Fitness Tracker</h1>\r\n    </header>\r\n\r\n    <nav>\r\n        <a href=\"#\">Home</a>\r\n        <a href=\"#\">Workouts</a>\r\n        <a href=\"#\">Nutrition</a>\r\n        <a href=\"#\">Contact</a>\r\n    </nav>\r\n\r\n    <section>\r\n        <h2>Welcome to our Fitness Tracker</h2>\r\n\r\n        <p>This is a simple fitness tracker website. You can track your workouts, access nutrition information, and contact us for any inquiries.</p>\r\n\r\n        <img src=\"fitness_image.jpg\" alt=\"Fitness Image\">\r\n\r\n        <h3>Latest Workouts</h3>\r\n        <table>\r\n            <tr>\r\n                <th>Date</th>\r\n                <th>Exercise</th>\r\n                <th>Duration</th>\r\n            </tr>\r\n            <tr>\r\n                <td>2023-01-01</td>\r\n                <td>Running</td>\r\n                <td>30 minutes</td>\r\n            </tr>\r\n            <tr>\r\n                <td>2023-01-02</td>\r\n                <td>Weightlifting</td>\r\n                <td>45 minutes</td>\r\n            </tr>\r\n        </table>\r\n\r\n        <h2 onmouseout=\"PauseVideo()\">Exercise Videos</h2>\r\n        <iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/your-exercise-video\" frameborder=\"0\" allowfullscreen></iframe>\r\n\r\n        <h3>Contact Us</h3>\r\n        <form>\r\n            <input type=\"text\" id=\"name\" name=\"name\" required><br>\r\n\r\n            <label for=\"email\">Email:</label>\r\n            <label for=\"email\">Email:</label>\r\n            <input type=\"email\" id=\"email\" name=\"email\" required><br>\r\n\r\n            <label for=\"message\">Message:</label><br>\r\n            <textarea id=\"message\" name=\"message\" rows=\"4\" required></textarea><br>\r\n\r\n            <button type=\"submit\" style=\"color: rgb(0, 0, 0); background-color: rgb(76, 175, 80);\"></button>\r\n        </form>\r\n    </section>\r\n\r\n    <footer>\r\n        <p>&copy; 2023 Fitness Tracker. All rights reserved.</p>\r\n    </footer>\r\n\r\n</body>\r\n</html>```\r\nResponse format: \r\nSnippet with error: …\r\nLocation of error: …\r\nWCAG Guideline violated: …\r\nDetection Algorithm: …\r\nExplanation of Error: …",
+            "kind": "text"
+          }
+        ],
+        "text": "Context: You are an accessibility expert reviewing HTML for accessibility issues. Analyze the following code in the context of WCAG (Web Content Accessibility Guidelines) 2.2, listing any issues that may violate these guidelines. You will only be analyzing the HTML, ignoring any included or missing styles and scripts.\r\nCode: \r\n```<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Fitness Tracker</title>\r\n    <style>\r\n        body {\r\n            font-family: Arial, sans-serif;\r\n            margin: 0;\r\n            padding: 0;\r\n        }\r\n\r\n        header, footer {\r\n            background-color: #333;\r\n            color: white;\r\n            text-align: center;\r\n            padding: 1em;\r\n        }\r\n\r\n        nav {\r\n            background-color: #444;\r\n            padding: 0.5em;\r\n        }\r\n\r\n        nav a {\r\n            color: white;\r\n            text-decoration: none;\r\n            padding: 0.5em 1em;\r\n            margin: 0 1em;\r\n            border-radius: 5px;\r\n        }\r\n\r\n        section {\r\n            padding: 20px;\r\n            margin: 10px;\r\n        }\r\n\r\n        img {\r\n            max-width: 100%;\r\n            height: auto;\r\n        }\r\n\r\n        table {\r\n            width: 100%;\r\n            border-collapse: collapse;\r\n            margin-top: 20px;\r\n        }\r\n\r\n        th, td {\r\n            border: 1px solid #ddd;\r\n            padding: 8px;\r\n            text-align: left;\r\n        }\r\n\r\n        button {\r\n            background-color: #4CAF50; /* Green background */\r\n            color: #000000; /* Changed text color to black */\r\n            padding: 10px 20px;\r\n            border: none;\r\n            border-radius: 5px;\r\n            cursor: pointer;\r\n        }\r\n\r\n        button:hover {\r\n            background-color: #45a049;\r\n        }\r\n    </style>\r\n</head>\r\n<body>\r\n\r\n    <header>\r\n        <h1>Fitness Tracker</h1>\r\n    </header>\r\n\r\n    <nav>\r\n        <a href=\"#\">Home</a>\r\n        <a href=\"#\">Workouts</a>\r\n        <a href=\"#\">Nutrition</a>\r\n        <a href=\"#\">Contact</a>\r\n    </nav>\r\n\r\n    <section>\r\n        <h2>Welcome to our Fitness Tracker</h2>\r\n\r\n        <p>This is a simple fitness tracker website. You can track your workouts, access nutrition information, and contact us for any inquiries.</p>\r\n\r\n        <img src=\"fitness_image.jpg\" alt=\"Fitness Image\">\r\n\r\n        <h3>Latest Workouts</h3>\r\n        <table>\r\n            <tr>\r\n                <th>Date</th>\r\n                <th>Exercise</th>\r\n                <th>Duration</th>\r\n            </tr>\r\n            <tr>\r\n                <td>2023-01-01</td>\r\n                <td>Running</td>\r\n                <td>30 minutes</td>\r\n            </tr>\r\n            <tr>\r\n                <td>2023-01-02</td>\r\n                <td>Weightlifting</td>\r\n                <td>45 minutes</td>\r\n            </tr>\r\n        </table>\r\n\r\n        <h2 onmouseout=\"PauseVideo()\">Exercise Videos</h2>\r\n        <iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/your-exercise-video\" frameborder=\"0\" allowfullscreen></iframe>\r\n\r\n        <h3>Contact Us</h3>\r\n        <form>\r\n            <input type=\"text\" id=\"name\" name=\"name\" required><br>\r\n\r\n            <label for=\"email\">Email:</label>\r\n            <label for=\"email\">Email:</label>\r\n            <input type=\"email\" id=\"email\" name=\"email\" required><br>\r\n\r\n            <label for=\"message\">Message:</label><br>\r\n            <textarea id=\"message\" name=\"message\" rows=\"4\" required></textarea><br>\r\n\r\n            <button type=\"submit\" style=\"color: rgb(0, 0, 0); background-color: rgb(76, 175, 80);\"></button>\r\n        </form>\r\n    </section>\r\n\r\n    <footer>\r\n        <p>&copy; 2023 Fitness Tracker. All rights reserved.</p>\r\n    </footer>\r\n\r\n</body>\r\n</html>```\r\nResponse format: \r\nSnippet with error: …\r\nLocation of error: …\r\nWCAG Guideline violated: …\r\nDetection Algorithm: …\r\nExplanation of Error: …"
+      },
+      "variableData": {
+        "variables": []
+      },
+      "response": [
+        {
+          "value": "Snippet with error: \n```html\n<h2 onmouseout=\"PauseVideo()\">Exercise Videos</h2>\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/your-exercise-video\" frameborder=\"0\" allowfullscreen></iframe>\n```\nLocation of error: In the section containing the \"Exercise Videos\" heading and the iframe for the video.\n\nWCAG Guideline violated: 2.1.1 Keyboard (Level A)\n\nDetection Algorithm: Checking for event handlers that may not be accessible via keyboard.\n\nExplanation of Error: The `onmouseout` event handler on the h2 element is not keyboard accessible. This means that users who rely on keyboard navigation will not be able to trigger this event, which could lead to a different user experience for them. \n\n---\n\nSnippet with error: \n```html\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/your-exercise-video\" frameborder=\"0\" allowfullscreen></iframe>\n```\nLocation of error: In the iframe for the video.\n\nWCAG Guideline violated: 4.1.2 Name, Role, Value (Level A)\n\nDetection Algorithm: Checking for elements that require a description or title.\n\nExplanation of Error: The iframe does not have a title attribute. This attribute is important for screen readers, as it provides a description of the content of the iframe.\n\n---\n\nSnippet with error: \n```html\n<input type=\"text\" id=\"name\" name=\"name\" required><br>\n<label for=\"email\">Email:</label>\n<label for=\"email\">Email:</label>\n<input type=\"email\" id=\"email\" name=\"email\" required><br>\n<label for=\"message\">Message:</label><br>\n<textarea id=\"message\" name=\"message\" rows=\"4\" required></textarea><br>\n<button type=\"submit\" style=\"color: rgb(0, 0, 0); background-color: rgb(76, 175, 80);\"></button>\n```\nLocation of error: In the form for contacting.\n\nWCAG Guideline violated: 1.3.1 Info and Relationships (Level A)\n\nDetection Algorithm: Checking for form elements without labels or with duplicate labels.\n\nExplanation of Error: The input field for name does not have a corresponding label, which is necessary for screen readers to properly identify the purpose of the input field. Also, there are two labels for the email input field, which can be confusing for screen reader users. The submit button lacks descriptive text, making it unclear for screen reader users what action the button performs.",
+          "supportThemeIcons": false,
+          "supportHtml": false
+        }
+      ],
+      "result": {
+        "timings": {
+          "firstProgress": 1302,
+          "totalElapsed": 15970
+        },
+        "metadata": {
+          "responseId": "0a19e4a3-75a2-4511-90d5-d7ebc7cf8b27",
+          "sessionId": "5789b591-f936-42b0-b2f5-52c2933564d3"
+        }
+      },
+      "followups": [
+        {
+          "kind": "reply",
+          "agentId": "github.copilot.default",
+          "message": "What are some best practices for making forms accessible in HTML?"
+        }
+      ],
+      "isCanceled": false,
+      "agent": {
+        "b": {
+          "extensionId": {
+            "value": "GitHub.copilot-chat",
+            "_lower": "github.copilot-chat"
+          },
+          "extensionPublisherDisplayName": "GitHub",
+          "extensionPublisherId": "GitHub",
+          "extensionDisplayName": "GitHub Copilot Chat",
+          "id": "github.copilot.default",
+          "description": "Ask Copilot or type / for commands",
+          "metadata": {
+            "fullName": "GitHub Copilot",
+            "themeIcon": {
+              "id": "copilot"
+            },
+            "hasFollowups": true,
+            "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+            "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+            "helpTextPostfix": {
+              "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview).",
+              "isTrusted": {
+                "enabledCommands": [
+                  "inlineChat.start"
+                ]
+              },
+              "supportThemeIcons": false,
+              "supportHtml": false,
+              "uris": {
+                "command:inlineChat.start": {
+                  "$mid": 1,
+                  "path": "inlineChat.start",
+                  "scheme": "command"
+                },
+                "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                  "$mid": 1,
+                  "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                  "scheme": "https",
+                  "authority": "docs.github.com",
+                  "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+                },
+                "https://code.visualstudio.com/docs/copilot/overview": {
+                  "$mid": 1,
+                  "path": "/docs/copilot/overview",
+                  "scheme": "https",
+                  "authority": "code.visualstudio.com"
+                }
+              }
+            },
+            "supportIssueReporting": false,
+            "requester": {
+              "name": "chauler",
+              "icon": {
+                "$mid": 1,
+                "path": "/chauler",
+                "scheme": "https",
+                "authority": "avatars.githubusercontent.com"
+              }
+            }
+          },
+          "name": "GitHub Copilot",
+          "isDefault": true,
+          "locations": [
+            "panel"
+          ],
+          "slashCommands": []
+        },
+        "d": {}
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\Alex\\Desktop\\A11y_AI\\RQ3-Results\\Project-7\\index.txt",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/Alex/Desktop/A11y_AI/RQ3-Results/Project-7/index.txt",
+              "path": "/c:/Users/Alex/Desktop/A11y_AI/RQ3-Results/Project-7/index.txt",
+              "scheme": "file"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 140,
+              "endColumn": 24
+            }
+          }
+        }
+      ]
+    },
+    {
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 50
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 51
+            },
+            "text": "Are there any more issues? List all that you find.",
+            "kind": "text"
+          }
+        ],
+        "text": "Are there any more issues? List all that you find."
+      },
+      "variableData": {
+        "variables": []
+      },
+      "response": [
+        {
+          "value": "Snippet with error: \n```html\n<a href=\"#\">Home</a>\n<a href=\"#\">Workouts</a>\n<a href=\"#\">Nutrition</a>\n<a href=\"#\">Contact</a>\n```\nLocation of error: In the navigation menu.\n\nWCAG Guideline violated: 2.4.4 Link Purpose (In Context) (Level A)\n\nDetection Algorithm: Checking for links with generic text or placeholders.\n\nExplanation of Error: The links in the navigation menu all have a href attribute of \"#\", which doesn't provide any context about the destination of the link. This can be confusing for screen reader users who rely on the href attribute to understand where the link will take them.\n\n---\n\nSnippet with error: \n```html\n<img src=\"fitness_image.jpg\" alt=\"Fitness Image\">\n```\nLocation of error: In the section containing the welcome message.\n\nWCAG Guideline violated: 1.1.1 Non-text Content (Level A)\n\nDetection Algorithm: Checking for images with generic alt text.\n\nExplanation of Error: The alt text for the image is \"Fitness Image\", which doesn't provide a clear description of the image content. Alt text should be descriptive and provide context for those who cannot see the image.\n\n---\n\nSnippet with error: \n```html\n<button type=\"submit\" style=\"color: rgb(0, 0, 0); background-color: rgb(76, 175, 80);\"></button>\n```\nLocation of error: In the contact form.\n\nWCAG Guideline violated: 4.1.2 Name, Role, Value (Level A)\n\nDetection Algorithm: Checking for interactive elements without text or labels.\n\nExplanation of Error: The submit button lacks any text or aria-label attribute, making it unclear for screen reader users what action the button performs. \n\n---\n\nSnippet with error: \n```html\n<header>\n    <h1>Fitness Tracker</h1>\n</header>\n```\nLocation of error: In the header of the page.\n\nWCAG Guideline violated: 2.4.6 Headings and Labels (Level AA)\n\nDetection Algorithm: Checking for headings that are not descriptive.\n\nExplanation of Error: The heading \"Fitness Tracker\" is not descriptive enough. It should provide more context about the content of the page or section it is heading. For example, \"Welcome to Fitness Tracker - Your Personal Workout and Nutrition Guide\" would be more descriptive.",
+          "supportThemeIcons": false,
+          "supportHtml": false
+        }
+      ],
+      "result": {
+        "timings": {
+          "firstProgress": 1463,
+          "totalElapsed": 14721
+        },
+        "metadata": {
+          "responseId": "dccdd28a-5142-42ff-a6e5-2c1c1de0a7b4",
+          "sessionId": "5789b591-f936-42b0-b2f5-52c2933564d3"
+        }
+      },
+      "followups": [
+        {
+          "kind": "reply",
+          "agentId": "github.copilot.default",
+          "message": "What are some best practices for improving the accessibility of HTML forms?"
+        }
+      ],
+      "isCanceled": false,
+      "agent": {
+        "b": {
+          "extensionId": {
+            "value": "GitHub.copilot-chat",
+            "_lower": "github.copilot-chat"
+          },
+          "extensionPublisherDisplayName": "GitHub",
+          "extensionPublisherId": "GitHub",
+          "extensionDisplayName": "GitHub Copilot Chat",
+          "id": "github.copilot.default",
+          "description": "Ask Copilot or type / for commands",
+          "metadata": {
+            "fullName": "GitHub Copilot",
+            "themeIcon": {
+              "id": "copilot"
+            },
+            "hasFollowups": true,
+            "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+            "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+            "helpTextPostfix": {
+              "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview).",
+              "isTrusted": {
+                "enabledCommands": [
+                  "inlineChat.start"
+                ]
+              },
+              "supportThemeIcons": false,
+              "supportHtml": false,
+              "uris": {
+                "command:inlineChat.start": {
+                  "$mid": 1,
+                  "path": "inlineChat.start",
+                  "scheme": "command"
+                },
+                "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                  "$mid": 1,
+                  "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                  "scheme": "https",
+                  "authority": "docs.github.com",
+                  "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+                },
+                "https://code.visualstudio.com/docs/copilot/overview": {
+                  "$mid": 1,
+                  "path": "/docs/copilot/overview",
+                  "scheme": "https",
+                  "authority": "code.visualstudio.com"
+                }
+              }
+            },
+            "supportIssueReporting": false,
+            "requester": {
+              "name": "chauler",
+              "icon": {
+                "$mid": 1,
+                "path": "/chauler",
+                "scheme": "https",
+                "authority": "avatars.githubusercontent.com"
+              }
+            }
+          },
+          "name": "GitHub Copilot",
+          "isDefault": true,
+          "locations": [
+            "panel"
+          ],
+          "slashCommands": []
+        },
+        "d": {}
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\Alex\\Desktop\\A11y_AI\\RQ3-Results\\Project-7\\index.txt",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/Alex/Desktop/A11y_AI/RQ3-Results/Project-7/index.txt",
+              "path": "/c:/Users/Alex/Desktop/A11y_AI/RQ3-Results/Project-7/index.txt",
+              "scheme": "file"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 140,
+              "endColumn": 24
+            }
+          }
+        }
+      ]
+    },
+    {
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 50
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 51
+            },
+            "text": "Are there any more issues? List all that you find.",
+            "kind": "text"
+          }
+        ],
+        "text": "Are there any more issues? List all that you find."
+      },
+      "variableData": {
+        "variables": []
+      },
+      "response": [
+        {
+          "value": "Snippet with error: \n```html\n<nav>\n    <a href=\"#\">Home</a>\n    <a href=\"#\">Workouts</a>\n    <a href=\"#\">Nutrition</a>\n    <a href=\"#\">Contact</a>\n</nav>\n```\nLocation of error: In the navigation menu.\n\nWCAG Guideline violated: 2.4.4 Link Purpose (In Context) (Level A)\n\nDetection Algorithm: Checking for links with generic text or placeholders.\n\nExplanation of Error: The links in the navigation menu all have a href attribute of \"#\", which doesn't provide any context about the destination of the link. This can be confusing for screen reader users who rely on the href attribute to understand where the link will take them.\n\n---\n\nSnippet with error: \n```html\n<img src=\"fitness_image.jpg\" alt=\"Fitness Image\">\n```\nLocation of error: In the section containing the welcome message.\n\nWCAG Guideline violated: 1.1.1 Non-text Content (Level A)\n\nDetection Algorithm: Checking for images with generic alt text.\n\nExplanation of Error: The alt text for the image is \"Fitness Image\", which doesn't provide a clear description of the image content. Alt text should be descriptive and provide context for those who cannot see the image.\n\n---\n\nSnippet with error: \n```html\n<button type=\"submit\" style=\"color: rgb(0, 0, 0); background-color: rgb(76, 175, 80);\"></button>\n```\nLocation of error: In the contact form.\n\nWCAG Guideline violated: 4.1.2 Name, Role, Value (Level A)\n\nDetection Algorithm: Checking for interactive elements without text or labels.\n\nExplanation of Error: The submit button lacks any text or aria-label attribute, making it unclear for screen reader users what action the button performs. \n\n---\n\nSnippet with error: \n```html\n<header>\n    <h1>Fitness Tracker</h1>\n</header>\n```\nLocation of error: In the header of the page.\n\nWCAG Guideline violated: 2.4.6 Headings and Labels (Level AA)\n\nDetection Algorithm: Checking for headings that are not descriptive.\n\nExplanation of Error: The heading \"Fitness Tracker\" is not descriptive enough. It should provide more context about the content of the page or section it is heading. For example, \"Welcome to Fitness Tracker - Your Personal Workout and Nutrition Guide\" would be more descriptive.",
+          "supportThemeIcons": false,
+          "supportHtml": false
+        }
+      ],
+      "result": {
+        "timings": {
+          "firstProgress": 1458,
+          "totalElapsed": 16516
+        },
+        "metadata": {
+          "responseId": "f552086c-60de-4674-bd06-6c301998a2cf",
+          "sessionId": "5789b591-f936-42b0-b2f5-52c2933564d3"
+        }
+      },
+      "followups": [
+        {
+          "kind": "reply",
+          "agentId": "github.copilot.default",
+          "message": "What are some best practices for improving accessibility in HTML?"
+        }
+      ],
+      "isCanceled": false,
+      "agent": {
+        "b": {
+          "extensionId": {
+            "value": "GitHub.copilot-chat",
+            "_lower": "github.copilot-chat"
+          },
+          "extensionPublisherDisplayName": "GitHub",
+          "extensionPublisherId": "GitHub",
+          "extensionDisplayName": "GitHub Copilot Chat",
+          "id": "github.copilot.default",
+          "description": "Ask Copilot or type / for commands",
+          "metadata": {
+            "fullName": "GitHub Copilot",
+            "themeIcon": {
+              "id": "copilot"
+            },
+            "hasFollowups": true,
+            "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+            "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+            "helpTextPostfix": {
+              "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview).",
+              "isTrusted": {
+                "enabledCommands": [
+                  "inlineChat.start"
+                ]
+              },
+              "supportThemeIcons": false,
+              "supportHtml": false,
+              "uris": {
+                "command:inlineChat.start": {
+                  "$mid": 1,
+                  "path": "inlineChat.start",
+                  "scheme": "command"
+                },
+                "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                  "$mid": 1,
+                  "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                  "scheme": "https",
+                  "authority": "docs.github.com",
+                  "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+                },
+                "https://code.visualstudio.com/docs/copilot/overview": {
+                  "$mid": 1,
+                  "path": "/docs/copilot/overview",
+                  "scheme": "https",
+                  "authority": "code.visualstudio.com"
+                }
+              }
+            },
+            "supportIssueReporting": false,
+            "requester": {
+              "name": "chauler",
+              "icon": {
+                "$mid": 1,
+                "path": "/chauler",
+                "scheme": "https",
+                "authority": "avatars.githubusercontent.com"
+              }
+            }
+          },
+          "name": "GitHub Copilot",
+          "isDefault": true,
+          "locations": [
+            "panel"
+          ],
+          "slashCommands": []
+        },
+        "d": {}
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\Alex\\Desktop\\A11y_AI\\RQ3-Results\\Project-7\\index.txt",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/Alex/Desktop/A11y_AI/RQ3-Results/Project-7/index.txt",
+              "path": "/c:/Users/Alex/Desktop/A11y_AI/RQ3-Results/Project-7/index.txt",
+              "scheme": "file"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 140,
+              "endColumn": 24
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

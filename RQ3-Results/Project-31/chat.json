@@ -1,0 +1,436 @@
+{
+  "requesterUsername": "chauler",
+  "requesterAvatarIconUri": {
+    "$mid": 1,
+    "path": "/chauler",
+    "scheme": "https",
+    "authority": "avatars.githubusercontent.com"
+  },
+  "responderUsername": "GitHub Copilot",
+  "responderAvatarIconUri": {
+    "id": "copilot"
+  },
+  "initialLocation": "panel",
+  "welcomeMessage": [
+    "Hi **@chauler**, how can I help you?"
+  ],
+  "requests": [
+    {
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 3749
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 140,
+              "endColumn": 24
+            },
+            "text": "Context: You are an accessibility expert reviewing HTML for accessibility issues. Analyze the following code in the context of WCAG (Web Content Accessibility Guidelines) 2.2, listing any issues that may violate these guidelines. You will only be analyzing the HTML, ignoring any included or missing styles and scripts.\r\nCode: \r\n```<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n  <meta charset=\"UTF-8\">\r\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n  <style>\r\n    body {\r\n      margin: 0;\r\n      padding: 0;\r\n      font-family: 'Arial', sans-serif;\r\n      background: url('background.jpg') no-repeat center center fixed;\r\n      background-size: cover;\r\n      color: #fff;\r\n    }\r\n\r\n    header {\r\n      background: #333;\r\n      padding: 10px;\r\n      text-align: center;\r\n    }\r\n\r\n    nav {\r\n      display: flex;\r\n      justify-content: center;\r\n      background: #444;\r\n      padding: 10px;\r\n    }\r\n\r\n    nav a {\r\n      color: #fff;\r\n      text-decoration: none;\r\n      margin: 0 20px;\r\n      font-size: 18px;\r\n    }\r\n\r\n    section {\r\n      padding: 20px;\r\n    }\r\n\r\n    h2 {\r\n      color: #fff; /* Text color: white */\r\n      background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background for better contrast */\r\n      padding: 10px; /* Add padding for better appearance */\r\n    }\r\n\r\n    form {\r\n      display: flex;\r\n      flex-direction: column;\r\n      max-width: 300px;\r\n      margin: auto;\r\n    }\r\n\r\n    label {\r\n      margin-bottom: 8px;\r\n      color: #fff; /* Set label text color to white for better contrast */\r\n      background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background for better contrast */\r\n      padding: 8px; /* Add padding for better appearance */\r\n    }\r\n\r\n    input, select {\r\n      padding: 10px;\r\n      margin-bottom: 15px;\r\n    }\r\n\r\n    button {\r\n      padding: 10px;\r\n      background: #4CAF50;\r\n      color: #fff;\r\n      border: none;\r\n      cursor: pointer;\r\n    }\r\n\r\n    button:hover {\r\n      background: #45a049;\r\n    }\r\n  </style>\r\n</head>\r\n<body>\r\n\r\n  <header>\r\n    <marquee>Ticket Booking System</marquee>\r\n  </header>\r\n\r\n  <nav>\r\n    <a href=\"#\">Home</a>\r\n    <a href=\"#\">Movies</a>\r\n    <a href=\"#\">Events</a>\r\n    <a href=\"#\">Contact</a>\r\n  </nav>\r\n\r\n  <section>\r\n    <h2>Book Your Tickets</h2>\r\n    <form id=\"bookingForm\">\r\n      <label for=\"event\"></label>\r\n      <select id=\"event\" name=\"event\">\r\n        <option value=\"movie\">Movie</option>\r\n        <option value=\"concert\">Concert</option>\r\n        <!-- Add more options as needed -->\r\n      </select>\r\n\r\n      <label for=\"quantity\">\r\n        Number of Tickets:\r\n      </label>\r\n      <input type=\"number\" alt=\"quantity\" id=\"quantity\" name=\"quantity\" min=\"1\" required>\r\n\r\n      <label for=\"name\" style=\"color: #fff; background-color: rgba(0, 0, 0, 0.7);\">\r\n        Your Name:\r\n      </label>\r\n      <input type=\"text\" id=\"name\" name=\"name\" required>\r\n\r\n      <button type=\"button\" onclick=\"submitForm()\" style=\"background-color: #45a049;\"> <!-- Adjusted background color for better contrast -->\r\n        Book Now\r\n      </button>\r\n    </form>\r\n\r\n    <div id=\"confirmation\" style=\"display:none;\">\r\n      <p id=\"confirmationText\">Your tickets have been booked. Thank you!</p>\r\n    </div>\r\n  </section>\r\n\r\n  <script>\r\n    function submitForm() {\r\n      // Perform any additional processing here (e.g., sending data to a server)\r\n      // For now, just show a confirmation message\r\n      document.getElementById('bookingForm').style.display = 'none';\r\n      document.getElementById('confirmation').style.display = 'block';\r\n    }\r\n  </script>\r\n\r\n</body>\r\n</html>\r\n```\r\nResponse format: \r\nSnippet with error: …\r\nLocation of error: …\r\nWCAG Guideline violated: …\r\nDetection Algorithm: …\r\nExplanation of Error: …",
+            "kind": "text"
+          }
+        ],
+        "text": "Context: You are an accessibility expert reviewing HTML for accessibility issues. Analyze the following code in the context of WCAG (Web Content Accessibility Guidelines) 2.2, listing any issues that may violate these guidelines. You will only be analyzing the HTML, ignoring any included or missing styles and scripts.\r\nCode: \r\n```<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n  <meta charset=\"UTF-8\">\r\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n  <style>\r\n    body {\r\n      margin: 0;\r\n      padding: 0;\r\n      font-family: 'Arial', sans-serif;\r\n      background: url('background.jpg') no-repeat center center fixed;\r\n      background-size: cover;\r\n      color: #fff;\r\n    }\r\n\r\n    header {\r\n      background: #333;\r\n      padding: 10px;\r\n      text-align: center;\r\n    }\r\n\r\n    nav {\r\n      display: flex;\r\n      justify-content: center;\r\n      background: #444;\r\n      padding: 10px;\r\n    }\r\n\r\n    nav a {\r\n      color: #fff;\r\n      text-decoration: none;\r\n      margin: 0 20px;\r\n      font-size: 18px;\r\n    }\r\n\r\n    section {\r\n      padding: 20px;\r\n    }\r\n\r\n    h2 {\r\n      color: #fff; /* Text color: white */\r\n      background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background for better contrast */\r\n      padding: 10px; /* Add padding for better appearance */\r\n    }\r\n\r\n    form {\r\n      display: flex;\r\n      flex-direction: column;\r\n      max-width: 300px;\r\n      margin: auto;\r\n    }\r\n\r\n    label {\r\n      margin-bottom: 8px;\r\n      color: #fff; /* Set label text color to white for better contrast */\r\n      background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background for better contrast */\r\n      padding: 8px; /* Add padding for better appearance */\r\n    }\r\n\r\n    input, select {\r\n      padding: 10px;\r\n      margin-bottom: 15px;\r\n    }\r\n\r\n    button {\r\n      padding: 10px;\r\n      background: #4CAF50;\r\n      color: #fff;\r\n      border: none;\r\n      cursor: pointer;\r\n    }\r\n\r\n    button:hover {\r\n      background: #45a049;\r\n    }\r\n  </style>\r\n</head>\r\n<body>\r\n\r\n  <header>\r\n    <marquee>Ticket Booking System</marquee>\r\n  </header>\r\n\r\n  <nav>\r\n    <a href=\"#\">Home</a>\r\n    <a href=\"#\">Movies</a>\r\n    <a href=\"#\">Events</a>\r\n    <a href=\"#\">Contact</a>\r\n  </nav>\r\n\r\n  <section>\r\n    <h2>Book Your Tickets</h2>\r\n    <form id=\"bookingForm\">\r\n      <label for=\"event\"></label>\r\n      <select id=\"event\" name=\"event\">\r\n        <option value=\"movie\">Movie</option>\r\n        <option value=\"concert\">Concert</option>\r\n        <!-- Add more options as needed -->\r\n      </select>\r\n\r\n      <label for=\"quantity\">\r\n        Number of Tickets:\r\n      </label>\r\n      <input type=\"number\" alt=\"quantity\" id=\"quantity\" name=\"quantity\" min=\"1\" required>\r\n\r\n      <label for=\"name\" style=\"color: #fff; background-color: rgba(0, 0, 0, 0.7);\">\r\n        Your Name:\r\n      </label>\r\n      <input type=\"text\" id=\"name\" name=\"name\" required>\r\n\r\n      <button type=\"button\" onclick=\"submitForm()\" style=\"background-color: #45a049;\"> <!-- Adjusted background color for better contrast -->\r\n        Book Now\r\n      </button>\r\n    </form>\r\n\r\n    <div id=\"confirmation\" style=\"display:none;\">\r\n      <p id=\"confirmationText\">Your tickets have been booked. Thank you!</p>\r\n    </div>\r\n  </section>\r\n\r\n  <script>\r\n    function submitForm() {\r\n      // Perform any additional processing here (e.g., sending data to a server)\r\n      // For now, just show a confirmation message\r\n      document.getElementById('bookingForm').style.display = 'none';\r\n      document.getElementById('confirmation').style.display = 'block';\r\n    }\r\n  </script>\r\n\r\n</body>\r\n</html>\r\n```\r\nResponse format: \r\nSnippet with error: …\r\nLocation of error: …\r\nWCAG Guideline violated: …\r\nDetection Algorithm: …\r\nExplanation of Error: …"
+      },
+      "variableData": {
+        "variables": []
+      },
+      "response": [
+        {
+          "value": "Snippet with error: `<marquee>Ticket Booking System</marquee>`\nLocation of error: Inside the `<header>` tag\nWCAG Guideline violated: 2.2.2 Pause, Stop, Hide (Level A)\nDetection Algorithm: Checking for deprecated HTML elements that could cause distraction or difficulty in understanding content.\nExplanation of Error: The `<marquee>` tag is deprecated and it creates content that moves or auto-updates that can be a distraction and might not be accessible to all users. It's recommended to replace it with more modern and accessible techniques.\n\n---\n\nSnippet with error: `<label for=\"event\"></label>`\nLocation of error: Inside the `<form>` tag\nWCAG Guideline violated: 1.3.1 Info and Relationships (Level A)\nDetection Algorithm: Checking for labels that are associated with form controls but do not contain any text.\nExplanation of Error: The label for the \"event\" select menu is empty. Labels should provide descriptive text for form controls to assist users in filling out the form.\n\n---\n\nSnippet with error: `<input type=\"number\" alt=\"quantity\" id=\"quantity\" name=\"quantity\" min=\"1\" required>`\nLocation of error: Inside the `<form>` tag\nWCAG Guideline violated: 4.1.2 Name, Role, Value (Level A)\nDetection Algorithm: Checking for incorrect attributes on form elements.\nExplanation of Error: The `alt` attribute is not valid for `input` elements. If you want to provide a description, use the `aria-label` or `aria-labelledby` attribute instead.\n\n---\n\nSnippet with error: `<button type=\"button\" onclick=\"submitForm()\" style=\"background-color: #45a049;\">`\nLocation of error: Inside the `<form>` tag\nWCAG Guideline violated: 3.2.2 On Input (Level A)\nDetection Algorithm: Checking for form submission handled by JavaScript.\nExplanation of Error: The form is submitted using JavaScript. This can create issues for users who have JavaScript disabled or are using assistive technologies. It's recommended to use a submit button (`<button type=\"submit\">`) and handle form submission on the server side.",
+          "supportThemeIcons": false,
+          "supportHtml": false
+        }
+      ],
+      "result": {
+        "timings": {
+          "firstProgress": 1301,
+          "totalElapsed": 14809
+        },
+        "metadata": {
+          "responseId": "f321e9be-cec1-4659-9a18-4a370caf98b0",
+          "sessionId": "15107a75-93ac-440e-8bd4-98241718d71a"
+        }
+      },
+      "followups": [
+        {
+          "kind": "reply",
+          "agentId": "github.copilot.default",
+          "message": "What are some alternative techniques to replace the deprecated `<marquee>` tag for creating moving content?"
+        }
+      ],
+      "isCanceled": false,
+      "agent": {
+        "b": {
+          "extensionId": {
+            "value": "GitHub.copilot-chat",
+            "_lower": "github.copilot-chat"
+          },
+          "extensionPublisherDisplayName": "GitHub",
+          "extensionPublisherId": "GitHub",
+          "extensionDisplayName": "GitHub Copilot Chat",
+          "id": "github.copilot.default",
+          "description": "Ask Copilot or type / for commands",
+          "metadata": {
+            "fullName": "GitHub Copilot",
+            "themeIcon": {
+              "id": "copilot"
+            },
+            "hasFollowups": true,
+            "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+            "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+            "helpTextPostfix": {
+              "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview).",
+              "isTrusted": {
+                "enabledCommands": [
+                  "inlineChat.start"
+                ]
+              },
+              "supportThemeIcons": false,
+              "supportHtml": false,
+              "uris": {
+                "command:inlineChat.start": {
+                  "$mid": 1,
+                  "path": "inlineChat.start",
+                  "scheme": "command"
+                },
+                "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                  "$mid": 1,
+                  "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                  "scheme": "https",
+                  "authority": "docs.github.com",
+                  "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+                },
+                "https://code.visualstudio.com/docs/copilot/overview": {
+                  "$mid": 1,
+                  "path": "/docs/copilot/overview",
+                  "scheme": "https",
+                  "authority": "code.visualstudio.com"
+                }
+              }
+            },
+            "supportIssueReporting": false,
+            "requester": {
+              "name": "chauler",
+              "icon": {
+                "$mid": 1,
+                "path": "/chauler",
+                "scheme": "https",
+                "authority": "avatars.githubusercontent.com"
+              }
+            }
+          },
+          "name": "GitHub Copilot",
+          "isDefault": true,
+          "locations": [
+            "panel"
+          ],
+          "slashCommands": []
+        },
+        "d": {}
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\Alex\\Desktop\\A11y_AI\\RQ3-Results\\Project-31\\index.txt",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/Alex/Desktop/A11y_AI/RQ3-Results/Project-31/index.txt",
+              "path": "/c:/Users/Alex/Desktop/A11y_AI/RQ3-Results/Project-31/index.txt",
+              "scheme": "file"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 140,
+              "endColumn": 24
+            }
+          }
+        }
+      ]
+    },
+    {
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 50
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 51
+            },
+            "text": "Are there any more issues? List all that you find.",
+            "kind": "text"
+          }
+        ],
+        "text": "Are there any more issues? List all that you find."
+      },
+      "variableData": {
+        "variables": []
+      },
+      "response": [
+        {
+          "value": "Snippet with error: `<a href=\"#\">Home</a>`\nLocation of error: Inside the `<nav>` tag\nWCAG Guideline violated: 2.4.4 Link Purpose (In Context) (Level A)\nDetection Algorithm: Checking for links that have no href attribute or a non-descriptive href attribute.\nExplanation of Error: The links in the navigation have a non-descriptive href attribute (`#`). This can be confusing for users who rely on screen readers or other assistive technologies. Each link's href attribute should be unique and descriptive of its destination.\n\n---\n\nSnippet with error: `<body style=\"color: #fff;\">`\nLocation of error: `<body>` tag\nWCAG Guideline violated: 1.4.3 Contrast (Minimum) (Level AA)\nDetection Algorithm: Checking for low contrast between text color and background color.\nExplanation of Error: The body text color is white (`#fff`) and the background image might not provide sufficient contrast for this text color. This can make the text hard to read for users with low vision or color vision deficiencies. Ensure that there is sufficient contrast between text color and background color.\n\n---\n\nSnippet with error: `<button type=\"button\" onclick=\"submitForm()\" style=\"background-color: #45a049;\">`\nLocation of error: Inside the `<form>` tag\nWCAG Guideline violated: 2.1.1 Keyboard (Level A)\nDetection Algorithm: Checking for interactive elements that are not accessible via keyboard.\nExplanation of Error: The form submission is triggered by a button click event, which might not be accessible for keyboard-only users. Ensure that all functionality can be accessed using the keyboard.\n\n---\n\nSnippet with error: `<div id=\"confirmation\" style=\"display:none;\">`\nLocation of error: Inside the `<section>` tag\nWCAG Guideline violated: 4.1.2 Name, Role, Value (Level A)\nDetection Algorithm: Checking for elements that are hidden but might contain important information.\nExplanation of Error: The confirmation message is hidden by default and only shown after form submission. Users who use screen readers might not be aware of this change in content. Use ARIA roles and properties to inform assistive technologies about changes in content.",
+          "supportThemeIcons": false,
+          "supportHtml": false
+        }
+      ],
+      "result": {
+        "timings": {
+          "firstProgress": 1664,
+          "totalElapsed": 13879
+        },
+        "metadata": {
+          "responseId": "2487a06f-29ed-4827-9295-43149fb8202e",
+          "sessionId": "15107a75-93ac-440e-8bd4-98241718d71a"
+        }
+      },
+      "followups": [
+        {
+          "kind": "reply",
+          "agentId": "github.copilot.default",
+          "message": "What are some best practices for improving accessibility in HTML forms?"
+        }
+      ],
+      "isCanceled": false,
+      "agent": {
+        "b": {
+          "extensionId": {
+            "value": "GitHub.copilot-chat",
+            "_lower": "github.copilot-chat"
+          },
+          "extensionPublisherDisplayName": "GitHub",
+          "extensionPublisherId": "GitHub",
+          "extensionDisplayName": "GitHub Copilot Chat",
+          "id": "github.copilot.default",
+          "description": "Ask Copilot or type / for commands",
+          "metadata": {
+            "fullName": "GitHub Copilot",
+            "themeIcon": {
+              "id": "copilot"
+            },
+            "hasFollowups": true,
+            "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+            "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+            "helpTextPostfix": {
+              "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview).",
+              "isTrusted": {
+                "enabledCommands": [
+                  "inlineChat.start"
+                ]
+              },
+              "supportThemeIcons": false,
+              "supportHtml": false,
+              "uris": {
+                "command:inlineChat.start": {
+                  "$mid": 1,
+                  "path": "inlineChat.start",
+                  "scheme": "command"
+                },
+                "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                  "$mid": 1,
+                  "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                  "scheme": "https",
+                  "authority": "docs.github.com",
+                  "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+                },
+                "https://code.visualstudio.com/docs/copilot/overview": {
+                  "$mid": 1,
+                  "path": "/docs/copilot/overview",
+                  "scheme": "https",
+                  "authority": "code.visualstudio.com"
+                }
+              }
+            },
+            "supportIssueReporting": false,
+            "requester": {
+              "name": "chauler",
+              "icon": {
+                "$mid": 1,
+                "path": "/chauler",
+                "scheme": "https",
+                "authority": "avatars.githubusercontent.com"
+              }
+            }
+          },
+          "name": "GitHub Copilot",
+          "isDefault": true,
+          "locations": [
+            "panel"
+          ],
+          "slashCommands": []
+        },
+        "d": {}
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\Alex\\Desktop\\A11y_AI\\RQ3-Results\\Project-31\\index.txt",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/Alex/Desktop/A11y_AI/RQ3-Results/Project-31/index.txt",
+              "path": "/c:/Users/Alex/Desktop/A11y_AI/RQ3-Results/Project-31/index.txt",
+              "scheme": "file"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 140,
+              "endColumn": 24
+            }
+          }
+        }
+      ]
+    },
+    {
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 50
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 51
+            },
+            "text": "Are there any more issues? List all that you find.",
+            "kind": "text"
+          }
+        ],
+        "text": "Are there any more issues? List all that you find."
+      },
+      "variableData": {
+        "variables": []
+      },
+      "response": [
+        {
+          "value": "Snippet with error: `<html lang=\"en\">`\nLocation of error: At the start of the HTML document\nWCAG Guideline violated: 3.1.1 Language of Page (Level A)\nDetection Algorithm: Checking if the language of the page is defined.\nExplanation of Error: The language of the page is set to English. If the content is not in English, this can cause issues for screen readers and other assistive technologies. Ensure that the language attribute matches the language of the page content.\n\n---\n\nSnippet with error: `<h2>Book Your Tickets</h2>`\nLocation of error: Inside the `<section>` tag\nWCAG Guideline violated: 1.3.1 Info and Relationships (Level A)\nDetection Algorithm: Checking for headings that do not follow a logical order.\nExplanation of Error: The document starts with a level 2 heading, skipping the level 1 heading. This can be confusing for users who rely on screen readers or other assistive technologies. Ensure that headings follow a logical order, starting with a level 1 heading.\n\n---\n\nSnippet with error: `<input type=\"text\" id=\"name\" name=\"name\" required>`\nLocation of error: Inside the `<form>` tag\nWCAG Guideline violated: 3.3.2 Labels or Instructions (Level A)\nDetection Algorithm: Checking for form controls that do not have associated labels.\nExplanation of Error: The text input for the user's name does not have an associated label. Labels provide descriptive text for form controls to assist users in filling out the form.\n\n---\n\nSnippet with error: `<script>...</script>`\nLocation of error: At the end of the HTML document\nWCAG Guideline violated: 2.1.1 Keyboard (Level A)\nDetection Algorithm: Checking for scripts that might interfere with keyboard navigation.\nExplanation of Error: The script hides the form and shows a confirmation message after form submission. This change in content might not be accessible for keyboard-only users. Ensure that all functionality can be accessed using the keyboard.",
+          "supportThemeIcons": false,
+          "supportHtml": false
+        }
+      ],
+      "result": {
+        "timings": {
+          "firstProgress": 1302,
+          "totalElapsed": 12520
+        },
+        "metadata": {
+          "responseId": "0cfe5ac0-0769-4ddb-bf06-b4b81826c28c",
+          "sessionId": "15107a75-93ac-440e-8bd4-98241718d71a"
+        }
+      },
+      "followups": [
+        {
+          "kind": "reply",
+          "agentId": "github.copilot.default",
+          "message": "What are some best practices for improving accessibility in HTML?"
+        }
+      ],
+      "isCanceled": false,
+      "agent": {
+        "b": {
+          "extensionId": {
+            "value": "GitHub.copilot-chat",
+            "_lower": "github.copilot-chat"
+          },
+          "extensionPublisherDisplayName": "GitHub",
+          "extensionPublisherId": "GitHub",
+          "extensionDisplayName": "GitHub Copilot Chat",
+          "id": "github.copilot.default",
+          "description": "Ask Copilot or type / for commands",
+          "metadata": {
+            "fullName": "GitHub Copilot",
+            "themeIcon": {
+              "id": "copilot"
+            },
+            "hasFollowups": true,
+            "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+            "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+            "helpTextPostfix": {
+              "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview).",
+              "isTrusted": {
+                "enabledCommands": [
+                  "inlineChat.start"
+                ]
+              },
+              "supportThemeIcons": false,
+              "supportHtml": false,
+              "uris": {
+                "command:inlineChat.start": {
+                  "$mid": 1,
+                  "path": "inlineChat.start",
+                  "scheme": "command"
+                },
+                "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                  "$mid": 1,
+                  "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                  "scheme": "https",
+                  "authority": "docs.github.com",
+                  "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+                },
+                "https://code.visualstudio.com/docs/copilot/overview": {
+                  "$mid": 1,
+                  "path": "/docs/copilot/overview",
+                  "scheme": "https",
+                  "authority": "code.visualstudio.com"
+                }
+              }
+            },
+            "supportIssueReporting": false,
+            "requester": {
+              "name": "chauler",
+              "icon": {
+                "$mid": 1,
+                "path": "/chauler",
+                "scheme": "https",
+                "authority": "avatars.githubusercontent.com"
+              }
+            }
+          },
+          "name": "GitHub Copilot",
+          "isDefault": true,
+          "locations": [
+            "panel"
+          ],
+          "slashCommands": []
+        },
+        "d": {}
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\Alex\\Desktop\\A11y_AI\\RQ3-Results\\Project-31\\index.txt",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/Alex/Desktop/A11y_AI/RQ3-Results/Project-31/index.txt",
+              "path": "/c:/Users/Alex/Desktop/A11y_AI/RQ3-Results/Project-31/index.txt",
+              "scheme": "file"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 140,
+              "endColumn": 24
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,436 @@
+{
+  "requesterUsername": "chauler",
+  "requesterAvatarIconUri": {
+    "$mid": 1,
+    "path": "/chauler",
+    "scheme": "https",
+    "authority": "avatars.githubusercontent.com"
+  },
+  "responderUsername": "GitHub Copilot",
+  "responderAvatarIconUri": {
+    "id": "copilot"
+  },
+  "initialLocation": "panel",
+  "welcomeMessage": [
+    "Hi **@chauler**, how can I help you?"
+  ],
+  "requests": [
+    {
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 3191
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 103,
+              "endColumn": 24
+            },
+            "text": "Context: You are an accessibility expert reviewing HTML for accessibility issues. Analyze the following code in the context of WCAG (Web Content Accessibility Guidelines) 2.2, listing any issues that may violate these guidelines. You will only be analyzing the HTML, ignoring any included or missing styles and scripts.\r\nCode: \r\n```<!DOCTYPE html>\r\n<html lang=\"en\">\r\n  <head>\r\n    <meta charset=\"UTF-8\" />\r\n    <title>Bookstore</title>\r\n    <link rel=\"stylesheet\" href=\"styles.css\" />\r\n  </head>\r\n\r\n  <body>\r\n    <!-- Navigation Bar -->\r\n    <nav>\r\n      <ul>\r\n        <li><a href=\"#home\">Home</a></li>\r\n        <li><a href=\"#books\">Books</a></li>\r\n        <li><a href=\"#about\">About</a></li>\r\n        <li><a href=\"#contact\">Contact</a></li>\r\n      </ul>\r\n    </nav>\r\n\r\n    <!-- Header with Background Image -->\r\n    <header style=\"background-image: url('header-image.jpg')\">\r\n      <h1>Welcome to our Bookstore</h1>\r\n      <p>Explore a vast collection of books.</p>\r\n    </header>\r\n\r\n    <!-- Search Bar and Filters -->\r\n\r\n    <section id=\"filters\">\r\n      <label for=\"search\">Search:</label>\r\n      <input\r\n        type=\"text\"\r\n        id=\"search\"\r\n        placeholder=\"Search...\"\r\n        aria-label=\"Search\"\r\n      />\r\n      <select id=\"filter\">\r\n        <option value=\"genre\">Genre</option>\r\n        <option value=\"author\">Author</option>\r\n        <!-- Add more filter options -->\r\n      </select>\r\n      <button>Apply Filters</button>\r\n    </section>\r\n\r\n    <!-- Book Display Section -->\r\n    <section id=\"books\">\r\n      <!-- Display books dynamically from database -->\r\n      <!-- Example book -->\r\n      <div class=\"book\">\r\n        <img src=\"book-cover.jpg\" />\r\n        <h2>Book Title</h2>\r\n        <p>Author: Author Name</p>\r\n        <font size=\"5\">Description of the book...</font>\r\n        <button>Read More</button>\r\n      </div>\r\n\r\n      <!-- Add more books dynamically -->\r\n    </section>\r\n\r\n    <!-- Video about the Bookstore -->\r\n    <section id=\"video\">\r\n      <h2><b>Discover Our Bookstore</b></h2>\r\n      <video autoplay>\r\n        <source src=\"bookstore-video.mp4\" type=\"video/mp4\" />\r\n        Your browser does not support the video tag.\r\n      </video>\r\n    </section>\r\n\r\n    <!-- Contact Form -->\r\n    <section id=\"contact\">\r\n      <h2>Contact Us</h2>\r\n      <form action=\"submit.php\" method=\"POST\">\r\n        <label for=\"name\">Your Name:</label>\r\n        <input type=\"text\" id=\"name\" name=\"name\" placeholder=\"Your Name\" />\r\n        <label for=\"email\">Your Email:</label>\r\n        <input type=\"email\" id=\"email\" name=\"email\" placeholder=\"Your Email\" />\r\n        <label for=\"message\">Your Message:</label>\r\n        <textarea\r\n          id=\"message\"\r\n          name=\"message\"\r\n          placeholder=\"Your Message\"\r\n        ></textarea>\r\n        <button type=\"submit\">Send</button>\r\n      </form>\r\n    </section>\r\n\r\n    <!-- Footer -->\r\n    <footer>\r\n      <p>&copy; 2023 Bookstore. All rights reserved.</p>\r\n    </footer>\r\n\r\n    <!-- JavaScript for interactivity -->\r\n    <script src=\"scripts.js\"></script>\r\n  </body>\r\n</html>\r\n```\r\nResponse format: \r\nSnippet with error: …\r\nLocation of error: …\r\nWCAG Guideline violated: …\r\nDetection Algorithm: …\r\nExplanation of Error: …",
+            "kind": "text"
+          }
+        ],
+        "text": "Context: You are an accessibility expert reviewing HTML for accessibility issues. Analyze the following code in the context of WCAG (Web Content Accessibility Guidelines) 2.2, listing any issues that may violate these guidelines. You will only be analyzing the HTML, ignoring any included or missing styles and scripts.\r\nCode: \r\n```<!DOCTYPE html>\r\n<html lang=\"en\">\r\n  <head>\r\n    <meta charset=\"UTF-8\" />\r\n    <title>Bookstore</title>\r\n    <link rel=\"stylesheet\" href=\"styles.css\" />\r\n  </head>\r\n\r\n  <body>\r\n    <!-- Navigation Bar -->\r\n    <nav>\r\n      <ul>\r\n        <li><a href=\"#home\">Home</a></li>\r\n        <li><a href=\"#books\">Books</a></li>\r\n        <li><a href=\"#about\">About</a></li>\r\n        <li><a href=\"#contact\">Contact</a></li>\r\n      </ul>\r\n    </nav>\r\n\r\n    <!-- Header with Background Image -->\r\n    <header style=\"background-image: url('header-image.jpg')\">\r\n      <h1>Welcome to our Bookstore</h1>\r\n      <p>Explore a vast collection of books.</p>\r\n    </header>\r\n\r\n    <!-- Search Bar and Filters -->\r\n\r\n    <section id=\"filters\">\r\n      <label for=\"search\">Search:</label>\r\n      <input\r\n        type=\"text\"\r\n        id=\"search\"\r\n        placeholder=\"Search...\"\r\n        aria-label=\"Search\"\r\n      />\r\n      <select id=\"filter\">\r\n        <option value=\"genre\">Genre</option>\r\n        <option value=\"author\">Author</option>\r\n        <!-- Add more filter options -->\r\n      </select>\r\n      <button>Apply Filters</button>\r\n    </section>\r\n\r\n    <!-- Book Display Section -->\r\n    <section id=\"books\">\r\n      <!-- Display books dynamically from database -->\r\n      <!-- Example book -->\r\n      <div class=\"book\">\r\n        <img src=\"book-cover.jpg\" />\r\n        <h2>Book Title</h2>\r\n        <p>Author: Author Name</p>\r\n        <font size=\"5\">Description of the book...</font>\r\n        <button>Read More</button>\r\n      </div>\r\n\r\n      <!-- Add more books dynamically -->\r\n    </section>\r\n\r\n    <!-- Video about the Bookstore -->\r\n    <section id=\"video\">\r\n      <h2><b>Discover Our Bookstore</b></h2>\r\n      <video autoplay>\r\n        <source src=\"bookstore-video.mp4\" type=\"video/mp4\" />\r\n        Your browser does not support the video tag.\r\n      </video>\r\n    </section>\r\n\r\n    <!-- Contact Form -->\r\n    <section id=\"contact\">\r\n      <h2>Contact Us</h2>\r\n      <form action=\"submit.php\" method=\"POST\">\r\n        <label for=\"name\">Your Name:</label>\r\n        <input type=\"text\" id=\"name\" name=\"name\" placeholder=\"Your Name\" />\r\n        <label for=\"email\">Your Email:</label>\r\n        <input type=\"email\" id=\"email\" name=\"email\" placeholder=\"Your Email\" />\r\n        <label for=\"message\">Your Message:</label>\r\n        <textarea\r\n          id=\"message\"\r\n          name=\"message\"\r\n          placeholder=\"Your Message\"\r\n        ></textarea>\r\n        <button type=\"submit\">Send</button>\r\n      </form>\r\n    </section>\r\n\r\n    <!-- Footer -->\r\n    <footer>\r\n      <p>&copy; 2023 Bookstore. All rights reserved.</p>\r\n    </footer>\r\n\r\n    <!-- JavaScript for interactivity -->\r\n    <script src=\"scripts.js\"></script>\r\n  </body>\r\n</html>\r\n```\r\nResponse format: \r\nSnippet with error: …\r\nLocation of error: …\r\nWCAG Guideline violated: …\r\nDetection Algorithm: …\r\nExplanation of Error: …"
+      },
+      "variableData": {
+        "variables": []
+      },
+      "response": [
+        {
+          "value": "Snippet with error: \n```html\n<img src=\"book-cover.jpg\" />\n```\nLocation of error: Book Display Section\n\nWCAG Guideline violated: 1.1.1 Non-text Content (Level A)\n\nDetection Algorithm: Checking if all `img` elements have `alt` attribute.\n\nExplanation of Error: The `img` tag is missing an `alt` attribute. This attribute is important for users who cannot see the image. It provides a text description of the image that can be read by screen readers or displayed if the image fails to load.\n\n---\n\nSnippet with error: \n```html\n<video autoplay>\n  <source src=\"bookstore-video.mp4\" type=\"video/mp4\" />\n  Your browser does not support the video tag.\n</video>\n```\nLocation of error: Video about the Bookstore section\n\nWCAG Guideline violated: 1.2.1 Audio-only and Video-only (Prerecorded) (Level A)\n\nDetection Algorithm: Checking if `video` elements have captions or descriptions.\n\nExplanation of Error: The `video` tag is missing captions or a description. This is important for users who cannot see or hear the video. It provides a text description or transcription of the video that can be read by screen readers or displayed for deaf or hard of hearing users.\n\n---\n\nSnippet with error: \n```html\n<header style=\"background-image: url('header-image.jpg')\">\n  <h1>Welcome to our Bookstore</h1>\n  <p>Explore a vast collection of books.</p>\n</header>\n```\nLocation of error: Header with Background Image section\n\nWCAG Guideline violated: 1.4.5 Images of Text (Level AA)\n\nDetection Algorithm: Checking if text is presented within an image without a text alternative.\n\nExplanation of Error: The header uses a background image to present text. If the image fails to load or if the user cannot see the image, the text will not be accessible. It's better to use actual text that is styled with CSS for such purposes.",
+          "supportThemeIcons": false,
+          "supportHtml": false
+        }
+      ],
+      "result": {
+        "timings": {
+          "firstProgress": 1240,
+          "totalElapsed": 12387
+        },
+        "metadata": {
+          "responseId": "698421aa-21e7-4c3a-9f36-19db4f24a688",
+          "sessionId": "6114dea8-c9f8-4fd7-bace-bebe15a3a466"
+        }
+      },
+      "followups": [
+        {
+          "kind": "reply",
+          "agentId": "github.copilot.default",
+          "message": "What are the requirements for providing a text alternative for images?"
+        }
+      ],
+      "isCanceled": false,
+      "agent": {
+        "b": {
+          "extensionId": {
+            "value": "GitHub.copilot-chat",
+            "_lower": "github.copilot-chat"
+          },
+          "extensionPublisherDisplayName": "GitHub",
+          "extensionPublisherId": "GitHub",
+          "extensionDisplayName": "GitHub Copilot Chat",
+          "id": "github.copilot.default",
+          "description": "Ask Copilot or type / for commands",
+          "metadata": {
+            "fullName": "GitHub Copilot",
+            "themeIcon": {
+              "id": "copilot"
+            },
+            "hasFollowups": true,
+            "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+            "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+            "helpTextPostfix": {
+              "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview).",
+              "isTrusted": {
+                "enabledCommands": [
+                  "inlineChat.start"
+                ]
+              },
+              "supportThemeIcons": false,
+              "supportHtml": false,
+              "uris": {
+                "command:inlineChat.start": {
+                  "$mid": 1,
+                  "path": "inlineChat.start",
+                  "scheme": "command"
+                },
+                "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                  "$mid": 1,
+                  "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                  "scheme": "https",
+                  "authority": "docs.github.com",
+                  "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+                },
+                "https://code.visualstudio.com/docs/copilot/overview": {
+                  "$mid": 1,
+                  "path": "/docs/copilot/overview",
+                  "scheme": "https",
+                  "authority": "code.visualstudio.com"
+                }
+              }
+            },
+            "supportIssueReporting": false,
+            "requester": {
+              "name": "chauler",
+              "icon": {
+                "$mid": 1,
+                "path": "/chauler",
+                "scheme": "https",
+                "authority": "avatars.githubusercontent.com"
+              }
+            }
+          },
+          "name": "GitHub Copilot",
+          "isDefault": true,
+          "locations": [
+            "panel"
+          ],
+          "slashCommands": []
+        },
+        "d": {}
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\Alex\\Desktop\\A11y_AI\\RQ3-Results\\Project-2\\index2.txt",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/Alex/Desktop/A11y_AI/RQ3-Results/Project-2/index2.txt",
+              "path": "/c:/Users/Alex/Desktop/A11y_AI/RQ3-Results/Project-2/index2.txt",
+              "scheme": "file"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 103,
+              "endColumn": 24
+            }
+          }
+        }
+      ]
+    },
+    {
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 50
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 51
+            },
+            "text": "Are there any more issues? List all that you find.",
+            "kind": "text"
+          }
+        ],
+        "text": "Are there any more issues? List all that you find."
+      },
+      "variableData": {
+        "variables": []
+      },
+      "response": [
+        {
+          "value": "Snippet with error: \n```html\n<font size=\"5\">Description of the book...</font>\n```\nLocation of error: Book Display Section\n\nWCAG Guideline violated: 1.4.4 Resize text (Level AA)\n\nDetection Algorithm: Checking if `font` tag is used.\n\nExplanation of Error: The `font` tag is deprecated and should not be used. It's better to use CSS to style text. This is important for users who need to increase the text size for readability. The `font` tag does not scale well when text size is increased.\n\n---\n\nSnippet with error: \n```html\n<button>Read More</button>\n```\nLocation of error: Book Display Section\n\nWCAG Guideline violated: 4.1.2 Name, Role, Value (Level A)\n\nDetection Algorithm: Checking if interactive elements have accessible names.\n\nExplanation of Error: The `button` tag is missing an accessible name. This is important for screen reader users to understand the purpose of the button. An `aria-label` attribute or off-screen text can be used to provide an accessible name.\n\n---\n\nSnippet with error: \n```html\n<video autoplay>\n  <source src=\"bookstore-video.mp4\" type=\"video/mp4\" />\n  Your browser does not support the video tag.\n</video>\n```\nLocation of error: Video about the Bookstore section\n\nWCAG Guideline violated: 2.2.2 Pause, Stop, Hide (Level A)\n\nDetection Algorithm: Checking if `video` elements with `autoplay` have a mechanism to pause, stop, or hide them.\n\nExplanation of Error: The `video` tag has the `autoplay` attribute but does not provide a mechanism to pause, stop, or hide the video. This can be a problem for users who find moving or auto-updating content distracting or for users with cognitive disabilities.\n\n---\n\nSnippet with error: \n```html\n<nav>\n  <ul>\n    <li><a href=\"#home\">Home</a></li>\n    <li><a href=\"#books\">Books</a></li>\n    <li><a href=\"#about\">About</a></li>\n    <li><a href=\"#contact\">Contact</a></li>\n  </ul>\n</nav>\n```\nLocation of error: Navigation Bar\n\nWCAG Guideline violated: 2.4.1 Bypass Blocks (Level A)\n\nDetection Algorithm: Checking if there is a mechanism to bypass repeated content.\n\nExplanation of Error: The navigation bar is likely to be repeated on multiple pages. There should be a mechanism to bypass it, such as a \"Skip to main content\" link at the start of each page. This is important for keyboard and screen reader users who do not want to navigate through the same navigation links on every page.",
+          "supportThemeIcons": false,
+          "supportHtml": false
+        }
+      ],
+      "result": {
+        "timings": {
+          "firstProgress": 1398,
+          "totalElapsed": 18122
+        },
+        "metadata": {
+          "responseId": "749f7b06-9141-49e2-89b7-02272011b8f4",
+          "sessionId": "6114dea8-c9f8-4fd7-bace-bebe15a3a466"
+        }
+      },
+      "followups": [
+        {
+          "kind": "reply",
+          "agentId": "github.copilot.default",
+          "message": "What are some guidelines for providing accessible alternatives for images and videos in HTML?"
+        }
+      ],
+      "isCanceled": false,
+      "agent": {
+        "b": {
+          "extensionId": {
+            "value": "GitHub.copilot-chat",
+            "_lower": "github.copilot-chat"
+          },
+          "extensionPublisherDisplayName": "GitHub",
+          "extensionPublisherId": "GitHub",
+          "extensionDisplayName": "GitHub Copilot Chat",
+          "id": "github.copilot.default",
+          "description": "Ask Copilot or type / for commands",
+          "metadata": {
+            "fullName": "GitHub Copilot",
+            "themeIcon": {
+              "id": "copilot"
+            },
+            "hasFollowups": true,
+            "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+            "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+            "helpTextPostfix": {
+              "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview).",
+              "isTrusted": {
+                "enabledCommands": [
+                  "inlineChat.start"
+                ]
+              },
+              "supportThemeIcons": false,
+              "supportHtml": false,
+              "uris": {
+                "command:inlineChat.start": {
+                  "$mid": 1,
+                  "path": "inlineChat.start",
+                  "scheme": "command"
+                },
+                "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                  "$mid": 1,
+                  "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                  "scheme": "https",
+                  "authority": "docs.github.com",
+                  "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+                },
+                "https://code.visualstudio.com/docs/copilot/overview": {
+                  "$mid": 1,
+                  "path": "/docs/copilot/overview",
+                  "scheme": "https",
+                  "authority": "code.visualstudio.com"
+                }
+              }
+            },
+            "supportIssueReporting": false,
+            "requester": {
+              "name": "chauler",
+              "icon": {
+                "$mid": 1,
+                "path": "/chauler",
+                "scheme": "https",
+                "authority": "avatars.githubusercontent.com"
+              }
+            }
+          },
+          "name": "GitHub Copilot",
+          "isDefault": true,
+          "locations": [
+            "panel"
+          ],
+          "slashCommands": []
+        },
+        "d": {}
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\Alex\\Desktop\\A11y_AI\\RQ3-Results\\Project-2\\index2.txt",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/Alex/Desktop/A11y_AI/RQ3-Results/Project-2/index2.txt",
+              "path": "/c:/Users/Alex/Desktop/A11y_AI/RQ3-Results/Project-2/index2.txt",
+              "scheme": "file"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 103,
+              "endColumn": 24
+            }
+          }
+        }
+      ]
+    },
+    {
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 50
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 51
+            },
+            "text": "Are there any more issues? List all that you find.",
+            "kind": "text"
+          }
+        ],
+        "text": "Are there any more issues? List all that you find."
+      },
+      "variableData": {
+        "variables": []
+      },
+      "response": [
+        {
+          "value": "Snippet with error: \n```html\n<button>Apply Filters</button>\n```\nLocation of error: Search Bar and Filters section\n\nWCAG Guideline violated: 4.1.2 Name, Role, Value (Level A)\n\nDetection Algorithm: Checking if interactive elements have accessible names.\n\nExplanation of Error: The `button` tag is missing an accessible name. This is important for screen reader users to understand the purpose of the button. An `aria-label` attribute or off-screen text can be used to provide an accessible name.\n\n---\n\nSnippet with error: \n```html\n<section id=\"video\">\n  <h2><b>Discover Our Bookstore</b></h2>\n  <video autoplay>\n    <source src=\"bookstore-video.mp4\" type=\"video/mp4\" />\n    Your browser does not support the video tag.\n  </video>\n</section>\n```\nLocation of error: Video about the Bookstore section\n\nWCAG Guideline violated: 1.4.2 Audio Control (Level A)\n\nDetection Algorithm: Checking if `video` elements with sound provide a control mechanism.\n\nExplanation of Error: The `video` tag is missing a control to mute, pause, or reduce the volume of the audio. This is important for users who may be disturbed by the sound or for users in a noisy environment.\n\n---\n\nSnippet with error: \n```html\n<form action=\"submit.php\" method=\"POST\">\n  <label for=\"name\">Your Name:</label>\n  <input type=\"text\" id=\"name\" name=\"name\" placeholder=\"Your Name\" />\n  <label for=\"email\">Your Email:</label>\n  <input type=\"email\" id=\"email\" name=\"email\" placeholder=\"Your Email\" />\n  <label for=\"message\">Your Message:</label>\n  <textarea id=\"message\" name=\"message\" placeholder=\"Your Message\"></textarea>\n  <button type=\"submit\">Send</button>\n</form>\n```\nLocation of error: Contact Form section\n\nWCAG Guideline violated: 3.3.2 Labels or Instructions (Level A)\n\nDetection Algorithm: Checking if form elements have associated labels.\n\nExplanation of Error: While the form fields do have labels, they are not programmatically associated with the fields. This can be fixed by adding a `for` attribute to the `label` that matches the `id` of the associated input field. This is important for screen reader users to understand the purpose of the form fields.",
+          "supportThemeIcons": false,
+          "supportHtml": false
+        }
+      ],
+      "result": {
+        "timings": {
+          "firstProgress": 1415,
+          "totalElapsed": 15554
+        },
+        "metadata": {
+          "responseId": "3baaa5fe-17f3-4e43-bded-1d2e75844940",
+          "sessionId": "6114dea8-c9f8-4fd7-bace-bebe15a3a466"
+        }
+      },
+      "followups": [
+        {
+          "kind": "reply",
+          "agentId": "github.copilot.default",
+          "message": "What are some best practices for improving the accessibility of HTML forms?"
+        }
+      ],
+      "isCanceled": false,
+      "agent": {
+        "b": {
+          "extensionId": {
+            "value": "GitHub.copilot-chat",
+            "_lower": "github.copilot-chat"
+          },
+          "extensionPublisherDisplayName": "GitHub",
+          "extensionPublisherId": "GitHub",
+          "extensionDisplayName": "GitHub Copilot Chat",
+          "id": "github.copilot.default",
+          "description": "Ask Copilot or type / for commands",
+          "metadata": {
+            "fullName": "GitHub Copilot",
+            "themeIcon": {
+              "id": "copilot"
+            },
+            "hasFollowups": true,
+            "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+            "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+            "helpTextPostfix": {
+              "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview).",
+              "isTrusted": {
+                "enabledCommands": [
+                  "inlineChat.start"
+                ]
+              },
+              "supportThemeIcons": false,
+              "supportHtml": false,
+              "uris": {
+                "command:inlineChat.start": {
+                  "$mid": 1,
+                  "path": "inlineChat.start",
+                  "scheme": "command"
+                },
+                "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                  "$mid": 1,
+                  "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                  "scheme": "https",
+                  "authority": "docs.github.com",
+                  "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+                },
+                "https://code.visualstudio.com/docs/copilot/overview": {
+                  "$mid": 1,
+                  "path": "/docs/copilot/overview",
+                  "scheme": "https",
+                  "authority": "code.visualstudio.com"
+                }
+              }
+            },
+            "supportIssueReporting": false,
+            "requester": {
+              "name": "chauler",
+              "icon": {
+                "$mid": 1,
+                "path": "/chauler",
+                "scheme": "https",
+                "authority": "avatars.githubusercontent.com"
+              }
+            }
+          },
+          "name": "GitHub Copilot",
+          "isDefault": true,
+          "locations": [
+            "panel"
+          ],
+          "slashCommands": []
+        },
+        "d": {}
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\Alex\\Desktop\\A11y_AI\\RQ3-Results\\Project-2\\index2.txt",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/Alex/Desktop/A11y_AI/RQ3-Results/Project-2/index2.txt",
+              "path": "/c:/Users/Alex/Desktop/A11y_AI/RQ3-Results/Project-2/index2.txt",
+              "scheme": "file"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 103,
+              "endColumn": 24
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

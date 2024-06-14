@@ -1,0 +1,436 @@
+{
+  "requesterUsername": "chauler",
+  "requesterAvatarIconUri": {
+    "$mid": 1,
+    "path": "/chauler",
+    "scheme": "https",
+    "authority": "avatars.githubusercontent.com"
+  },
+  "responderUsername": "GitHub Copilot",
+  "responderAvatarIconUri": {
+    "id": "copilot"
+  },
+  "initialLocation": "panel",
+  "welcomeMessage": [
+    "Hi **@chauler**, how can I help you?"
+  ],
+  "requests": [
+    {
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 5539
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 183,
+              "endColumn": 24
+            },
+            "text": "Context: You are an accessibility expert reviewing HTML for accessibility issues. Analyze the following code in the context of WCAG (Web Content Accessibility Guidelines) 2.2, listing any issues that may violate these guidelines. You will only be analyzing the HTML, ignoring any included or missing styles and scripts.\r\nCode: \r\n```<!DOCTYPE html>\r\n<html lang=\"en\">\r\n\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Your Gaming Website</title>\r\n    <style>\r\n        body {\r\n            margin: 0;\r\n            padding: 0;\r\n            font-family: Arial, sans-serif;\r\n        }\r\n\r\n        header {\r\n            background: #333;\r\n            color: #fff;\r\n            padding: 10px;\r\n            text-align: center;\r\n        }\r\n\r\n        nav {\r\n            background: #444;\r\n            color: #fff;\r\n            padding: 10px;\r\n            text-align: center;\r\n        }\r\n\r\n        nav a {\r\n            color: #fff;\r\n            text-decoration: none;\r\n            padding: 10px;\r\n            margin: 0 10px;\r\n        }\r\n\r\n        section {\r\n            padding: 20px;\r\n        }\r\n\r\n        footer {\r\n            background: #333;\r\n            color: #fff;\r\n            text-align: center;\r\n            padding: 10px;\r\n            position: fixed;\r\n            bottom: 0;\r\n            width: 100%;\r\n        }\r\n\r\n        .hero-section {\r\n            position: relative;\r\n            background: url('background.jpg') center/cover no-repeat;\r\n            color: #fff;\r\n            text-align: center;\r\n            padding: 100px 20px;\r\n        }\r\n\r\n        .hero-overlay {\r\n            position: absolute;\r\n            top: 0;\r\n            left: 0;\r\n            width: 100%;\r\n            height: 100%;\r\n            background: rgba(0, 0, 0, 0.5); /* Adjust the transparency as needed */\r\n        }\r\n\r\n        .hero-text {\r\n            position: relative;\r\n            z-index: 1;\r\n        }\r\n\r\n        .video-section {\r\n            text-align: center;\r\n        }\r\n\r\n        .game-description {\r\n            max-width: 800px;\r\n            margin: 0 auto;\r\n            text-align: justify;\r\n        }\r\n\r\n        .button {\r\n            display: inline-block;\r\n            padding: 10px 20px;\r\n            background: #007BFF;\r\n            color: #fff;\r\n            text-decoration: none;\r\n            border-radius: 5px;\r\n        }\r\n\r\n        .input-field {\r\n            padding: 10px;\r\n            margin: 10px 0;\r\n            width: 100%;\r\n        }\r\n\r\n        /* Adjusted style for the submit button for better contrast */\r\n        .button.submit {\r\n            background: #28a745; /* Green color */\r\n        }\r\n    </style>\r\n</head>\r\n\r\n<body>\r\n\r\n    <header>\r\n        <h1>Your Gaming Website</h1>\r\n    </header>\r\n\r\n    <nav>\r\n        <a href=\"#home\">Home</a>\r\n        <a href=\"#games\">Games</a>\r\n        <a href=\"#about\">About</a>\r\n        <a href=\"#contact\">Contact</a>\r\n    </nav>\r\n\r\n    <section class=\"hero-section\">\r\n        <div class=\"hero-overlay\"></div>\r\n        <div class=\"hero-text\">\r\n            <h3>Welcome to the Gaming World!</h3>\r\n            <p>Discover the latest and greatest games.</p>\r\n            <a href=\"#games\" class=\"button\">Explore Games</a>\r\n        </div>\r\n    </section>\r\n\r\n    <section id=\"games\" class=\"video-section\">\r\n        <h3>Featured Games</h3>\r\n        <iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/your-game-video-id\" frameborder=\"0\"\r\n            allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\"\r\n            allowfullscreen></iframe>\r\n    </section>\r\n\r\n    <section id=\"about\" class=\"game-description\">\r\n        <h2>About Us</h2>\r\n        <p>Your gaming website is dedicated to bringing you the latest news, reviews, and updates from the gaming\r\n            world. Explore our collection of games and stay informed.</p>\r\n    </section>\r\n\r\n    <section id=\"contact\">\r\n        <h2>Contact Us</h2>\r\n        <form>\r\n            <label for=\"username\">Username:</label><br>\r\n            <input type=\"text\" id=\"username\" name=\"username\"><br>\r\n            <input type=\"password\" id=\"pwd\" name=\"pwd\">      \r\n\r\n            <input type=\"radio\" id=\"1\" name=\"fav_number\" value=\"1\">\r\n            <label for=\"1\"></label><br>\r\n            <input type=\"radio\" id=\"2\" name=\"fav_number\" value=\"2\">\r\n            <label for=\"2\">2</label><br>\r\n            <input type=\"radio\" id=\"3\" name=\"fav_number\" value=\"3\">\r\n            <label for=\"3\">3</label>   \r\n                     \r\n            <input type=\"checkbox\" id=\"vehicle1\" name=\"vehicle1\" value=\"Bike\">\r\n            <label for=\"vehicle1\"> I have a bike</label><br>\r\n            <input type=\"checkbox\" id=\"vehicle2\" name=\"vehicle2\" value=\"Car\">\r\n            <label for=\"vehicle2\"> I have a car</label><br>\r\n            <input type=\"checkbox\" id=\"vehicle3\" name=\"vehicle3\" value=\"Boat\">\r\n            <label for=\"vehicle3\"> I have a boat</label>\r\n\r\n            <label for=\"myfile\">Select a file:</label>\r\n            <input type=\"file\" id=\"myfile\" name=\"myfile\">\r\n\r\n            <!-- Apply the modified style to the submit button -->\r\n            <input type=\"submit\" value=\"Submit\" class=\"button submit\">\r\n        </form>\r\n    </section>\r\n\r\n    <footer onmouseout=\"Popup()\">\r\n        &copy; 2023 Your Gaming Website. All rights reserved.\r\n    </footer>\r\n\r\n</body>\r\n\r\n</html>\r\n```\r\nResponse format: \r\nSnippet with error: …\r\nLocation of error: …\r\nWCAG Guideline violated: …\r\nDetection Algorithm: …\r\nExplanation of Error: …",
+            "kind": "text"
+          }
+        ],
+        "text": "Context: You are an accessibility expert reviewing HTML for accessibility issues. Analyze the following code in the context of WCAG (Web Content Accessibility Guidelines) 2.2, listing any issues that may violate these guidelines. You will only be analyzing the HTML, ignoring any included or missing styles and scripts.\r\nCode: \r\n```<!DOCTYPE html>\r\n<html lang=\"en\">\r\n\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Your Gaming Website</title>\r\n    <style>\r\n        body {\r\n            margin: 0;\r\n            padding: 0;\r\n            font-family: Arial, sans-serif;\r\n        }\r\n\r\n        header {\r\n            background: #333;\r\n            color: #fff;\r\n            padding: 10px;\r\n            text-align: center;\r\n        }\r\n\r\n        nav {\r\n            background: #444;\r\n            color: #fff;\r\n            padding: 10px;\r\n            text-align: center;\r\n        }\r\n\r\n        nav a {\r\n            color: #fff;\r\n            text-decoration: none;\r\n            padding: 10px;\r\n            margin: 0 10px;\r\n        }\r\n\r\n        section {\r\n            padding: 20px;\r\n        }\r\n\r\n        footer {\r\n            background: #333;\r\n            color: #fff;\r\n            text-align: center;\r\n            padding: 10px;\r\n            position: fixed;\r\n            bottom: 0;\r\n            width: 100%;\r\n        }\r\n\r\n        .hero-section {\r\n            position: relative;\r\n            background: url('background.jpg') center/cover no-repeat;\r\n            color: #fff;\r\n            text-align: center;\r\n            padding: 100px 20px;\r\n        }\r\n\r\n        .hero-overlay {\r\n            position: absolute;\r\n            top: 0;\r\n            left: 0;\r\n            width: 100%;\r\n            height: 100%;\r\n            background: rgba(0, 0, 0, 0.5); /* Adjust the transparency as needed */\r\n        }\r\n\r\n        .hero-text {\r\n            position: relative;\r\n            z-index: 1;\r\n        }\r\n\r\n        .video-section {\r\n            text-align: center;\r\n        }\r\n\r\n        .game-description {\r\n            max-width: 800px;\r\n            margin: 0 auto;\r\n            text-align: justify;\r\n        }\r\n\r\n        .button {\r\n            display: inline-block;\r\n            padding: 10px 20px;\r\n            background: #007BFF;\r\n            color: #fff;\r\n            text-decoration: none;\r\n            border-radius: 5px;\r\n        }\r\n\r\n        .input-field {\r\n            padding: 10px;\r\n            margin: 10px 0;\r\n            width: 100%;\r\n        }\r\n\r\n        /* Adjusted style for the submit button for better contrast */\r\n        .button.submit {\r\n            background: #28a745; /* Green color */\r\n        }\r\n    </style>\r\n</head>\r\n\r\n<body>\r\n\r\n    <header>\r\n        <h1>Your Gaming Website</h1>\r\n    </header>\r\n\r\n    <nav>\r\n        <a href=\"#home\">Home</a>\r\n        <a href=\"#games\">Games</a>\r\n        <a href=\"#about\">About</a>\r\n        <a href=\"#contact\">Contact</a>\r\n    </nav>\r\n\r\n    <section class=\"hero-section\">\r\n        <div class=\"hero-overlay\"></div>\r\n        <div class=\"hero-text\">\r\n            <h3>Welcome to the Gaming World!</h3>\r\n            <p>Discover the latest and greatest games.</p>\r\n            <a href=\"#games\" class=\"button\">Explore Games</a>\r\n        </div>\r\n    </section>\r\n\r\n    <section id=\"games\" class=\"video-section\">\r\n        <h3>Featured Games</h3>\r\n        <iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/your-game-video-id\" frameborder=\"0\"\r\n            allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\"\r\n            allowfullscreen></iframe>\r\n    </section>\r\n\r\n    <section id=\"about\" class=\"game-description\">\r\n        <h2>About Us</h2>\r\n        <p>Your gaming website is dedicated to bringing you the latest news, reviews, and updates from the gaming\r\n            world. Explore our collection of games and stay informed.</p>\r\n    </section>\r\n\r\n    <section id=\"contact\">\r\n        <h2>Contact Us</h2>\r\n        <form>\r\n            <label for=\"username\">Username:</label><br>\r\n            <input type=\"text\" id=\"username\" name=\"username\"><br>\r\n            <input type=\"password\" id=\"pwd\" name=\"pwd\">      \r\n\r\n            <input type=\"radio\" id=\"1\" name=\"fav_number\" value=\"1\">\r\n            <label for=\"1\"></label><br>\r\n            <input type=\"radio\" id=\"2\" name=\"fav_number\" value=\"2\">\r\n            <label for=\"2\">2</label><br>\r\n            <input type=\"radio\" id=\"3\" name=\"fav_number\" value=\"3\">\r\n            <label for=\"3\">3</label>   \r\n                     \r\n            <input type=\"checkbox\" id=\"vehicle1\" name=\"vehicle1\" value=\"Bike\">\r\n            <label for=\"vehicle1\"> I have a bike</label><br>\r\n            <input type=\"checkbox\" id=\"vehicle2\" name=\"vehicle2\" value=\"Car\">\r\n            <label for=\"vehicle2\"> I have a car</label><br>\r\n            <input type=\"checkbox\" id=\"vehicle3\" name=\"vehicle3\" value=\"Boat\">\r\n            <label for=\"vehicle3\"> I have a boat</label>\r\n\r\n            <label for=\"myfile\">Select a file:</label>\r\n            <input type=\"file\" id=\"myfile\" name=\"myfile\">\r\n\r\n            <!-- Apply the modified style to the submit button -->\r\n            <input type=\"submit\" value=\"Submit\" class=\"button submit\">\r\n        </form>\r\n    </section>\r\n\r\n    <footer onmouseout=\"Popup()\">\r\n        &copy; 2023 Your Gaming Website. All rights reserved.\r\n    </footer>\r\n\r\n</body>\r\n\r\n</html>\r\n```\r\nResponse format: \r\nSnippet with error: …\r\nLocation of error: …\r\nWCAG Guideline violated: …\r\nDetection Algorithm: …\r\nExplanation of Error: …"
+      },
+      "variableData": {
+        "variables": []
+      },
+      "response": [
+        {
+          "value": "Snippet with error: \n```html\n<input type=\"password\" id=\"pwd\" name=\"pwd\">\n```\nLocation of error: In the \"Contact Us\" form.\nWCAG Guideline violated: 1.3.1 Info and Relationships.\nDetection Algorithm: Checking if all form inputs have associated labels.\nExplanation of Error: The password input field does not have an associated label, which can make it difficult for screen reader users to understand its purpose.\n\n---\n\nSnippet with error: \n```html\n<input type=\"radio\" id=\"1\" name=\"fav_number\" value=\"1\">\n<label for=\"1\"></label><br>\n```\nLocation of error: In the \"Contact Us\" form.\nWCAG Guideline violated: 1.3.1 Info and Relationships.\nDetection Algorithm: Checking if all form inputs have associated labels.\nExplanation of Error: The first radio button does not have an associated label, which can make it difficult for screen reader users to understand its purpose.\n\n---\n\nSnippet with error: \n```html\n<footer onmouseout=\"Popup()\">\n```\nLocation of error: In the footer.\nWCAG Guideline violated: 2.1.1 Keyboard.\nDetection Algorithm: Checking if there are any mouse-specific event handlers.\nExplanation of Error: The onmouseout event handler is mouse-specific, which can make the website less accessible for keyboard-only users. Consider using focus and blur event handlers instead.\n\n---\n\nSnippet with error: \n```html\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/your-game-video-id\" frameborder=\"0\"\n    allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\"\n    allowfullscreen></iframe>\n```\nLocation of error: In the \"Featured Games\" section.\nWCAG Guideline violated: 4.1.2 Name, Role, Value.\nDetection Algorithm: Checking if all iframes have a title attribute.\nExplanation of Error: The iframe does not have a title attribute, which can make it difficult for screen reader users to understand its content.",
+          "supportThemeIcons": false,
+          "supportHtml": false
+        }
+      ],
+      "result": {
+        "timings": {
+          "firstProgress": 1413,
+          "totalElapsed": 13162
+        },
+        "metadata": {
+          "responseId": "142efbe5-75f1-4c97-ae3f-522cd84c451e",
+          "sessionId": "34d269e4-27fc-4ca0-bc5c-1ca86d2f67ac"
+        }
+      },
+      "followups": [
+        {
+          "kind": "reply",
+          "agentId": "github.copilot.default",
+          "message": "What are some best practices for improving accessibility in HTML forms?"
+        }
+      ],
+      "isCanceled": false,
+      "agent": {
+        "b": {
+          "extensionId": {
+            "value": "GitHub.copilot-chat",
+            "_lower": "github.copilot-chat"
+          },
+          "extensionPublisherDisplayName": "GitHub",
+          "extensionPublisherId": "GitHub",
+          "extensionDisplayName": "GitHub Copilot Chat",
+          "id": "github.copilot.default",
+          "description": "Ask Copilot or type / for commands",
+          "metadata": {
+            "fullName": "GitHub Copilot",
+            "themeIcon": {
+              "id": "copilot"
+            },
+            "hasFollowups": true,
+            "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+            "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+            "helpTextPostfix": {
+              "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview).",
+              "isTrusted": {
+                "enabledCommands": [
+                  "inlineChat.start"
+                ]
+              },
+              "supportThemeIcons": false,
+              "supportHtml": false,
+              "uris": {
+                "command:inlineChat.start": {
+                  "$mid": 1,
+                  "path": "inlineChat.start",
+                  "scheme": "command"
+                },
+                "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                  "$mid": 1,
+                  "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                  "scheme": "https",
+                  "authority": "docs.github.com",
+                  "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+                },
+                "https://code.visualstudio.com/docs/copilot/overview": {
+                  "$mid": 1,
+                  "path": "/docs/copilot/overview",
+                  "scheme": "https",
+                  "authority": "code.visualstudio.com"
+                }
+              }
+            },
+            "supportIssueReporting": false,
+            "requester": {
+              "name": "chauler",
+              "icon": {
+                "$mid": 1,
+                "path": "/chauler",
+                "scheme": "https",
+                "authority": "avatars.githubusercontent.com"
+              }
+            }
+          },
+          "name": "GitHub Copilot",
+          "isDefault": true,
+          "locations": [
+            "panel"
+          ],
+          "slashCommands": []
+        },
+        "d": {}
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\Alex\\Desktop\\A11y_AI\\RQ3-Results\\Project-13\\2ERROR.txt",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/Alex/Desktop/A11y_AI/RQ3-Results/Project-13/2ERROR.txt",
+              "path": "/c:/Users/Alex/Desktop/A11y_AI/RQ3-Results/Project-13/2ERROR.txt",
+              "scheme": "file"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 183,
+              "endColumn": 24
+            }
+          }
+        }
+      ]
+    },
+    {
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 50
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 51
+            },
+            "text": "Are there any more issues? List all that you find.",
+            "kind": "text"
+          }
+        ],
+        "text": "Are there any more issues? List all that you find."
+      },
+      "variableData": {
+        "variables": []
+      },
+      "response": [
+        {
+          "value": "Snippet with error: \n```html\n<input type=\"password\" id=\"pwd\" name=\"pwd\">\n```\nLocation of error: In the \"Contact Us\" form.\nWCAG Guideline violated: 1.3.1 Info and Relationships.\nDetection Algorithm: Checking if all form inputs have associated labels.\nExplanation of Error: The password input field does not have an associated label, which can make it difficult for screen reader users to understand its purpose.\n\n---\n\nSnippet with error: \n```html\n<input type=\"radio\" id=\"1\" name=\"fav_number\" value=\"1\">\n<label for=\"1\"></label><br>\n```\nLocation of error: In the \"Contact Us\" form.\nWCAG Guideline violated: 1.3.1 Info and Relationships.\nDetection Algorithm: Checking if all form inputs have associated labels.\nExplanation of Error: The first radio button does not have an associated label, which can make it difficult for screen reader users to understand its purpose.\n\n---\n\nSnippet with error: \n```html\n<footer onmouseout=\"Popup()\">\n```\nLocation of error: In the footer.\nWCAG Guideline violated: 2.1.1 Keyboard.\nDetection Algorithm: Checking if there are any mouse-specific event handlers.\nExplanation of Error: The onmouseout event handler is mouse-specific, which can make the website less accessible for keyboard-only users. Consider using focus and blur event handlers instead.\n\n---\n\nSnippet with error: \n```html\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/your-game-video-id\" frameborder=\"0\"\n    allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\"\n    allowfullscreen></iframe>\n```\nLocation of error: In the \"Featured Games\" section.\nWCAG Guideline violated: 4.1.2 Name, Role, Value.\nDetection Algorithm: Checking if all iframes have a title attribute.\nExplanation of Error: The iframe does not have a title attribute, which can make it difficult for screen reader users to understand its content.",
+          "supportThemeIcons": false,
+          "supportHtml": false
+        }
+      ],
+      "result": {
+        "timings": {
+          "firstProgress": 1180,
+          "totalElapsed": 12476
+        },
+        "metadata": {
+          "responseId": "190b1e5c-d4af-4b3f-b39c-310c704f3fac",
+          "sessionId": "34d269e4-27fc-4ca0-bc5c-1ca86d2f67ac"
+        }
+      },
+      "followups": [
+        {
+          "kind": "reply",
+          "agentId": "github.copilot.default",
+          "message": "What are some recommendations for improving the accessibility of the HTML code?"
+        }
+      ],
+      "isCanceled": false,
+      "agent": {
+        "b": {
+          "extensionId": {
+            "value": "GitHub.copilot-chat",
+            "_lower": "github.copilot-chat"
+          },
+          "extensionPublisherDisplayName": "GitHub",
+          "extensionPublisherId": "GitHub",
+          "extensionDisplayName": "GitHub Copilot Chat",
+          "id": "github.copilot.default",
+          "description": "Ask Copilot or type / for commands",
+          "metadata": {
+            "fullName": "GitHub Copilot",
+            "themeIcon": {
+              "id": "copilot"
+            },
+            "hasFollowups": true,
+            "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+            "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+            "helpTextPostfix": {
+              "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview).",
+              "isTrusted": {
+                "enabledCommands": [
+                  "inlineChat.start"
+                ]
+              },
+              "supportThemeIcons": false,
+              "supportHtml": false,
+              "uris": {
+                "command:inlineChat.start": {
+                  "$mid": 1,
+                  "path": "inlineChat.start",
+                  "scheme": "command"
+                },
+                "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                  "$mid": 1,
+                  "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                  "scheme": "https",
+                  "authority": "docs.github.com",
+                  "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+                },
+                "https://code.visualstudio.com/docs/copilot/overview": {
+                  "$mid": 1,
+                  "path": "/docs/copilot/overview",
+                  "scheme": "https",
+                  "authority": "code.visualstudio.com"
+                }
+              }
+            },
+            "supportIssueReporting": false,
+            "requester": {
+              "name": "chauler",
+              "icon": {
+                "$mid": 1,
+                "path": "/chauler",
+                "scheme": "https",
+                "authority": "avatars.githubusercontent.com"
+              }
+            }
+          },
+          "name": "GitHub Copilot",
+          "isDefault": true,
+          "locations": [
+            "panel"
+          ],
+          "slashCommands": []
+        },
+        "d": {}
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\Alex\\Desktop\\A11y_AI\\RQ3-Results\\Project-13\\2ERROR.txt",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/Alex/Desktop/A11y_AI/RQ3-Results/Project-13/2ERROR.txt",
+              "path": "/c:/Users/Alex/Desktop/A11y_AI/RQ3-Results/Project-13/2ERROR.txt",
+              "scheme": "file"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 183,
+              "endColumn": 24
+            }
+          }
+        }
+      ]
+    },
+    {
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 50
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 51
+            },
+            "text": "Are there any more issues? List all that you find.",
+            "kind": "text"
+          }
+        ],
+        "text": "Are there any more issues? List all that you find."
+      },
+      "variableData": {
+        "variables": []
+      },
+      "response": [
+        {
+          "value": "Snippet with error: \n```html\n<input type=\"password\" id=\"pwd\" name=\"pwd\">\n```\nLocation of error: In the \"Contact Us\" form.\nWCAG Guideline violated: 1.3.1 Info and Relationships.\nDetection Algorithm: Checking if all form inputs have associated labels.\nExplanation of Error: The password input field does not have an associated label, which can make it difficult for screen reader users to understand its purpose.\n\n---\n\nSnippet with error: \n```html\n<input type=\"radio\" id=\"1\" name=\"fav_number\" value=\"1\">\n<label for=\"1\"></label><br>\n```\nLocation of error: In the \"Contact Us\" form.\nWCAG Guideline violated: 1.3.1 Info and Relationships.\nDetection Algorithm: Checking if all form inputs have associated labels.\nExplanation of Error: The first radio button does not have an associated label, which can make it difficult for screen reader users to understand its purpose.\n\n---\n\nSnippet with error: \n```html\n<footer onmouseout=\"Popup()\">\n```\nLocation of error: In the footer.\nWCAG Guideline violated: 2.1.1 Keyboard.\nDetection Algorithm: Checking if there are any mouse-specific event handlers.\nExplanation of Error: The onmouseout event handler is mouse-specific, which can make the website less accessible for keyboard-only users. Consider using focus and blur event handlers instead.\n\n---\n\nSnippet with error: \n```html\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/your-game-video-id\" frameborder=\"0\"\n    allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\"\n    allowfullscreen></iframe>\n```\nLocation of error: In the \"Featured Games\" section.\nWCAG Guideline violated: 4.1.2 Name, Role, Value.\nDetection Algorithm: Checking if all iframes have a title attribute.\nExplanation of Error: The iframe does not have a title attribute, which can make it difficult for screen reader users to understand its content.\n\n---\n\nSnippet with error: \n```html\n<section class=\"hero-section\">\n    <div class=\"hero-overlay\"></div>\n    <div class=\"hero-text\">\n        <h3>Welcome to the Gaming World!</h3>\n        <p>Discover the latest and greatest games.</p>\n        <a href=\"#games\" class=\"button\">Explore Games</a>\n    </div>\n</section>\n```\nLocation of error: In the \"Hero Section\".\nWCAG Guideline violated: 1.4.3 Contrast (Minimum).\nDetection Algorithm: Checking if the contrast ratio between text and its background meets the minimum requirement.\nExplanation of Error: The contrast ratio between the text and its background in the hero section may not meet the minimum requirement, making it difficult for users with moderate visual impairments to read.\n\n---\n\nSnippet with error: \n```html\n<nav>\n    <a href=\"#home\">Home</a>\n    <a href=\"#games\">Games</a>\n    <a href=\"#about\">About</a>\n    <a href=\"#contact\">Contact</a>\n</nav>\n```\nLocation of error: In the navigation bar.\nWCAG Guideline violated: 2.4.1 Bypass Blocks.\nDetection Algorithm: Checking if there are mechanisms to bypass blocks of content that are repeated on multiple web pages.\nExplanation of Error: The navigation bar does not have a mechanism to bypass it, which can make it difficult for keyboard-only users to navigate the website. Consider adding a \"Skip to main content\" link at the start of each page.",
+          "supportThemeIcons": false,
+          "supportHtml": false
+        }
+      ],
+      "result": {
+        "timings": {
+          "firstProgress": 1359,
+          "totalElapsed": 22453
+        },
+        "metadata": {
+          "responseId": "e6aaea9c-bf6d-4605-bcff-c87259cc05e6",
+          "sessionId": "34d269e4-27fc-4ca0-bc5c-1ca86d2f67ac"
+        }
+      },
+      "followups": [
+        {
+          "kind": "reply",
+          "agentId": "github.copilot.default",
+          "message": "What are some guidelines for improving the contrast ratio in web design?"
+        }
+      ],
+      "isCanceled": false,
+      "agent": {
+        "b": {
+          "extensionId": {
+            "value": "GitHub.copilot-chat",
+            "_lower": "github.copilot-chat"
+          },
+          "extensionPublisherDisplayName": "GitHub",
+          "extensionPublisherId": "GitHub",
+          "extensionDisplayName": "GitHub Copilot Chat",
+          "id": "github.copilot.default",
+          "description": "Ask Copilot or type / for commands",
+          "metadata": {
+            "fullName": "GitHub Copilot",
+            "themeIcon": {
+              "id": "copilot"
+            },
+            "hasFollowups": true,
+            "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+            "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+            "helpTextPostfix": {
+              "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview).",
+              "isTrusted": {
+                "enabledCommands": [
+                  "inlineChat.start"
+                ]
+              },
+              "supportThemeIcons": false,
+              "supportHtml": false,
+              "uris": {
+                "command:inlineChat.start": {
+                  "$mid": 1,
+                  "path": "inlineChat.start",
+                  "scheme": "command"
+                },
+                "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                  "$mid": 1,
+                  "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                  "scheme": "https",
+                  "authority": "docs.github.com",
+                  "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+                },
+                "https://code.visualstudio.com/docs/copilot/overview": {
+                  "$mid": 1,
+                  "path": "/docs/copilot/overview",
+                  "scheme": "https",
+                  "authority": "code.visualstudio.com"
+                }
+              }
+            },
+            "supportIssueReporting": false,
+            "requester": {
+              "name": "chauler",
+              "icon": {
+                "$mid": 1,
+                "path": "/chauler",
+                "scheme": "https",
+                "authority": "avatars.githubusercontent.com"
+              }
+            }
+          },
+          "name": "GitHub Copilot",
+          "isDefault": true,
+          "locations": [
+            "panel"
+          ],
+          "slashCommands": []
+        },
+        "d": {}
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\Alex\\Desktop\\A11y_AI\\RQ3-Results\\Project-13\\2ERROR.txt",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/Alex/Desktop/A11y_AI/RQ3-Results/Project-13/2ERROR.txt",
+              "path": "/c:/Users/Alex/Desktop/A11y_AI/RQ3-Results/Project-13/2ERROR.txt",
+              "scheme": "file"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 183,
+              "endColumn": 24
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

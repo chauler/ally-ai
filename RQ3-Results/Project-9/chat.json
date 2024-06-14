@@ -1,0 +1,436 @@
+{
+  "requesterUsername": "chauler",
+  "requesterAvatarIconUri": {
+    "$mid": 1,
+    "path": "/chauler",
+    "scheme": "https",
+    "authority": "avatars.githubusercontent.com"
+  },
+  "responderUsername": "GitHub Copilot",
+  "responderAvatarIconUri": {
+    "id": "copilot"
+  },
+  "initialLocation": "panel",
+  "welcomeMessage": [
+    "Hi **@chauler**, how can I help you?"
+  ],
+  "requests": [
+    {
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 3771
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 144,
+              "endColumn": 24
+            },
+            "text": "Context: You are an accessibility expert reviewing HTML for accessibility issues. Analyze the following code in the context of WCAG (Web Content Accessibility Guidelines) 2.2, listing any issues that may violate these guidelines. You will only be analyzing the HTML, ignoring any included or missing styles and scripts.\r\nCode: \r\n```<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n  <base href=\"https://bhargavichandu1.github.io/\">\r\n  <meta charset=\"UTF-8\">\r\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n  <title>Hospital Management System</title>\r\n  <style>\r\n    body {\r\n      margin: 0;\r\n      padding: 0;\r\n      font-family: 'Arial', sans-serif;\r\n      color: #333; /* Set the default text color */\r\n    }\r\n\r\n    header {\r\n      background-image: url('hospital_background.jpg');\r\n      background-size: cover;\r\n      color: #fff;\r\n      text-align: center;\r\n      padding: 50px;\r\n    }\r\n\r\n    nav {\r\n      background-color: #333;\r\n      overflow: hidden;\r\n    }\r\n\r\n    nav a {\r\n      float: left;\r\n      display: block;\r\n      color: white;\r\n      text-align: center;\r\n      padding: 14px 16px;\r\n      text-decoration: none;\r\n    }\r\n\r\n    section {\r\n      padding: 20px;\r\n    }\r\n\r\n    footer {\r\n      background-color: #333;\r\n      color: white;\r\n      text-align: center;\r\n      padding: 10px;\r\n      position: fixed;\r\n      bottom: 0;\r\n      width: 100%;\r\n    }\r\n\r\n    h1, h2, h3, h4, h5, h6 {\r\n      color: #fff;\r\n    }\r\n\r\n    /* Add your additional styles for buttons, input fields, etc. */\r\n    label {\r\n      display: block;\r\n      margin-bottom: 5px;\r\n      color: #333; /* Set label color */\r\n    }\r\n\r\n    input, textarea, button {\r\n      margin-bottom: 10px;\r\n    }\r\n\r\n    /* Add more specific styles for form elements if needed */\r\n  </style>\r\n</head>\r\n<body>\r\n\r\n  <!-- Header -->\r\n  <header>\r\n    <marquee>Hospital Management System</marquee>\r\n  </header>\r\n\r\n  <!-- Navigation -->\r\n  <nav>\r\n    <a href=\"#home\">Home</a>\r\n    <a href=\"#services\">Services</a>\r\n    <a href=\"#about\">About Us</a>\r\n    <a href=\"#contact\">Contact</a>\r\n    <!-- Add more navigation links as needed-->\r\n  </nav>\r\n\r\n  <!-- Home Section -->\r\n  <section id=\"home\">\r\n    <h2>Welcome to Our Hospital</h2>\r\n    <p>This is a brief description of your hospital and its services.</p>\r\n    <!-- HTML5 video or audio -->\r\n    <video width=\"400\" controls>\r\n      <source src=\"hospital_video.mp4\" type=\"video/mp4\">\r\n      Your browser does not support the video tag.\r\n    </video>\r\n  </section>\r\n\r\n  <!-- Services Section -->\r\n  <section id=\"services\">\r\n    <h2>Our Services</h2>\r\n    <p>Describe the services offered by your hospital.</p>\r\n    <!-- Add more content and sections as needed-->\r\n  </section>\r\n\r\n  <!-- About Section -->\r\n  <section id=\"about\">\r\n    <h4>About Us</h4>\r\n    <h3>Provide information about the hospital's history, mission, and values.</h3>\r\n    <!-- Add more content and sections as needed-->\r\n  </section>\r\n\r\n  <!-- Contact Section -->\r\n  <section id=\"contact\">\r\n    <h2>Contact Us</h2>\r\n    <form>\r\n      <label for=\"name\"></label>\r\n      <input type=\"text\" id=\"name\" name=\"name\" required>\r\n      <br>\r\n      <label for=\"email\">Email:</label>\r\n      <input type=\"email\" id=\"email\" name=\"email\" required>\r\n      <br>\r\n      <label for=\"message\">Message:</label>\r\n      <textarea id=\"message\" name=\"message\" rows=\"4\" required></textarea>\r\n      <br>\r\n      <button type=\"submit\">Submit</button>\r\n    </form>\r\n  </section>\r\n\r\n  <meta http-equiv=\"refresh\" content=\"0\">\r\n\r\n  <!-- Footer -->\r\n  <footer>\r\n    <p>© 2023 Hospital Management System. All rights reserved.</p>\r\n  </footer>\r\n</body>\r\n</html>\r\n```\r\nResponse format: \r\nSnippet with error: …\r\nLocation of error: …\r\nWCAG Guideline violated: …\r\nDetection Algorithm: …\r\nExplanation of Error: …",
+            "kind": "text"
+          }
+        ],
+        "text": "Context: You are an accessibility expert reviewing HTML for accessibility issues. Analyze the following code in the context of WCAG (Web Content Accessibility Guidelines) 2.2, listing any issues that may violate these guidelines. You will only be analyzing the HTML, ignoring any included or missing styles and scripts.\r\nCode: \r\n```<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n  <base href=\"https://bhargavichandu1.github.io/\">\r\n  <meta charset=\"UTF-8\">\r\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n  <title>Hospital Management System</title>\r\n  <style>\r\n    body {\r\n      margin: 0;\r\n      padding: 0;\r\n      font-family: 'Arial', sans-serif;\r\n      color: #333; /* Set the default text color */\r\n    }\r\n\r\n    header {\r\n      background-image: url('hospital_background.jpg');\r\n      background-size: cover;\r\n      color: #fff;\r\n      text-align: center;\r\n      padding: 50px;\r\n    }\r\n\r\n    nav {\r\n      background-color: #333;\r\n      overflow: hidden;\r\n    }\r\n\r\n    nav a {\r\n      float: left;\r\n      display: block;\r\n      color: white;\r\n      text-align: center;\r\n      padding: 14px 16px;\r\n      text-decoration: none;\r\n    }\r\n\r\n    section {\r\n      padding: 20px;\r\n    }\r\n\r\n    footer {\r\n      background-color: #333;\r\n      color: white;\r\n      text-align: center;\r\n      padding: 10px;\r\n      position: fixed;\r\n      bottom: 0;\r\n      width: 100%;\r\n    }\r\n\r\n    h1, h2, h3, h4, h5, h6 {\r\n      color: #fff;\r\n    }\r\n\r\n    /* Add your additional styles for buttons, input fields, etc. */\r\n    label {\r\n      display: block;\r\n      margin-bottom: 5px;\r\n      color: #333; /* Set label color */\r\n    }\r\n\r\n    input, textarea, button {\r\n      margin-bottom: 10px;\r\n    }\r\n\r\n    /* Add more specific styles for form elements if needed */\r\n  </style>\r\n</head>\r\n<body>\r\n\r\n  <!-- Header -->\r\n  <header>\r\n    <marquee>Hospital Management System</marquee>\r\n  </header>\r\n\r\n  <!-- Navigation -->\r\n  <nav>\r\n    <a href=\"#home\">Home</a>\r\n    <a href=\"#services\">Services</a>\r\n    <a href=\"#about\">About Us</a>\r\n    <a href=\"#contact\">Contact</a>\r\n    <!-- Add more navigation links as needed-->\r\n  </nav>\r\n\r\n  <!-- Home Section -->\r\n  <section id=\"home\">\r\n    <h2>Welcome to Our Hospital</h2>\r\n    <p>This is a brief description of your hospital and its services.</p>\r\n    <!-- HTML5 video or audio -->\r\n    <video width=\"400\" controls>\r\n      <source src=\"hospital_video.mp4\" type=\"video/mp4\">\r\n      Your browser does not support the video tag.\r\n    </video>\r\n  </section>\r\n\r\n  <!-- Services Section -->\r\n  <section id=\"services\">\r\n    <h2>Our Services</h2>\r\n    <p>Describe the services offered by your hospital.</p>\r\n    <!-- Add more content and sections as needed-->\r\n  </section>\r\n\r\n  <!-- About Section -->\r\n  <section id=\"about\">\r\n    <h4>About Us</h4>\r\n    <h3>Provide information about the hospital's history, mission, and values.</h3>\r\n    <!-- Add more content and sections as needed-->\r\n  </section>\r\n\r\n  <!-- Contact Section -->\r\n  <section id=\"contact\">\r\n    <h2>Contact Us</h2>\r\n    <form>\r\n      <label for=\"name\"></label>\r\n      <input type=\"text\" id=\"name\" name=\"name\" required>\r\n      <br>\r\n      <label for=\"email\">Email:</label>\r\n      <input type=\"email\" id=\"email\" name=\"email\" required>\r\n      <br>\r\n      <label for=\"message\">Message:</label>\r\n      <textarea id=\"message\" name=\"message\" rows=\"4\" required></textarea>\r\n      <br>\r\n      <button type=\"submit\">Submit</button>\r\n    </form>\r\n  </section>\r\n\r\n  <meta http-equiv=\"refresh\" content=\"0\">\r\n\r\n  <!-- Footer -->\r\n  <footer>\r\n    <p>© 2023 Hospital Management System. All rights reserved.</p>\r\n  </footer>\r\n</body>\r\n</html>\r\n```\r\nResponse format: \r\nSnippet with error: …\r\nLocation of error: …\r\nWCAG Guideline violated: …\r\nDetection Algorithm: …\r\nExplanation of Error: …"
+      },
+      "variableData": {
+        "variables": []
+      },
+      "response": [
+        {
+          "value": "Snippet with error: `<marquee>Hospital Management System</marquee>`\nLocation of error: Inside the `<header>` tag\nWCAG Guideline violated: 2.2.2 Pause, Stop, Hide (Level A)\nDetection Algorithm: Check if the `<marquee>` tag is used.\nExplanation of Error: The `<marquee>` tag is deprecated and it creates moving content that cannot be paused, stopped, or hidden, which can be distracting or disorienting for some users.\n\n---\n\nSnippet with error: `<video width=\"400\" controls> <source src=\"hospital_video.mp4\" type=\"video/mp4\"> Your browser does not support the video tag. </video>`\nLocation of error: Inside the `#home` section\nWCAG Guideline violated: 1.2.3 Audio Description or Media Alternative (Prerecorded) (Level A)\nDetection Algorithm: Check if the `<video>` tag is used without a `<track>` tag for captions.\nExplanation of Error: The video does not have captions or a text alternative, making it inaccessible to people who are deaf or hard of hearing.\n\n---\n\nSnippet with error: `<label for=\"name\"></label>`\nLocation of error: Inside the form in the `#contact` section\nWCAG Guideline violated: 1.3.1 Info and Relationships (Level A)\nDetection Algorithm: Check if the `<label>` tag is empty.\nExplanation of Error: The label for the name input field is empty, which can make it difficult for screen reader users to understand what information should be entered in the field.\n\n---\n\nSnippet with error: `<meta http-equiv=\"refresh\" content=\"0\">`\nLocation of error: Just before the `<footer>` tag\nWCAG Guideline violated: 2.2.1 Timing Adjustable (Level A)\nDetection Algorithm: Check if the `<meta>` tag with `http-equiv=\"refresh\"` attribute is used.\nExplanation of Error: This tag is used to refresh the page automatically, which can disorient and confuse users, especially those with cognitive disabilities.",
+          "supportThemeIcons": false,
+          "supportHtml": false
+        }
+      ],
+      "result": {
+        "timings": {
+          "firstProgress": 1190,
+          "totalElapsed": 16015
+        },
+        "metadata": {
+          "responseId": "2fe851bf-2dca-493b-ad56-c2f2311cb5a6",
+          "sessionId": "aabfe2b4-ef22-40a3-acc1-f0813cdc7f0c"
+        }
+      },
+      "followups": [
+        {
+          "kind": "reply",
+          "agentId": "github.copilot.default",
+          "message": "What are some best practices for creating accessible HTML forms?"
+        }
+      ],
+      "isCanceled": false,
+      "agent": {
+        "b": {
+          "extensionId": {
+            "value": "GitHub.copilot-chat",
+            "_lower": "github.copilot-chat"
+          },
+          "extensionPublisherDisplayName": "GitHub",
+          "extensionPublisherId": "GitHub",
+          "extensionDisplayName": "GitHub Copilot Chat",
+          "id": "github.copilot.default",
+          "description": "Ask Copilot or type / for commands",
+          "metadata": {
+            "fullName": "GitHub Copilot",
+            "themeIcon": {
+              "id": "copilot"
+            },
+            "hasFollowups": true,
+            "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+            "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+            "helpTextPostfix": {
+              "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview).",
+              "isTrusted": {
+                "enabledCommands": [
+                  "inlineChat.start"
+                ]
+              },
+              "supportThemeIcons": false,
+              "supportHtml": false,
+              "uris": {
+                "command:inlineChat.start": {
+                  "$mid": 1,
+                  "path": "inlineChat.start",
+                  "scheme": "command"
+                },
+                "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                  "$mid": 1,
+                  "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                  "scheme": "https",
+                  "authority": "docs.github.com",
+                  "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+                },
+                "https://code.visualstudio.com/docs/copilot/overview": {
+                  "$mid": 1,
+                  "path": "/docs/copilot/overview",
+                  "scheme": "https",
+                  "authority": "code.visualstudio.com"
+                }
+              }
+            },
+            "supportIssueReporting": false,
+            "requester": {
+              "name": "chauler",
+              "icon": {
+                "$mid": 1,
+                "path": "/chauler",
+                "scheme": "https",
+                "authority": "avatars.githubusercontent.com"
+              }
+            }
+          },
+          "name": "GitHub Copilot",
+          "isDefault": true,
+          "locations": [
+            "panel"
+          ],
+          "slashCommands": []
+        },
+        "d": {}
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\Alex\\Desktop\\A11y_AI\\RQ3-Results\\Project-9\\index.txt",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/Alex/Desktop/A11y_AI/RQ3-Results/Project-9/index.txt",
+              "path": "/c:/Users/Alex/Desktop/A11y_AI/RQ3-Results/Project-9/index.txt",
+              "scheme": "file"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 144,
+              "endColumn": 24
+            }
+          }
+        }
+      ]
+    },
+    {
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 50
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 51
+            },
+            "text": "Are there any more issues? List all that you find.",
+            "kind": "text"
+          }
+        ],
+        "text": "Are there any more issues? List all that you find."
+      },
+      "variableData": {
+        "variables": []
+      },
+      "response": [
+        {
+          "value": "Snippet with error: `<nav>...</nav>`\nLocation of error: Navigation section\nWCAG Guideline violated: 1.3.1 Info and Relationships (Level A)\nDetection Algorithm: Check if the `<nav>` tag is used without aria-label or aria-labelledby attributes.\nExplanation of Error: The navigation section does not have an aria-label or aria-labelledby attribute, which can make it difficult for screen reader users to understand the purpose of the section.\n\n---\n\nSnippet with error: `<footer>...</footer>`\nLocation of error: Footer section\nWCAG Guideline violated: 1.3.1 Info and Relationships (Level A)\nDetection Algorithm: Check if the `<footer>` tag is used without aria-label or aria-labelledby attributes.\nExplanation of Error: The footer section does not have an aria-label or aria-labelledby attribute, which can make it difficult for screen reader users to understand the purpose of the section.\n\n---\n\nSnippet with error: `<h4>About Us</h4> <h3>Provide information about the hospital's history, mission, and values.</h3>`\nLocation of error: Inside the `#about` section\nWCAG Guideline violated: 1.3.1 Info and Relationships (Level A)\nDetection Algorithm: Check if heading levels are skipped.\nExplanation of Error: Heading levels should not be skipped. Here, an H3 is used after an H4, which can confuse screen reader users.\n\n---\n\nSnippet with error: `<a href=\"#home\">Home</a> <a href=\"#services\">Services</a> <a href=\"#about\">About Us</a> <a href=\"#contact\">Contact</a>`\nLocation of error: Inside the `<nav>` tag\nWCAG Guideline violated: 2.4.4 Link Purpose (In Context) (Level A)\nDetection Algorithm: Check if the `<a>` tag is used without a title attribute.\nExplanation of Error: The links do not have a title attribute, which can make it difficult for screen reader users to understand the purpose of the link.\n\n---\n\nSnippet with error: `<input type=\"text\" id=\"name\" name=\"name\" required>`\nLocation of error: Inside the form in the `#contact` section\nWCAG Guideline violated: 3.3.2 Labels or Instructions (Level A)\nDetection Algorithm: Check if the `<input>` tag is used without a placeholder attribute.\nExplanation of Error: The input field does not have a placeholder attribute, which can make it difficult for users to understand what information should be entered in the field.",
+          "supportThemeIcons": false,
+          "supportHtml": false
+        }
+      ],
+      "result": {
+        "timings": {
+          "firstProgress": 1568,
+          "totalElapsed": 15833
+        },
+        "metadata": {
+          "responseId": "cc3a0c4a-b8e1-4a3d-b5c4-5dfe3e0783dc",
+          "sessionId": "aabfe2b4-ef22-40a3-acc1-f0813cdc7f0c"
+        }
+      },
+      "followups": [
+        {
+          "kind": "reply",
+          "agentId": "github.copilot.default",
+          "message": "What are some best practices for improving the accessibility of HTML forms?"
+        }
+      ],
+      "isCanceled": false,
+      "agent": {
+        "b": {
+          "extensionId": {
+            "value": "GitHub.copilot-chat",
+            "_lower": "github.copilot-chat"
+          },
+          "extensionPublisherDisplayName": "GitHub",
+          "extensionPublisherId": "GitHub",
+          "extensionDisplayName": "GitHub Copilot Chat",
+          "id": "github.copilot.default",
+          "description": "Ask Copilot or type / for commands",
+          "metadata": {
+            "fullName": "GitHub Copilot",
+            "themeIcon": {
+              "id": "copilot"
+            },
+            "hasFollowups": true,
+            "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+            "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+            "helpTextPostfix": {
+              "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview).",
+              "isTrusted": {
+                "enabledCommands": [
+                  "inlineChat.start"
+                ]
+              },
+              "supportThemeIcons": false,
+              "supportHtml": false,
+              "uris": {
+                "command:inlineChat.start": {
+                  "$mid": 1,
+                  "path": "inlineChat.start",
+                  "scheme": "command"
+                },
+                "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                  "$mid": 1,
+                  "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                  "scheme": "https",
+                  "authority": "docs.github.com",
+                  "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+                },
+                "https://code.visualstudio.com/docs/copilot/overview": {
+                  "$mid": 1,
+                  "path": "/docs/copilot/overview",
+                  "scheme": "https",
+                  "authority": "code.visualstudio.com"
+                }
+              }
+            },
+            "supportIssueReporting": false,
+            "requester": {
+              "name": "chauler",
+              "icon": {
+                "$mid": 1,
+                "path": "/chauler",
+                "scheme": "https",
+                "authority": "avatars.githubusercontent.com"
+              }
+            }
+          },
+          "name": "GitHub Copilot",
+          "isDefault": true,
+          "locations": [
+            "panel"
+          ],
+          "slashCommands": []
+        },
+        "d": {}
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\Alex\\Desktop\\A11y_AI\\RQ3-Results\\Project-9\\index.txt",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/Alex/Desktop/A11y_AI/RQ3-Results/Project-9/index.txt",
+              "path": "/c:/Users/Alex/Desktop/A11y_AI/RQ3-Results/Project-9/index.txt",
+              "scheme": "file"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 144,
+              "endColumn": 24
+            }
+          }
+        }
+      ]
+    },
+    {
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 50
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 51
+            },
+            "text": "Are there any more issues? List all that you find.",
+            "kind": "text"
+          }
+        ],
+        "text": "Are there any more issues? List all that you find."
+      },
+      "variableData": {
+        "variables": []
+      },
+      "response": [
+        {
+          "value": "Snippet with error: `<html lang=\"en\">`\nLocation of error: At the start of the HTML document\nWCAG Guideline violated: 3.1.1 Language of Page (Level A)\nDetection Algorithm: Check if the `lang` attribute in the `<html>` tag matches the actual language of the page content.\nExplanation of Error: The `lang` attribute is set to \"en\" (English), but if the actual content of the page is not in English, this can cause problems for screen reader users.\n\n---\n\nSnippet with error: `<video width=\"400\" controls> <source src=\"hospital_video.mp4\" type=\"video/mp4\"> Your browser does not support the video tag. </video>`\nLocation of error: Inside the `#home` section\nWCAG Guideline violated: 1.2.5 Audio Description (Prerecorded) (Level AA)\nDetection Algorithm: Check if the `<video>` tag is used without a description track.\nExplanation of Error: The video does not have an audio description, which makes it inaccessible to people who are blind or have low vision.\n\n---\n\nSnippet with error: `<section id=\"home\">...</section>`\nLocation of error: Home section\nWCAG Guideline violated: 1.3.1 Info and Relationships (Level A)\nDetection Algorithm: Check if the `<section>` tag is used without an aria-label or aria-labelledby attribute.\nExplanation of Error: The section does not have an aria-label or aria-labelledby attribute, which can make it difficult for screen reader users to understand the purpose of the section.\n\n---\n\nSnippet with error: `<button type=\"submit\">Submit</button>`\nLocation of error: Inside the form in the `#contact` section\nWCAG Guideline violated: 4.1.2 Name, Role, Value (Level A)\nDetection Algorithm: Check if the `<button>` tag is used without an aria-label or aria-labelledby attribute.\nExplanation of Error: The button does not have an aria-label or aria-labelledby attribute, which can make it difficult for screen reader users to understand the purpose of the button.\n\n---\n\nSnippet with error: `<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">`\nLocation of error: Inside the `<head>` tag\nWCAG Guideline violated: 1.4.4 Resize text (Level AA)\nDetection Algorithm: Check if the `maximum-scale`, `minimum-scale`, or `user-scalable=no` parameters are used in the `content` attribute of the `<meta name=\"viewport\">` tag.\nExplanation of Error: The viewport meta tag does not restrict zooming, which is good for accessibility. However, if the rest of the page is not designed to work well at increased zoom levels, this can still result in an accessibility issue.",
+          "supportThemeIcons": false,
+          "supportHtml": false
+        }
+      ],
+      "result": {
+        "timings": {
+          "firstProgress": 1189,
+          "totalElapsed": 16796
+        },
+        "metadata": {
+          "responseId": "d9779b8c-e14f-439d-9453-f08e7cbf23e6",
+          "sessionId": "aabfe2b4-ef22-40a3-acc1-f0813cdc7f0c"
+        }
+      },
+      "followups": [
+        {
+          "kind": "reply",
+          "agentId": "github.copilot.default",
+          "message": "What are some best practices for improving the accessibility of HTML code?"
+        }
+      ],
+      "isCanceled": false,
+      "agent": {
+        "b": {
+          "extensionId": {
+            "value": "GitHub.copilot-chat",
+            "_lower": "github.copilot-chat"
+          },
+          "extensionPublisherDisplayName": "GitHub",
+          "extensionPublisherId": "GitHub",
+          "extensionDisplayName": "GitHub Copilot Chat",
+          "id": "github.copilot.default",
+          "description": "Ask Copilot or type / for commands",
+          "metadata": {
+            "fullName": "GitHub Copilot",
+            "themeIcon": {
+              "id": "copilot"
+            },
+            "hasFollowups": true,
+            "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+            "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+            "helpTextPostfix": {
+              "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview).",
+              "isTrusted": {
+                "enabledCommands": [
+                  "inlineChat.start"
+                ]
+              },
+              "supportThemeIcons": false,
+              "supportHtml": false,
+              "uris": {
+                "command:inlineChat.start": {
+                  "$mid": 1,
+                  "path": "inlineChat.start",
+                  "scheme": "command"
+                },
+                "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                  "$mid": 1,
+                  "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                  "scheme": "https",
+                  "authority": "docs.github.com",
+                  "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+                },
+                "https://code.visualstudio.com/docs/copilot/overview": {
+                  "$mid": 1,
+                  "path": "/docs/copilot/overview",
+                  "scheme": "https",
+                  "authority": "code.visualstudio.com"
+                }
+              }
+            },
+            "supportIssueReporting": false,
+            "requester": {
+              "name": "chauler",
+              "icon": {
+                "$mid": 1,
+                "path": "/chauler",
+                "scheme": "https",
+                "authority": "avatars.githubusercontent.com"
+              }
+            }
+          },
+          "name": "GitHub Copilot",
+          "isDefault": true,
+          "locations": [
+            "panel"
+          ],
+          "slashCommands": []
+        },
+        "d": {}
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\Alex\\Desktop\\A11y_AI\\RQ3-Results\\Project-9\\index.txt",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/Alex/Desktop/A11y_AI/RQ3-Results/Project-9/index.txt",
+              "path": "/c:/Users/Alex/Desktop/A11y_AI/RQ3-Results/Project-9/index.txt",
+              "scheme": "file"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 144,
+              "endColumn": 24
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
